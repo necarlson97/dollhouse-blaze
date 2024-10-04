@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b03vv56x7f4gu"]
+
+[ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_7utfm"]
+[ext_resource type="PackedScene" uid="uid://bruqq7blelev4" path="res://scenes/kitchen.tscn" id="3_w3hwb"]
+[ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_x5sj7"]
+
+[node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(599, 351)
+zoom = Vector2(0.455, 0.455)
+
+[node name="ground" parent="." instance=ExtResource("1_7utfm")]
+
+[node name="kitchen" parent="." instance=ExtResource("3_w3hwb")]
+position = Vector2(3, 455)
+
+[node name="player" parent="." instance=ExtResource("4_x5sj7")]
+position = Vector2(296, 407)

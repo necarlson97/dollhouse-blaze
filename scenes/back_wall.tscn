@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce1gpb05x6i2y"]
+
+[ext_resource type="Texture2D" uid="uid://beowr7p13mlhi" path="res://assets/wallpaper diamonds.png" id="1_vtyld"]
+
+[node name="back wall" type="Node2D"]
+
+[node name="WallpaperDiamonds" type="Sprite2D" parent="."]
+position = Vector2(200, -202)
+texture = ExtResource("1_vtyld")

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bruqq7blelev4"]
+
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/back_wall.tscn" id="1_fwxsq"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/wall.tscn" id="2_g0c7c"]
+[ext_resource type="PackedScene" uid="uid://dgcya8lgxww5v" path="res://scenes/wall 3x.tscn" id="3_e4yy8"]
+
+[node name="kitchen" type="Node2D"]
+
+[node name="back wall" parent="." instance=ExtResource("1_fwxsq")]
+position = Vector2(0, -1)
+
+[node name="back wall2" parent="." instance=ExtResource("1_fwxsq")]
+position = Vector2(400, -1)
+
+[node name="back wall3" parent="." instance=ExtResource("1_fwxsq")]
+position = Vector2(801, -1)
+
+[node name="wall" parent="." instance=ExtResource("2_g0c7c")]
+
+[node name="wall2" parent="." instance=ExtResource("2_g0c7c")]
+position = Vector2(1100, 0)
+
+[node name="wall4" parent="." instance=ExtResource("3_e4yy8")]
+rotation = 1.5708
+
+[node name="wall5" parent="." instance=ExtResource("3_e4yy8")]
+position = Vector2(-2, -505)
+rotation = 1.5708

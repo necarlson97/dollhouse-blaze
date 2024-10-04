@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgcya8lgxww5v"]
+
+[ext_resource type="Texture2D" uid="uid://bh15mpyy610eh" path="res://assets/wood plank 3x.png" id="1_32esn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b4mf"]
+size = Vector2(102, 1201)
+
+[node name="wall" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="WoodPlank" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(49, -601)
+texture = ExtResource("1_32esn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(50, -600.5)
+shape = SubResource("RectangleShape2D_2b4mf")
