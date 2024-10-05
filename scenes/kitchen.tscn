@@ -6,11 +6,14 @@
 [node name="kitchen" type="Node2D"]
 
 [node name="back wall" parent="." instance=ExtResource("1_fwxsq")]
+visible = false
 
 [node name="back wall2" parent="." instance=ExtResource("1_fwxsq")]
+visible = false
 position = Vector2(400, 0)
 
 [node name="back wall3" parent="." instance=ExtResource("1_fwxsq")]
+visible = false
 position = Vector2(800, 0)
 
 [node name="wall" parent="." instance=ExtResource("2_g0c7c")]
@@ -20,12 +23,13 @@ position = Vector2(-50, 0)
 position = Vector2(1150, 0)
 
 [node name="wall3" parent="." instance=ExtResource("2_g0c7c")]
+position = Vector2(0, -50)
 rotation = 1.5708
 
 [node name="wall4" parent="." instance=ExtResource("2_g0c7c")]
-position = Vector2(400, 0)
+position = Vector2(400, -50)
 rotation = 1.5708
 
 [node name="wall5" parent="." instance=ExtResource("2_g0c7c")]
-position = Vector2(800, 0)
+position = Vector2(800, -50)
 rotation = 1.5708

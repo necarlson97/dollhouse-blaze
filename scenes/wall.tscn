@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://ch1urk7qurk80"]
 
+[ext_resource type="Script" path="res://scripts/wall.gd" id="1_m4ujv"]
 [ext_resource type="Texture2D" uid="uid://b0gg1lxd0qhob" path="res://assets/wood plank.png" id="1_n5o2n"]
-[ext_resource type="Script" path="res://scripts/obstruction.gd" id="1_tshj6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2b4mf"]
 size = Vector2(102, 402)
 
 [node name="wall" type="Node2D" groups=["obstruction"]]
-script = ExtResource("1_tshj6")
+script = ExtResource("1_m4ujv")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 lock_rotation = true
