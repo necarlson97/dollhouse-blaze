@@ -9,11 +9,32 @@ freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.32, 0.32, 0.32, 1)
-position = Vector2(0, 200)
+position = Vector2(0, 80)
+rotation = -1.5708
+texture = ExtResource("1_682le")
+centered = false
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+modulate = Color(0.32, 0.32, 0.32, 1)
+position = Vector2(-1200, 80)
+rotation = -1.5708
+texture = ExtResource("1_682le")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0.32, 0.32, 0.32, 1)
+position = Vector2(1200, 80)
+rotation = -1.5708
+texture = ExtResource("1_682le")
+centered = false
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+modulate = Color(0.32, 0.32, 0.32, 1)
+position = Vector2(2400, 80)
 rotation = -1.5708
 texture = ExtResource("1_682le")
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 100)
+position = Vector2(0, -25)
 shape = SubResource("WorldBoundaryShape2D_tqvke")

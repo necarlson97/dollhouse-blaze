@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://rjgnubobolka"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_01dkr"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="1_xcq5n"]
+[ext_resource type="Texture2D" uid="uid://bg43wyjqsfibl" path="res://assets/wallpaper tile.png" id="2_byylu"]
+[ext_resource type="PackedScene" uid="uid://d2usi7vk75oiq" path="res://scenes/building/wall tile.tscn" id="3_yq8m5"]
+[ext_resource type="PackedScene" uid="uid://cdubplqcqgkk6" path="res://scenes/extinguisher.tscn" id="5_auppo"]
+
+[node name="bathroom large" type="Node2D"]
+script = ExtResource("1_01dkr")
+cell_size = 3
+
+[node name="back wall" parent="." instance=ExtResource("1_xcq5n")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("2_byylu")
+
+[node name="brl floor" parent="." instance=ExtResource("3_yq8m5")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[node name="back wall2" parent="." instance=ExtResource("1_xcq5n")]
+z_index = -1
+position = Vector2(400, 0)
+
+[node name="WallpaperDiamonds" parent="back wall2" index="0"]
+texture = ExtResource("2_byylu")
+
+[node name="brl floor 2" parent="." instance=ExtResource("3_yq8m5")]
+position = Vector2(600, 0)
+rotation = 1.5708
+
+[node name="back wall3" parent="." instance=ExtResource("1_xcq5n")]
+z_index = -1
+position = Vector2(800, 0)
+
+[node name="WallpaperDiamonds" parent="back wall3" index="0"]
+texture = ExtResource("2_byylu")
+
+[node name="brl floor 3" parent="." instance=ExtResource("3_yq8m5")]
+position = Vector2(1000, 0)
+rotation = 1.5708
+
+[node name="extinguisher" parent="." instance=ExtResource("5_auppo")]
+position = Vector2(344, -125)
+
+[editable path="back wall"]
+[editable path="back wall2"]
+[editable path="back wall3"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://c68ditcaw2uew"]
+
+[ext_resource type="Script" path="res://scripts/stairs.gd" id="1_cl6g2"]
+[ext_resource type="Texture2D" uid="uid://pi0mkfompjrw" path="res://assets/stairs up.png" id="2_3g0v7"]
+[ext_resource type="Texture2D" uid="uid://d1lgdgb4myct3" path="res://assets/stairs.png" id="2_vy048"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jumef"]
+size = Vector2(200, 400)
+
+[node name="stairs" type="Node2D"]
+script = ExtResource("1_cl6g2")
+
+[node name="Stair Up" type="Area2D" parent="."]
+
+[node name="Stairs" type="Sprite2D" parent="Stair Up"]
+z_index = -1
+position = Vector2(200, -200)
+texture = ExtResource("2_3g0v7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stair Up" groups=["interaction area"]]
+position = Vector2(200, -200)
+shape = SubResource("RectangleShape2D_jumef")
+
+[node name="Stair Down" type="Area2D" parent="."]
+position = Vector2(0, 400)
+
+[node name="Stairs" type="Sprite2D" parent="Stair Down"]
+z_index = -1
+position = Vector2(200, -200)
+texture = ExtResource("2_vy048")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stair Down" groups=["interaction area"]]
+position = Vector2(200, -200)
+shape = SubResource("RectangleShape2D_jumef")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2lkanq1fnk2w"]
+
+[ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="1_le5x2"]
+[ext_resource type="Script" path="res://scripts/flame.gd" id="1_lki44"]
+[ext_resource type="Material" uid="uid://c7ht782kbyluq" path="res://assets/smoke.tres" id="2_wtt2f"]
+[ext_resource type="Material" uid="uid://cepag8qrylrfa" path="res://assets/flame.tres" id="4_2h2em"]
+[ext_resource type="Material" uid="uid://cr0jojunitu8p" path="res://assets/spark.tres" id="5_lk082"]
+
+[node name="flame" type="Node2D"]
+script = ExtResource("1_lki44")
+
+[node name="smoke particles" type="GPUParticles2D" parent="."]
+amount = 20
+process_material = ExtResource("2_wtt2f")
+texture = ExtResource("1_le5x2")
+lifetime = 2.0
+
+[node name="fire particles" type="GPUParticles2D" parent="."]
+process_material = ExtResource("4_2h2em")
+texture = ExtResource("1_le5x2")
+
+[node name="spark particles" type="GPUParticles2D" parent="."]
+amount = 20
+amount_ratio = 0.1
+process_material = ExtResource("5_lk082")
+texture = ExtResource("1_le5x2")

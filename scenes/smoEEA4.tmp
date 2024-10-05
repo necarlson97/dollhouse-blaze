@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://boxy7muco0qgm"]
+
+[ext_resource type="Script" path="res://scripts/smoke_cell.gd" id="1_8ockh"]
+[ext_resource type="Texture2D" uid="uid://b7rxxp5r8vrkr" path="res://assets/1x1.png" id="1_yf0hv"]
+
+[node name="smoke cell" type="Node2D" groups=["smoke cell"]]
+script = ExtResource("1_8ockh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.482353, 0.482353, 0.482353, 0.576471)
+scale = Vector2(400, 170)
+texture = ExtResource("1_yf0hv")
+centered = false
+
+[node name="reference" type="Sprite2D" parent="."]
+modulate = Color(0.33, 0.385833, 1, 0.12549)
+scale = Vector2(400, 400)
+texture = ExtResource("1_yf0hv")
+centered = false

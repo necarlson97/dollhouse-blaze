@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://bhhkkbfvp1jiy"]
+
+[ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
+[ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
+[ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_cuf1r"]
+[ext_resource type="PackedScene" uid="uid://cr6klukbbb76h" path="res://scenes/rooms/hall.tscn" id="4_xlujy"]
+[ext_resource type="PackedScene" uid="uid://d3l575ltfli3g" path="res://scenes/building/door.tscn" id="5_8nr3v"]
+[ext_resource type="PackedScene" uid="uid://bruqq7blelev4" path="res://scenes/rooms/den.tscn" id="6_kb3xr"]
+[ext_resource type="PackedScene" uid="uid://c2holy8rn4e37" path="res://scenes/rooms/kitchen.tscn" id="7_vyfu8"]
+[ext_resource type="PackedScene" uid="uid://rjgnubobolka" path="res://scenes/rooms/bathroom large.tscn" id="8_2to6f"]
+[ext_resource type="PackedScene" uid="uid://c68ditcaw2uew" path="res://scenes/building/stairs.tscn" id="8_pw71g"]
+[ext_resource type="PackedScene" uid="uid://byqx0caid3gu5" path="res://scenes/rooms/bathroom segmented.tscn" id="10_7h1sg"]
+[ext_resource type="PackedScene" uid="uid://ddlxv76igtydu" path="res://scenes/rooms/bathroom small.tscn" id="11_prfff"]
+
+[node name="main" type="Node2D"]
+
+[node name="ground" parent="." instance=ExtResource("1_a3oba")]
+position = Vector2(400, 0)
+
+[node name="dollhouse" parent="." instance=ExtResource("2_fvky4")]
+position = Vector2(400, 0)
+ROOMS = 9
+skip_room_build = true
+
+[node name="hall" parent="dollhouse" instance=ExtResource("4_xlujy")]
+
+[node name="hall2" parent="dollhouse" instance=ExtResource("4_xlujy")]
+position = Vector2(400, 0)
+
+[node name="hall3" parent="dollhouse" instance=ExtResource("4_xlujy")]
+position = Vector2(800, 0)
+
+[node name="door" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(800, -200)
+force_unlocked = true
+
+[node name="Label" type="Label" parent="dollhouse"]
+offset_left = 63.0
+offset_top = -145.0
+offset_right = 276.0
+offset_bottom = -103.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "WASD to move"
+
+[node name="Label2" type="Label" parent="dollhouse"]
+offset_left = 64.0
+offset_top = -346.0
+offset_right = 277.0
+offset_bottom = -304.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Welcome, toy."
+
+[node name="den" parent="dollhouse" instance=ExtResource("6_kb3xr")]
+position = Vector2(1200, 0)
+
+[node name="door2" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(1200, -200)
+force_locked = true
+
+[node name="door3" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(2400, -200)
+force_locked = true
+
+[node name="bathroom large" parent="dollhouse" instance=ExtResource("8_2to6f")]
+position = Vector2(2400, 0)
+
+[node name="stairs" parent="dollhouse" instance=ExtResource("8_pw71g")]
+position = Vector2(3200, -400)
+
+[node name="kitchen" parent="dollhouse" instance=ExtResource("7_vyfu8")]
+position = Vector2(2400, -400)
+
+[node name="bathroom segmented" parent="dollhouse" instance=ExtResource("10_7h1sg")]
+position = Vector2(1600, -400)
+
+[node name="kitchen2" parent="dollhouse" instance=ExtResource("7_vyfu8")]
+position = Vector2(400, -400)
+
+[node name="bathroom small" parent="dollhouse" instance=ExtResource("11_prfff")]
+position = Vector2(0, -400)
+
+[node name="player" parent="." instance=ExtResource("4_cuf1r")]
+position = Vector2(733, -60)

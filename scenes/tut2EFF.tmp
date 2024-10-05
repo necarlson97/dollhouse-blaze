@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhhkkbfvp1jiy"]
+
+[ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
+[ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
+[ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_cuf1r"]
+[ext_resource type="PackedScene" uid="uid://cr6klukbbb76h" path="res://scenes/rooms/hall.tscn" id="4_xlujy"]
+[ext_resource type="PackedScene" uid="uid://d3l575ltfli3g" path="res://scenes/building/door.tscn" id="5_8nr3v"]
+[ext_resource type="PackedScene" uid="uid://bruqq7blelev4" path="res://scenes/rooms/den.tscn" id="6_kb3xr"]
+[ext_resource type="PackedScene" uid="uid://rjgnubobolka" path="res://scenes/rooms/bathroom large.tscn" id="8_2to6f"]
+
+[node name="main" type="Node2D"]
+
+[node name="ground" parent="." instance=ExtResource("1_a3oba")]
+position = Vector2(400, 0)
+
+[node name="dollhouse" parent="." instance=ExtResource("2_fvky4")]
+position = Vector2(400, 0)
+FLOORS = 1
+ROOMS = 12
+skip_room_build = true
+
+[node name="player" parent="." instance=ExtResource("4_cuf1r")]
+position = Vector2(733, -60)
+
+[node name="hall" parent="." instance=ExtResource("4_xlujy")]
+position = Vector2(400, 0)
+
+[node name="hall2" parent="." instance=ExtResource("4_xlujy")]
+position = Vector2(800, 0)
+
+[node name="hall3" parent="." instance=ExtResource("4_xlujy")]
+position = Vector2(1200, 0)
+
+[node name="door" parent="." instance=ExtResource("5_8nr3v")]
+position = Vector2(1200, -200)
+force_unlocked = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 463.0
+offset_top = -145.0
+offset_right = 676.0
+offset_bottom = -103.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "WASD to move"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 464.0
+offset_top = -346.0
+offset_right = 677.0
+offset_bottom = -304.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Welcome, toy."
+
+[node name="den" parent="." instance=ExtResource("6_kb3xr")]
+position = Vector2(1601, 0)
+
+[node name="door2" parent="." instance=ExtResource("5_8nr3v")]
+position = Vector2(1600, -200)
+force_locked = true
+
+[node name="door3" parent="." instance=ExtResource("5_8nr3v")]
+position = Vector2(2801, -200)
+force_locked = true
+
+[node name="bathroom large" parent="." instance=ExtResource("8_2to6f")]
+position = Vector2(2801, 0)

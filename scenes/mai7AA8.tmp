@@ -1,20 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://b03vv56x7f4gu"]
+[gd_scene load_steps=6 format=3 uid="uid://b03vv56x7f4gu"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_7utfm"]
+[ext_resource type="PackedScene" uid="uid://bruqq7blelev4" path="res://scenes/kitchen.tscn" id="3_w3hwb"]
 [ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="4_fg7cj"]
 [ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_x5sj7"]
 [ext_resource type="PackedScene" uid="uid://c2lkanq1fnk2w" path="res://scenes/flame.tscn" id="5_dycr8"]
 
 [node name="main" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(599, 351)
+zoom = Vector2(0.455, 0.455)
+
 [node name="ground" parent="." instance=ExtResource("1_7utfm")]
-position = Vector2(400, 0)
 
-[node name="dollhouse" parent="." instance=ExtResource("4_fg7cj")]
-position = Vector2(400, 0)
-
-[node name="flame" parent="." instance=ExtResource("5_dycr8")]
-position = Vector2(1334, -337)
+[node name="kitchen" parent="." instance=ExtResource("3_w3hwb")]
+position = Vector2(3, 455)
 
 [node name="player" parent="." instance=ExtResource("4_x5sj7")]
-position = Vector2(733, -60)
+position = Vector2(296, 407)
+
+[node name="dollhouse" parent="." instance=ExtResource("4_fg7cj")]
+
+[node name="flame" parent="." instance=ExtResource("5_dycr8")]
+position = Vector2(665, 238)

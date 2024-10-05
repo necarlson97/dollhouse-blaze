@@ -1,11 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://dqpfjdn77vy5e"]
+[gd_scene load_steps=10 format=3 uid="uid://dqpfjdn77vy5e"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_lviwu"]
 [ext_resource type="SpriteFrames" uid="uid://vi7t0osn8vsl" path="res://assets/player idle.tres" id="2_umil0"]
+[ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="3_t8as5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o73lw"]
 radius = 49.0
 height = 300.0
+
+[sub_resource type="Gradient" id="Gradient_5h80s"]
+offsets = PackedFloat32Array(0, 0.959016)
+colors = PackedColorArray(1, 0, 0, 1, 0.93, 0.967333, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lbkgx"]
+gradient = SubResource("Gradient_5h80s")
+
+[sub_resource type="Curve" id="Curve_h4jx7"]
+max_value = 20.0
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.193333, 1.31868), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_5hbdx"]
+curve = SubResource("Curve_h4jx7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hxs05"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(20, 100, 1)
+angle_min = 1.07288e-05
+angle_max = 283.9
+direction = Vector3(1, -1, 0)
+spread = 90.0
+initial_velocity_min = 100.0
+initial_velocity_max = 200.0
+gravity = Vector3(0, 784, 0)
+scale_curve = SubResource("CurveTexture_5hbdx")
+color_ramp = SubResource("GradientTexture1D_lbkgx")
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_lviwu")
@@ -23,3 +53,33 @@ frame_progress = 0.149064
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -260)
 zoom = Vector2(0.5, 0.5)
+
+[node name="ToolTip" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -234.0
+offset_top = -481.0
+offset_right = 230.0
+offset_bottom = -304.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Tool top Tool top Tool top Tool top Tool top Tool top "
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="BloodParticles" type="GPUParticles2D" parent="."]
+position = Vector2(0, -220)
+emitting = false
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_hxs05")
+texture = ExtResource("3_t8as5")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0

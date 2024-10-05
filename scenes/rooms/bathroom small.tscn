@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddlxv76igtydu"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_d87cc"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="1_y3s3h"]
+[ext_resource type="Texture2D" uid="uid://bg43wyjqsfibl" path="res://assets/wallpaper tile.png" id="2_c2r6e"]
+[ext_resource type="PackedScene" uid="uid://d2usi7vk75oiq" path="res://scenes/building/wall tile.tscn" id="3_geud1"]
+
+[node name="bathroom small" type="Node2D"]
+script = ExtResource("1_d87cc")
+cell_size = 1
+
+[node name="back wall" parent="." instance=ExtResource("1_y3s3h")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("2_c2r6e")
+
+[node name="brs floor" parent="." instance=ExtResource("3_geud1")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[editable path="back wall"]

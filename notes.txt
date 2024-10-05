@@ -1,0 +1,3 @@
+print("Neighbors of %s"%self)
+	print(neighbor_vectors)
+	print("  %s"%cell)

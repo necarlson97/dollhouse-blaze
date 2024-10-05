@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2holy8rn4e37"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_nd73w"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_suc1a"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="3_5ybou"]
+
+[node name="kitchen" type="Node2D"]
+script = ExtResource("1_nd73w")
+cell_size = 3
+
+[node name="back wall" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+
+[node name="back wall2" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+position = Vector2(400, 0)
+
+[node name="back wall3" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+position = Vector2(800, 0)
+
+[node name="kitchen floor 1" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[node name="kitchen floor 2" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(600, 0)
+rotation = 1.5708
+
+[node name="kitchen floor 3" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(1000, 0)
+rotation = 1.5708

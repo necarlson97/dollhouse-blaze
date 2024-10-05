@@ -1,0 +1,117 @@
+[gd_scene load_steps=14 format=3 uid="uid://d3l575ltfli3g"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_aprxd"]
+[ext_resource type="Texture2D" uid="uid://naw4hdyeuyn6" path="res://assets/door closed.png" id="2_pgynk"]
+[ext_resource type="Texture2D" uid="uid://tfligf5qft1j" path="res://assets/door open.png" id="3_1d5ds"]
+[ext_resource type="Texture2D" uid="uid://cf8yftmsmnqxp" path="res://assets/locked.png" id="4_t47tj"]
+[ext_resource type="Texture2D" uid="uid://dk40yj06d33es" path="res://assets/door smashed.png" id="5_8ulcx"]
+[ext_resource type="Texture2D" uid="uid://b7rxxp5r8vrkr" path="res://assets/1x1.png" id="6_lue8x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b4mf"]
+size = Vector2(50, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7ane"]
+size = Vector2(170, 400)
+
+[sub_resource type="Gradient" id="Gradient_e8c2o"]
+offsets = PackedFloat32Array(0, 0.959016)
+colors = PackedColorArray(0.988235, 0.898039, 0.803922, 1, 0.93, 0.967333, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b08jg"]
+gradient = SubResource("Gradient_e8c2o")
+
+[sub_resource type="Curve" id="Curve_vewk5"]
+max_value = 20.0
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.126667, 20), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_pu87d"]
+curve = SubResource("Curve_vewk5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jh8mi"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(20, 100, 1)
+angle_min = 1.07288e-05
+angle_max = 283.9
+direction = Vector3(1, -1, 0)
+spread = 90.0
+initial_velocity_min = 200.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 784, 0)
+scale_curve = SubResource("CurveTexture_pu87d")
+color_ramp = SubResource("GradientTexture1D_b08jg")
+
+[node name="door" type="Node2D" groups=["connector"]]
+z_index = -1
+script = ExtResource("1_aprxd")
+propegation_rate = 0.2
+
+[node name="DoorClosed" type="Sprite2D" parent="."]
+texture = ExtResource("2_pgynk")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_2b4mf")
+
+[node name="DoorOpen" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_1d5ds")
+centered = false
+offset = Vector2(0, -200)
+
+[node name="Locked" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_t47tj")
+
+[node name="DoorArea" type="Area2D" parent="." groups=["interaction area"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorArea"]
+shape = SubResource("RectangleShape2D_d7ane")
+
+[node name="DoorSmashed" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5_8ulcx")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_jh8mi")
+texture = ExtResource("6_lue8x")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+
+[node name="Health" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1e-05, 1e-05)
+
+[node name="HealthLabel" type="Label" parent="Health"]
+modulate = Color(0.964706, 0.698039, 0.419608, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.5
+offset_top = -62.0
+offset_right = 25.5
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 200
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1

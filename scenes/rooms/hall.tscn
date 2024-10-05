@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr6klukbbb76h"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_dogvi"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="1_kpr5c"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="2_iogy3"]
+[ext_resource type="Texture2D" uid="uid://dk3eqtly3u077" path="res://assets/wallpaper dots.png" id="2_mvc5w"]
+
+[node name="hall" type="Node2D"]
+script = ExtResource("1_dogvi")
+cell_size = 1
+
+[node name="back wall" parent="." instance=ExtResource("1_kpr5c")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("2_mvc5w")
+
+[node name="hall floor" parent="." instance=ExtResource("2_iogy3")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[editable path="back wall"]

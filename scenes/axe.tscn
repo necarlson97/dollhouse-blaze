@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://smsyp2cyhsbd"]
+
+[ext_resource type="Script" path="res://scripts/holdable.gd" id="1_prjap"]
+[ext_resource type="Texture2D" uid="uid://bdklkx3f5b653" path="res://assets/axe.png" id="1_q5s63"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt7yy"]
+size = Vector2(100, 200)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nebaf"]
+radius = 20.0
+height = 200.0
+
+[node name="axe" type="Node2D"]
+z_index = 1
+script = ExtResource("1_prjap")
+
+[node name="Axe" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_q5s63")
+
+[node name="Area2D" type="Area2D" parent="." groups=["interaction area"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qt7yy")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+sleeping = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_nebaf")
+disabled = true

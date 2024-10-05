@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://bruqq7blelev4"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_nd73w"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_suc1a"]
+[ext_resource type="PackedScene" uid="uid://smsyp2cyhsbd" path="res://scenes/axe.tscn" id="2_ut3xu"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="3_5ybou"]
+[ext_resource type="Texture2D" uid="uid://bub442fj01lat" path="res://assets/wallpaper chevrons.png" id="4_5gkod"]
+
+[node name="den" type="Node2D"]
+script = ExtResource("1_nd73w")
+cell_size = 3
+
+[node name="axe" parent="." instance=ExtResource("2_ut3xu")]
+position = Vector2(559, -256)
+rotation = 1.5708
+
+[node name="back wall" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("4_5gkod")
+
+[node name="back wall2" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+position = Vector2(400, 0)
+
+[node name="WallpaperDiamonds" parent="back wall2" index="0"]
+texture = ExtResource("4_5gkod")
+
+[node name="back wall3" parent="." instance=ExtResource("2_suc1a")]
+z_index = -1
+position = Vector2(800, 0)
+
+[node name="WallpaperDiamonds" parent="back wall3" index="0"]
+texture = ExtResource("4_5gkod")
+
+[node name="floor 1" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[node name="floor 2" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(600, 0)
+rotation = 1.5708
+
+[node name="floor 3" parent="." instance=ExtResource("3_5ybou")]
+position = Vector2(1000, 0)
+rotation = 1.5708
+
+[editable path="back wall"]
+[editable path="back wall2"]
+[editable path="back wall3"]
