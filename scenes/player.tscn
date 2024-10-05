@@ -7,7 +7,7 @@
 radius = 49.0
 height = 300.0
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_lviwu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -18,4 +18,4 @@ shape = SubResource("CapsuleShape2D_o73lw")
 position = Vector2(0, -153)
 sprite_frames = ExtResource("2_umil0")
 autoplay = "default"
-frame_progress = 0.177703
+frame_progress = 0.0179332

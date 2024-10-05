@@ -1,17 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://cksoyn8te21qi"]
 
-[ext_resource type="Texture2D" uid="uid://bnqnpbw2r8qko" path="res://icon.svg" id="1_1plo7"]
+[ext_resource type="Texture2D" uid="uid://bh15mpyy610eh" path="res://assets/wood plank 3x.png" id="1_682le"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tqvke"]
 
 [node name="RigidBody2D" type="RigidBody2D"]
-position = Vector2(0, 559.395)
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(673, 65)
-scale = Vector2(11.5313, 1)
-texture = ExtResource("1_1plo7")
+modulate = Color(0.32, 0.32, 0.32, 1)
+position = Vector2(0, 200)
+rotation = -1.5708
+texture = ExtResource("1_682le")
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 100)
 shape = SubResource("WorldBoundaryShape2D_tqvke")
