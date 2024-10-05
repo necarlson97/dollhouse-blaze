@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dqpfjdn77vy5e"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_lviwu"]
-[ext_resource type="SpriteFrames" uid="uid://vi7t0osn8vsl" path="res://assets/player idle.tres" id="2_umil0"]
+[ext_resource type="PackedScene" uid="uid://d3p2y3tlrujxa" path="res://scenes/figure.tscn" id="3_rf73h"]
 [ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="3_t8as5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o73lw"]
@@ -44,12 +44,6 @@ script = ExtResource("1_lviwu")
 position = Vector2(3, -151)
 shape = SubResource("CapsuleShape2D_o73lw")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -153)
-sprite_frames = ExtResource("2_umil0")
-autoplay = "default"
-frame_progress = 0.149064
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -260)
 zoom = Vector2(0.5, 0.5)
@@ -83,3 +77,5 @@ texture = ExtResource("3_t8as5")
 lifetime = 0.5
 one_shot = true
 explosiveness = 1.0
+
+[node name="figure" parent="." instance=ExtResource("3_rf73h")]

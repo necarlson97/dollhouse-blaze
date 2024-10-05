@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cbk6qbaiqy2qo"]
 
 [ext_resource type="Script" path="res://scripts/friend.gd" id="1_juo2y"]
-[ext_resource type="SpriteFrames" uid="uid://vi7t0osn8vsl" path="res://assets/player idle.tres" id="2_jrk5w"]
 [ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="3_3p7aa"]
+[ext_resource type="PackedScene" uid="uid://d3p2y3tlrujxa" path="res://scenes/figure.tscn" id="3_7xlw0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o73lw"]
 radius = 49.0
@@ -44,12 +44,6 @@ script = ExtResource("1_juo2y")
 position = Vector2(3, -151)
 shape = SubResource("CapsuleShape2D_o73lw")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -153)
-sprite_frames = ExtResource("2_jrk5w")
-autoplay = "default"
-frame_progress = 0.149064
-
 [node name="ToolTip" type="Label" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
@@ -78,3 +72,5 @@ texture = ExtResource("3_3p7aa")
 lifetime = 0.5
 one_shot = true
 explosiveness = 1.0
+
+[node name="figure" parent="." instance=ExtResource("3_7xlw0")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bhhkkbfvp1jiy"]
+[gd_scene load_steps=15 format=3 uid="uid://bhhkkbfvp1jiy"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
 [ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://rjgnubobolka" path="res://scenes/rooms/bathroom large.tscn" id="8_2to6f"]
 [ext_resource type="PackedScene" uid="uid://c68ditcaw2uew" path="res://scenes/building/stairs.tscn" id="8_pw71g"]
 [ext_resource type="PackedScene" uid="uid://byqx0caid3gu5" path="res://scenes/rooms/bathroom segmented.tscn" id="10_7h1sg"]
-[ext_resource type="PackedScene" uid="uid://cbk6qbaiqy2qo" path="res://scenes/friend.tscn" id="11_0eksa"]
 [ext_resource type="PackedScene" uid="uid://ddlxv76igtydu" path="res://scenes/rooms/bathroom small.tscn" id="11_prfff"]
 [ext_resource type="PackedScene" uid="uid://cq6sb1mqastug" path="res://scenes/magnifier.tscn" id="12_7tuvd"]
 [ext_resource type="Script" path="res://scripts/trigger_kid.gd" id="13_ij1l6"]
@@ -72,9 +71,6 @@ position = Vector2(400, -400)
 
 [node name="bathroom small" parent="dollhouse" instance=ExtResource("11_prfff")]
 position = Vector2(0, -400)
-
-[node name="friend" parent="dollhouse" instance=ExtResource("11_0eksa")]
-position = Vector2(200, -452)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 463.0

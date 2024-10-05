@@ -29,10 +29,14 @@ func handle_scroll(event):
 
 func get_moves():
 	if !dead:
+		var move_speed = WALK_SPEED
+		if Input.is_action_pressed("sprint"):
+			move_speed = RUN_SPEED
+			
 		if Input.is_action_pressed("ui_left"):
-			velocity.x = -WALK_SPEED
+			velocity.x = -move_speed
 		elif Input.is_action_pressed("ui_right"):
-			velocity.x =  WALK_SPEED
+			velocity.x =  move_speed
 
 		# Jumping (only if on the floor)
 		if Input.is_action_just_pressed("ui_up") and is_on_floor():
@@ -49,7 +53,7 @@ func handle_smoke():
 		lung_health -= cell.ammount * 0.001
 	lung_health = clamp(lung_health, 0, 1)
 	
-	$AnimatedSprite2D.modulate = Color.from_hsv(0, 1-blood_health, lung_health, 1)
+	$figure.modulate = Color.from_hsv(0, 1-blood_health, lung_health, 1)
 	
 	if blood_health <= 0 || lung_health <= 0:
 		die()
