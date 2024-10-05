@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhhkkbfvp1jiy"]
+[gd_scene load_steps=16 format=3 uid="uid://bhhkkbfvp1jiy"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
 [ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
@@ -10,7 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://rjgnubobolka" path="res://scenes/rooms/bathroom large.tscn" id="8_2to6f"]
 [ext_resource type="PackedScene" uid="uid://c68ditcaw2uew" path="res://scenes/building/stairs.tscn" id="8_pw71g"]
 [ext_resource type="PackedScene" uid="uid://byqx0caid3gu5" path="res://scenes/rooms/bathroom segmented.tscn" id="10_7h1sg"]
+[ext_resource type="PackedScene" uid="uid://cbk6qbaiqy2qo" path="res://scenes/friend.tscn" id="11_0eksa"]
 [ext_resource type="PackedScene" uid="uid://ddlxv76igtydu" path="res://scenes/rooms/bathroom small.tscn" id="11_prfff"]
+[ext_resource type="PackedScene" uid="uid://cq6sb1mqastug" path="res://scenes/magnifier.tscn" id="12_7tuvd"]
+[ext_resource type="Script" path="res://scripts/trigger_kid.gd" id="13_ij1l6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02l0e"]
+size = Vector2(600, 380)
 
 [node name="main" type="Node2D"]
 
@@ -34,23 +40,9 @@ position = Vector2(800, 0)
 position = Vector2(800, -200)
 force_unlocked = true
 
-[node name="Label" type="Label" parent="dollhouse"]
-offset_left = 63.0
-offset_top = -145.0
-offset_right = 276.0
-offset_bottom = -103.0
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 30
-text = "WASD to move"
-
-[node name="Label2" type="Label" parent="dollhouse"]
-offset_left = 64.0
-offset_top = -346.0
-offset_right = 277.0
-offset_bottom = -304.0
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 30
-text = "Welcome, toy."
+[node name="door4" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(800, -600)
+force_unlocked = true
 
 [node name="den" parent="dollhouse" instance=ExtResource("6_kb3xr")]
 position = Vector2(1200, 0)
@@ -81,5 +73,90 @@ position = Vector2(400, -400)
 [node name="bathroom small" parent="dollhouse" instance=ExtResource("11_prfff")]
 position = Vector2(0, -400)
 
+[node name="friend" parent="dollhouse" instance=ExtResource("11_0eksa")]
+position = Vector2(200, -452)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 463.0
+offset_top = -145.0
+offset_right = 676.0
+offset_bottom = -103.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "WASD to move"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 464.0
+offset_top = -346.0
+offset_right = 677.0
+offset_bottom = -304.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Welcome, toy."
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 1650.0
+offset_top = -348.0
+offset_right = 1863.0
+offset_bottom = -306.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Smashing open
+doors hurts..."
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 2054.0
+offset_top = -193.0
+offset_right = 2275.0
+offset_bottom = -106.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "But there are
+other ways"
+
 [node name="player" parent="." instance=ExtResource("4_cuf1r")]
 position = Vector2(733, -60)
+
+[node name="magnifier" parent="." instance=ExtResource("12_7tuvd")]
+position = Vector2(2136, -600)
+waiting = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(2800, -610)
+script = ExtResource("13_ij1l6")
+
+[node name="Labels" type="Node2D" parent="Area2D"]
+
+[node name="Label" type="Label" parent="Area2D/Labels"]
+offset_left = -244.0
+offset_top = -173.0
+offset_right = 337.0
+offset_bottom = -86.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Careful! Watch out for that sadistic kid..."
+
+[node name="Label2" type="Label" parent="Area2D/Labels"]
+offset_left = -1569.0
+offset_top = -183.0
+offset_right = -810.0
+offset_bottom = -51.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Fire burns, and smoke chokes.
+
+Use doors and windows to control the flow of smoke"
+
+[node name="Label3" type="Label" parent="Area2D/Labels"]
+offset_left = -2118.0
+offset_top = -95.0
+offset_right = -1704.0
+offset_bottom = 1.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "Carry your friends to saftey!"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_02l0e")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

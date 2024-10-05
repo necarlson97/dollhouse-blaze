@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cq6sb1mqastug"]
+
+[ext_resource type="Texture2D" uid="uid://ccklj0ulmom0u" path="res://assets/magnifier.png" id="1_07lqb"]
+[ext_resource type="Script" path="res://scripts/magnifier.gd" id="1_uiy82"]
+[ext_resource type="Material" uid="uid://c7ht782kbyluq" path="res://assets/smoke.tres" id="3_oo1aw"]
+[ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="4_4lx58"]
+
+[node name="magnifier" type="Node2D"]
+script = ExtResource("1_uiy82")
+
+[node name="Magnifier" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnifier"]
+position = Vector2(362, -115)
+texture = ExtResource("1_07lqb")
+
+[node name="smoke particles" type="GPUParticles2D" parent="Magnifier/Sprite2D"]
+position = Vector2(-359, 105)
+amount = 20
+process_material = ExtResource("3_oo1aw")
+texture = ExtResource("4_4lx58")
+lifetime = 2.0
