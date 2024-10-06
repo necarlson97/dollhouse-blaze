@@ -3,6 +3,7 @@ extends Node2D
 const SIZE = 400
 var FLOORS = 2
 var ROOMS = 4
+var FRIENDS = 2
 @export var skip_room_build = false
 
 var wall = preload("res://scenes/building/wall wood.tscn")
@@ -23,6 +24,7 @@ func _ready() -> void:
 	if diff != null:
 		FLOORS = diff.get_floors()
 		ROOMS = diff.get_rooms()
+		FRIENDS = diff.get_friend_count()
 	build()
 	
 func build():
@@ -30,6 +32,7 @@ func build():
 	if !skip_room_build:
 		build_rooms()
 		build_stairs()
+		place_friends()
 		
 	build_windows()
 	build_roof()
@@ -118,6 +121,14 @@ func create_smoke_cells():
 			new_smoke_cell.position.x = r * SIZE
 			new_smoke_cell.position.y = (1 + f) * -SIZE
 			add_child(new_smoke_cell)
+
+func place_friends():
+	for i in range(FRIENDS):
+		var r = randi_range(0, ROOMS)
+		var f = randi_range(0, FLOORS)
+		var friend = preload("res://scenes/friend.tscn").instantiate()
+		friend.position = Vector2((r + 0.5) * SIZE, f * SIZE)
+		add_child(friend)
 
 func make_graph():
 	# Now that all cells, walls, doors, etc are laid out - populate the

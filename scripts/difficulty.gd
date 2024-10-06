@@ -9,14 +9,14 @@ func get_rooms():
 		return room_set
 	var min_floors = 6 + level*2
 	var max_floors = 6 + level*2
-	return randf_range(min_floors, max_floors)
+	return randi_range(min_floors, max_floors)
 	
 func get_floors():
 	if floor_set > 0:
 		return floor_set
 	var min_floors = 2 + level*2
 	var max_floors = 3 + level*2
-	return randf_range(min_floors, max_floors)
+	return randi_range(min_floors, max_floors)
 	
 func get_friend_count():
 	return (1+level) * 2
