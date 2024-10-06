@@ -22,3 +22,4 @@ amount = 20
 process_material = ExtResource("3_oo1aw")
 texture = ExtResource("4_4lx58")
 lifetime = 2.0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)

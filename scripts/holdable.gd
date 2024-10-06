@@ -20,10 +20,10 @@ func pick_up(player):
 	item.get_parent().remove_child(item)
 	player.get_hold_spot().add_child(item)
 	player.held = self
-	var rbc = item.get_node_or_null("RigidBody2D/CollisionShape2D")
-	if rbc == null:
-		rbc = item.get_node("CollisionShape2D")
+	var rbc = get_rigidbody().get_node("CollisionShape2D")
 	rbc.disabled = true
+	if item is RigidBody2D:
+		item.freeze = true
 	item.get_node("Area2D/CollisionShape2D").disabled = true
 	
 	print("picking up %s (%s)"%[self, get_holding_player()])
@@ -33,16 +33,31 @@ func drop():
 	item.rotation = 0
 	var gp = item.global_position
 	get_holding_player().held = null
-	var new_parent = get_tree().get_root()
+	var new_parent = get_tree().get_first_node_in_group("dollhouse")
 	item.get_parent().remove_child(item)
 	new_parent.add_child(item)
 	item.global_position = gp
 	
-	var rbc = item.get_node_or_null("RigidBody2D/CollisionShape2D")
-	if rbc == null:
-		rbc = item.get_node("CollisionShape2D")
+	var rbc = get_rigidbody().get_node("CollisionShape2D")
 	rbc.disabled = false
+	if item is RigidBody2D:
+		item.freeze = false
 	item.get_node("Area2D/CollisionShape2D").disabled = false
+
+func get_rigidbody():
+	if item is RigidBody2D or item is CharacterBody2D:
+		return item
+	var rb = item.get_node_or_null("RigidBody2D")
+	if rb != null:
+		return rb
+	return null
+	
+func add_velocity(x):
+	if item is RigidBody2D:
+		item.linear_velocity.x += x
+	if item is CharacterBody2D:
+		item.velocity.x += x * 5
+		print("Throw chracter: %s"%item.velocity)
 
 func is_held() -> bool:
 	return get_holding_player() != null

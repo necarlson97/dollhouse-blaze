@@ -84,7 +84,8 @@ func add_smoke(to_add=null) -> bool:
 	
 func propegate_smoke() -> void:
 	# TODO DEBUG
-	if ammount == 0:
+	# TODO connectors empty from restart
+	if ammount == 0 || connectors.size() == 0:
 		return 
 
 	# Smoke never propegates down

@@ -78,7 +78,7 @@ func _process(delta: float) -> void:
 	if "axe" in held_str():
 		var nb = held.get_parent().nearby_breakable()
 		if nb != null:
-			tip_text += "\nPress r to smash %s"%nb
+			tip_text += "\nPress r to smash %s"%nb.get_parent().name
 			
 	$ToolTip.text = tip_text
 
@@ -90,6 +90,7 @@ func held_str() -> String:
 	
 func drop_held():
 	if held != null:
+		held.add_velocity(velocity.x * 2)
 		held.drop()
 
 func get_hold_spot():

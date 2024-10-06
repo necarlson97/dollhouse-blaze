@@ -19,24 +19,31 @@ func _process(delta: float) -> void:
 		just_saved()
 
 func get_moves():
-	velocity.x = get_walk_speed() * move_desire
+	if abs(velocity.x) <= get_walk_speed() * move_desire:
+		velocity.x = get_walk_speed() * move_desire
 	
 func handle_animation():
 	super.handle_animation()
 	if is_held():
 		velocity.y = 0
 		position.y = 150
+		var player = $Area2D.get_holding_player()
+		if player.get_walk_state() == "crouch":
+			position.y = 200
+		elif player.get_walk_state() == "crawl":
+			position.y = 300	
 		position.x = -25
 		rotation = 0
 		play_animation("carried")
+		walk_index = 2
 	
 	else:
 		if lung_health > 0.9:
-			walk_index = 0
+			walk_index = max(0, walk_index)
 		elif lung_health > 0.5:
-			walk_index = 1
+			walk_index = max(1, walk_index)
 		else:
-			walk_index = 2
+			walk_index = max(2, walk_index)
 
 func is_held() -> bool:
 	return $Area2D.is_held()

@@ -54,8 +54,7 @@ func build_rooms():
 			new_room.position.x = (ROOMS - remaining) * SIZE
 			new_room.position.y = f * -SIZE
 			remaining -= new_room.cell_size
-			
-			print(new_room.name)
+		
 			if remaining > 0 and "hall" not in new_room.name:
 				var new_door = door.instantiate()
 				new_door.name = "door %s %s"%[f, remaining]
@@ -140,11 +139,20 @@ func create_smoke_cells():
 			add_child(new_smoke_cell)
 
 func place_friends():
+	var previous_placements = ["0 0"]
+	
 	for i in range(FRIENDS):
-		var r = randi_range(0, ROOMS)
-		var f = randi_range(0, FLOORS)
+		var r = 0
+		var f = 0
+		var placed = previous_placements[0]
+		
+		while placed in previous_placements:
+			r = randi_range(0, ROOMS-1)
+			f = randi_range(0, FLOORS-1)	
+			placed = "%s %s"%[r, f]
+			
 		var friend = preload("res://scenes/friend.tscn").instantiate()
-		friend.position = Vector2((r + 0.5) * SIZE, f * SIZE)
+		friend.position = Vector2((r + 0.5) * SIZE, f * -SIZE)
 		add_child(friend)
 
 func make_graph():

@@ -5,12 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://dde4agj2ljr5p" path="res://assets/extinguisher.png" id="2_grbmp"]
 [ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="4_fng6k"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt7yy"]
-size = Vector2(100, 200)
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nebaf"]
 radius = 40.0
 height = 146.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt7yy"]
+size = Vector2(100, 200)
 
 [sub_resource type="Gradient" id="Gradient_0qq88"]
 offsets = PackedFloat32Array(0.00558659, 0.726257, 1)
@@ -40,9 +40,15 @@ color_ramp = SubResource("GradientTexture1D_f8chm")
 hue_variation_min = -2.23517e-08
 hue_variation_max = 0.00999998
 
-[node name="extinguisher" type="Node2D"]
+[node name="extinguisher" type="RigidBody2D"]
 z_index = 1
+collision_layer = 8
+mass = 10.0
 script = ExtResource("1_tf1hd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 21)
+shape = SubResource("CapsuleShape2D_nebaf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -54,14 +60,6 @@ script = ExtResource("1_ro11s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_qt7yy")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-sleeping = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(1, 21)
-shape = SubResource("CapsuleShape2D_nebaf")
-disabled = true
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -34.0

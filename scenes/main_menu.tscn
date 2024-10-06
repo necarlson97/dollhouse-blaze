@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh6as27fpkpv6"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_fyxbj"]
+[ext_resource type="Texture2D" uid="uid://d3kvurwllegcf" path="res://assets/menu.png" id="1_u28jd"]
+
+[node name="main menu" type="Node2D"]
+script = ExtResource("1_fyxbj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_u28jd")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(400, 0)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -768.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/font_size = 100
+text = "Dollhouse
+Blaze"
+horizontal_alignment = 1
+
+[node name="Tutorial" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Tutorial"
+
+[node name="Easy Level" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Easy Level"
+
+[node name="medium Level2" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Medium Level"
+
+[node name="hard Level3" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Hard Level"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Tutorial" to="." method="tutorial"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Easy Level" to="." method="level_easy"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/medium Level2" to="." method="level_medium"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/hard Level3" to="." method="level_hard"]

@@ -71,20 +71,21 @@ var dead = false
 func die():
 	dead = true
 	if lung_health <= 0:
-		$ToolTip.text = "You choked on smoke."
+		$ToolTip.text = "Choked on smoke."
 	if blood_health <= 0:
-		$ToolTip.text = "You blead out."
+		$ToolTip.text = "Blead out."
+	$ToolTip.position.y = -250
 
 func handle_animation():
 	if dead:
 		play_animation("dead")
 		return
 	
-	if !is_on_floor():
+	if !is_on_floor() and get_walk_state() != "crawl":
 		play_animation("falling")
 		return
 		
-	if is_running():
+	if is_running() and get_walk_state() != "crawl":
 		play_animation("run")
 	elif abs(velocity.x) > 10:
 		play_animation(get_walk_state())

@@ -15,8 +15,8 @@ func _input(event: InputEvent) -> void:
 		print(get_at_pos(get_global_mouse_position()))
 	if event.is_action_released("mouse_two"):
 		var fire = preload("res://scenes/flame.tscn").instantiate()
+		get_tree().get_first_node_in_group("dollhouse").add_child(fire)
 		fire.global_position = get_global_mouse_position()
-		add_child(fire)
 	
 func get_smoke_cell(pos: Vector2):
 	# Get the smoke cell that contains the given position

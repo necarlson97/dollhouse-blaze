@@ -11,8 +11,7 @@ script = ExtResource("1_nd73w")
 cell_size = 3
 
 [node name="axe" parent="." instance=ExtResource("2_ut3xu")]
-position = Vector2(559, -256)
-rotation = 1.5708
+position = Vector2(404, -126)
 
 [node name="back wall" parent="." instance=ExtResource("2_suc1a")]
 z_index = -1

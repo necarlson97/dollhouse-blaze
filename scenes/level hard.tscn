@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3ubstt8ehc5h"]
+
+[ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_7q5m7"]
+[ext_resource type="PackedScene" uid="uid://cq6sb1mqastug" path="res://scenes/magnifier.tscn" id="2_ppxdc"]
+[ext_resource type="PackedScene" uid="uid://djfvjyauyritd" path="res://scenes/dollhouse.tscn" id="3_wdvis"]
+[ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_asfge"]
+[ext_resource type="Script" path="res://scripts/player_placer.gd" id="5_eg745"]
+
+[node name="main" type="Node2D"]
+
+[node name="ground" parent="." instance=ExtResource("1_7q5m7")]
+position = Vector2(400, 0)
+
+[node name="magnifier" parent="." instance=ExtResource("2_ppxdc")]
+
+[node name="dollhouse" parent="." instance=ExtResource("3_wdvis")]
+position = Vector2(400, 0)
+
+[node name="difficulty" parent="dollhouse" index="0"]
+level = 3
+
+[node name="player" parent="." instance=ExtResource("4_asfge")]
+position = Vector2(733, -60)
+
+[node name="player placer" type="Node2D" parent="."]
+script = ExtResource("5_eg745")
+
+[editable path="dollhouse"]

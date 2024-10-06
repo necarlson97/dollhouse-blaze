@@ -8,7 +8,7 @@ const GROWTH = 0.001
 var cell = null
 
 var min_spread_frames = 100
-var max_spread_frames = 1000
+var max_spread_frames = 700
 var to_spread = randi_range(min_spread_frames, max_spread_frames)
 
 func _ready() -> void:

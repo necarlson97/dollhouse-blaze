@@ -31,27 +31,27 @@ theme_override_font_sizes/font_size = 100
 text = "Paused"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Control/VBoxContainer"]
+[node name="Continue" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Continue"
 
-[node name="Button4" type="Button" parent="Control/VBoxContainer"]
+[node name="Restart" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Restart"
 
-[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+[node name="Main Menu" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Main Menu"
 
-[node name="Button3" type="Button" parent="Control/VBoxContainer"]
+[node name="Tutorial" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Tutorial"
 
-[connection signal="pressed" from="Control/VBoxContainer/Button" to="." method="button_continue"]
-[connection signal="pressed" from="Control/VBoxContainer/Button4" to="." method="restart"]
-[connection signal="pressed" from="Control/VBoxContainer/Button2" to="." method="main_menu"]
-[connection signal="pressed" from="Control/VBoxContainer/Button3" to="." method="tutorial"]
+[connection signal="pressed" from="Control/VBoxContainer/Continue" to="." method="button_continue"]
+[connection signal="pressed" from="Control/VBoxContainer/Restart" to="." method="restart"]
+[connection signal="pressed" from="Control/VBoxContainer/Main Menu" to="." method="main_menu"]
+[connection signal="pressed" from="Control/VBoxContainer/Tutorial" to="." method="tutorial"]

@@ -11,5 +11,3 @@ func _process(delta: float) -> void:
 	modulate = bad.lerp(good, progress)
 	value = progress
 	$Label.text = "%s/%s Saved"%[saved, all.size()]
-	#print("%s/%s %s (%s)"%[savedvalue)
-	

@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://b7thtfygtosjm"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
-[ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
+[ext_resource type="PackedScene" uid="uid://djfvjyauyritd" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
 [ext_resource type="PackedScene" uid="uid://dqpfjdn77vy5e" path="res://scenes/player.tscn" id="4_cuf1r"]
 [ext_resource type="PackedScene" uid="uid://cr6klukbbb76h" path="res://scenes/rooms/hall.tscn" id="4_xlujy"]
 [ext_resource type="PackedScene" uid="uid://d3l575ltfli3g" path="res://scenes/building/door.tscn" id="5_8nr3v"]

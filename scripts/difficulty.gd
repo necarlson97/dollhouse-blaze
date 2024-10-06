@@ -1,6 +1,6 @@
 extends Node2D
 
-var level = 0
+@export var level = 0
 @export var room_set = -1
 @export var floor_set = -1
 
