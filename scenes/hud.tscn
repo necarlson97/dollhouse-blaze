@@ -51,19 +51,26 @@ text = "0/0 Saved
 0/0 Died"
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-offset_left = 1030.0
-offset_right = 1152.0
-offset_bottom = 648.0
 size_flags_vertical = 3
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="Control/HBoxContainer"]
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/VBoxContainer2/HBoxContainer"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 
-[node name="Lung Prog" type="ProgressBar" parent="Control/HBoxContainer/VBoxContainer3"]
+[node name="Lung Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer/VBoxContainer3"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -74,7 +81,7 @@ fill_mode = 3
 show_percentage = false
 script = ExtResource("3_mxh3v")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/HBoxContainer/VBoxContainer3"]
+[node name="TextureRect2" type="TextureRect" parent="Control/VBoxContainer2/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 3
@@ -82,11 +89,11 @@ size_flags_stretch_ratio = 0.1
 texture = ExtResource("2_yo00y")
 expand_mode = 3
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="Control/HBoxContainer"]
+[node name="VBoxContainer4" type="VBoxContainer" parent="Control/VBoxContainer2/HBoxContainer"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 
-[node name="Blood Prog" type="ProgressBar" parent="Control/HBoxContainer/VBoxContainer4"]
+[node name="Blood Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer/VBoxContainer4"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -97,7 +104,7 @@ fill_mode = 3
 show_percentage = false
 script = ExtResource("5_u7ydy")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/HBoxContainer/VBoxContainer4"]
+[node name="TextureRect2" type="TextureRect" parent="Control/VBoxContainer2/HBoxContainer/VBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 3
