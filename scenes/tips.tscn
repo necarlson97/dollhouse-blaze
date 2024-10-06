@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3jkwwykkk6vw"]
+
+[ext_resource type="Texture2D" uid="uid://d3kvurwllegcf" path="res://assets/menu.png" id="1_ltxx6"]
+[ext_resource type="Script" path="res://scripts/tips.gd" id="1_yv5y0"]
+
+[node name="tips" type="Node2D"]
+script = ExtResource("1_yv5y0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+modulate = Color(0.273873, 0.273873, 0.273873, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ltxx6")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+text = "Tips:
+* Crouch or Crawl through smokey rooms - but don't crawl through flame!
+* You smash windows by running through, throwing items, or throwing your friends!
+* Opening  doors / windows to the outside can help you vent smoke
+* It is possible to win by extinguishing the fire completly
+* Holding something - like an axe, extinguisher or towel - lets you break stuff without hurting yourself
+* You can use an axe to cut open holes in the floor, and jump up them
+* The best way to slow smoke is wetting a towel, and using it to further block closed doorways
+* Open windows/doors for friends you don't have time for - they might save themselves!
+* You don't need to save everyone - more than half will do!
+* Get outside to get fresh air!
+* For fun, you can set fires with right-click"
+
+[node name="main Menu" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Return to Main Menu"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/main Menu" to="." method="main_menu"]

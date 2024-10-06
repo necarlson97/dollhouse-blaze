@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 		$Magnifier.position = lerp($Magnifier.position, escape_vector, delta * speed)
 	elif $Magnifier.position.length() < 10:
 		spawn_fire()
-		escape_vector = Vector2(randf_range(20000, 30000), randf_range(20000, 30000))
+		escape_vector = Vector2(4000, 4000)
 	else:
 		$Magnifier.position = lerp($Magnifier.position, Vector2.ZERO, delta * speed)
 

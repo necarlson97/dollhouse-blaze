@@ -14,9 +14,15 @@ func _input(event: InputEvent) -> void:
 					body.hurt(0.1)
 
 func _on_body_entered(body):
-	var collision_velocity = body.linear_velocity.length()
+	if is_broken:
+		return
+	var collision_velocity = 0
+	if body is RigidBody2D:
+		collision_velocity = body.linear_velocity.length()
+	if body is CharacterBody2D:
+		collision_velocity = body.velocity.length()
 	if collision_velocity > 500:
-		get_parent().break_open()
+		call_deferred("break_open")
 		if body is Figure:
 			body.hurt(0.2)
 

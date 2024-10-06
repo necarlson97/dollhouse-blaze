@@ -39,9 +39,8 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 40
-theme_override_font_sizes/font_size = 100
-text = "Dollhouse
-Blaze"
+theme_override_font_sizes/font_size = 90
+text = "Dollhouse Blaze"
 horizontal_alignment = 1
 
 [node name="Tutorial" type="Button" parent="CanvasLayer/VBoxContainer"]
@@ -64,7 +63,13 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Hard Level"
 
+[node name="Tips" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Tips"
+
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/Tutorial" to="." method="tutorial"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/Easy Level" to="." method="level_easy"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/medium Level2" to="." method="level_medium"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/hard Level3" to="." method="level_hard"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Tips" to="." method="tips"]

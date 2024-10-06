@@ -18,8 +18,10 @@ func _process(delta: float) -> void:
 		make_visible()
 		if saved > dead:
 			$Control/VBoxContainer/Label.text = "You did it!"
+			$Control/VBoxContainer/Restart.text = "Another!"
 		else:
 			$Control/VBoxContainer/Label.text = "Many died..."
+			$Control/VBoxContainer/Restart.text = "Retry"
 		end_triggered = true
 	
 	var player = get_tree().get_first_node_in_group("player")
@@ -55,3 +57,7 @@ func main_menu():
 func tutorial():
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/tutorial.tscn")
+
+func tips():
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scenes/tips.tscn")

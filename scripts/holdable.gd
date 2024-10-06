@@ -26,10 +26,10 @@ func pick_up(player):
 		item.freeze = true
 	item.get_node("Area2D/CollisionShape2D").disabled = true
 	
-	print("picking up %s (%s)"%[self, get_holding_player()])
+	#print("picking up %s (%s)"%[self, get_holding_player()])
 
 func drop():
-	print("Dropping %s"%self)
+	#print("Dropping %s"%self)
 	item.rotation = 0
 	var gp = item.global_position
 	get_holding_player().held = null

@@ -60,25 +60,33 @@ func _process(delta: float) -> void:
 	for area in get_tree().get_nodes_in_group("interaction area"):
 		if self in area.get_overlapping_bodies():
 			if "Stair Down" in area.name:
-				tip_text += "\nPress w to ascend"
+				tip_text += "\nPress W to ascend"
 			elif "Stair Up" in area.name:
-				tip_text += "\nPress s to descend"
+				tip_text += "\nPress S to descend"
 			elif "Door" in area.name:
 				if area.get_parent().is_locked:
-					tip_text += "\nPress e to punch with your %s"%held_str()
+					tip_text += "\nPress E to punch with your %s"%held_str()
 				else:
-					tip_text += "\nPress e to open/close"
+					tip_text += "\nPress E to open/close"
 			elif "Window" in area.name:
-				tip_text += "\nPress e to smash with your %s"%held_str()
+				tip_text += "\nPress E to smash with your %s"%held_str()
 			else:
-				tip_text += "\nPress f to take %s"%area.get_parent().name
+				tip_text += "\nPress F to take %s"%area.get_parent().name
 	
 	if "extinguisher" in held_str():
-		tip_text += "\nPress r to extinguish"
+		tip_text += "\nPress R to extinguish"
 	if "axe" in held_str():
 		var nb = held.get_parent().nearby_breakable()
 		if nb != null:
-			tip_text += "\nPress r to smash %s"%nb.get_parent().name
+			tip_text += "\nPress R to smash %s"%nb.get_parent().name
+	if "towel" in held_str():
+		if held.item.nearby_wettable():
+			tip_text += "\nPress R to wet towel"
+		elif held.item.is_wet:
+			tip_text += "\nDrop to wet floors / doors"
+
+	if held != null:
+		tip_text += "\nF to drop, sprint+F to throw"
 			
 	$ToolTip.text = tip_text
 

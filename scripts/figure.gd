@@ -9,7 +9,7 @@ var WALK_SPEEDS = [
 	350, 275, 200
 ]
 
-const JUMP_FORCE = -800.0
+const JUMP_FORCE = -1600.0
 const MAX_FALL_SPEED = 1200.0
 
 var lung_health = 1.0
@@ -47,7 +47,7 @@ func handle_smoke():
 		modifier = 1.5
 		
 	if cell == null:
-		lung_health += 0.001
+		lung_health += 0.0001
 	else:
 		lung_health -= cell.ammount * 0.001 * modifier
 	lung_health = clamp(lung_health, 0, 1)
@@ -97,8 +97,18 @@ func handle_animation():
 	elif velocity.x > 0:
 		$figure.scale.x = 1
 	
-	
-	
+func set_height(height=null):
+	# Set collider height to match animation
+	var walk_heights = {
+		0: 300,
+		1: 220,
+		2: 150,
+	}
+	if height == null:
+		height = walk_heights[walk_index]
+	$CollisionShape2D.shape.height = height
+	$CollisionShape2D.position.y = -height/2
+
 var animations = {
 	"idle walk": preload("res://assets/player idle.tres"),
 	"idle crouch": preload("res://assets/player idle crouch.tres"),

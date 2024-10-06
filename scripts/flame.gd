@@ -12,6 +12,9 @@ var max_spread_frames = 700
 var to_spread = randi_range(min_spread_frames, max_spread_frames)
 
 func _ready() -> void:
+	set_cell()
+	
+func set_cell():
 	# Get the smoke cell I belong to (if any)
 	cell = Utils.get_smoke_cell(global_position)
 	if cell == null:

@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://bruqq7blelev4"]
+[gd_scene load_steps=8 format=3 uid="uid://bruqq7blelev4"]
 
 [ext_resource type="Script" path="res://scripts/room.gd" id="1_nd73w"]
 [ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_suc1a"]
 [ext_resource type="PackedScene" uid="uid://smsyp2cyhsbd" path="res://scenes/axe.tscn" id="2_ut3xu"]
 [ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="3_5ybou"]
 [ext_resource type="Texture2D" uid="uid://bub442fj01lat" path="res://assets/wallpaper chevrons.png" id="4_5gkod"]
+[ext_resource type="Texture2D" uid="uid://5tcskkjb5rf1" path="res://assets/fireplace.png" id="6_3gj61"]
+[ext_resource type="Texture2D" uid="uid://wi6rc0d2vncr" path="res://assets/table.png" id="7_ewf0f"]
 
 [node name="den" type="Node2D"]
 script = ExtResource("1_nd73w")
@@ -44,6 +46,15 @@ rotation = 1.5708
 [node name="floor 3" parent="." instance=ExtResource("3_5ybou")]
 position = Vector2(1000, 0)
 rotation = 1.5708
+
+[node name="Fireplace" type="Sprite2D" parent="."]
+position = Vector2(782.5, -212.5)
+scale = Vector2(0.9375, 0.9375)
+texture = ExtResource("6_3gj61")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(297, -127)
+texture = ExtResource("7_ewf0f")
 
 [editable path="back wall"]
 [editable path="back wall2"]

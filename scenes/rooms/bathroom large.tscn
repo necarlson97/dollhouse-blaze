@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://rjgnubobolka"]
+[gd_scene load_steps=10 format=3 uid="uid://rjgnubobolka"]
 
 [ext_resource type="Script" path="res://scripts/room.gd" id="1_01dkr"]
 [ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="1_xcq5n"]
 [ext_resource type="Texture2D" uid="uid://bg43wyjqsfibl" path="res://assets/wallpaper tile.png" id="2_byylu"]
 [ext_resource type="PackedScene" uid="uid://d2usi7vk75oiq" path="res://scenes/building/wall tile.tscn" id="3_yq8m5"]
 [ext_resource type="PackedScene" uid="uid://cdubplqcqgkk6" path="res://scenes/extinguisher.tscn" id="5_auppo"]
+[ext_resource type="PackedScene" uid="uid://do2tgopwebjgm" path="res://scenes/building/toilet.tscn" id="6_7ga3f"]
+[ext_resource type="PackedScene" uid="uid://dhvo5bj1tv623" path="res://scenes/building/sink.tscn" id="7_1orlh"]
+[ext_resource type="Texture2D" uid="uid://df82vxauav5ub" path="res://assets/towel rack.png" id="8_j0l6b"]
+[ext_resource type="PackedScene" uid="uid://ku77y3yxojqq" path="res://scenes/towel.tscn" id="9_1lycb"]
 
 [node name="bathroom large" type="Node2D"]
 script = ExtResource("1_01dkr")
@@ -43,7 +47,21 @@ position = Vector2(1000, 0)
 rotation = 1.5708
 
 [node name="extinguisher" parent="." instance=ExtResource("5_auppo")]
-position = Vector2(344, -125)
+position = Vector2(1104, -125)
+
+[node name="wet area" parent="." instance=ExtResource("6_7ga3f")]
+position = Vector2(915, -24)
+
+[node name="wet area2" parent="." instance=ExtResource("7_1orlh")]
+position = Vector2(149, -23)
+
+[node name="TowelRack" type="Sprite2D" parent="."]
+position = Vector2(369, -118)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_j0l6b")
+
+[node name="towel" parent="." instance=ExtResource("9_1lycb")]
+position = Vector2(372, -127)
 
 [editable path="back wall"]
 [editable path="back wall2"]

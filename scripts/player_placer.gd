@@ -13,6 +13,6 @@ func _ready() -> void:
 	print("Placed player at: %s"%p.position)
 	
 	x = (randi_range(0, d.ROOMS-1) + 0.5) * d.SIZE
-	y = (randi_range(0, d.FLOORS-1) - 0.5) * -d.SIZE
+	y = (randi_range(1, d.FLOORS-1) - 0.5) * -d.SIZE
 	m.position = d.global_position + Vector2(x, y)
 	print("Magnifier player at: %s"%m.position)

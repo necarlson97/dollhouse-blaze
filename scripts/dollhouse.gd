@@ -16,6 +16,8 @@ var rooms = [
 	preload("res://scenes/rooms/bathroom segmented.tscn"),
 	preload("res://scenes/rooms/kitchen.tscn"),
 	preload("res://scenes/rooms/hall.tscn"),
+	preload("res://scenes/rooms/hall med.tscn"),
+	preload("res://scenes/rooms/hall long.tscn"),
 	preload("res://scenes/rooms/den.tscn"),
 ]
 

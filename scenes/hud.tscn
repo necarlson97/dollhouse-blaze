@@ -18,7 +18,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control"]
-custom_minimum_size = Vector2(100, 0)
+custom_minimum_size = Vector2(50, 0)
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
@@ -36,42 +36,37 @@ fill_mode = 3
 show_percentage = false
 script = ExtResource("1_02wdo")
 
-[node name="Label" type="Label" parent="Control/VBoxContainer/Saved Prog"]
-layout_mode = 0
-offset_left = 49.0
-offset_top = 604.0
-offset_right = 199.0
-offset_bottom = 648.0
-theme_override_font_sizes/font_size = 30
-text = "0/0 Saved"
-vertical_alignment = 1
-
-[node name="saved" type="Sprite2D" parent="Control/VBoxContainer/Saved Prog"]
-z_index = 4
-position = Vector2(25.0001, 623)
-scale = Vector2(0.430001, 0.430001)
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer"]
+layout_mode = 2
 texture = ExtResource("1_u0g7k")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -50.0
-grow_horizontal = 0
-grow_vertical = 2
+[node name="Label" type="Label" parent="Control/VBoxContainer/TextureRect"]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 9.0
+offset_right = 253.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 30
+text = "0/0 Saved
+0/0 Died"
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+offset_left = 1030.0
+offset_right = 1152.0
+offset_bottom = 648.0
 size_flags_vertical = 3
 
-[node name="Lung Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer"]
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/HBoxContainer"]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
-size_flags_horizontal = 0
+
+[node name="Lung Prog" type="ProgressBar" parent="Control/HBoxContainer/VBoxContainer3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
 max_value = 1.0
 value = 1.0
@@ -79,16 +74,22 @@ fill_mode = 3
 show_percentage = false
 script = ExtResource("3_mxh3v")
 
-[node name="Lungs" type="Sprite2D" parent="Control/VBoxContainer2/HBoxContainer/Lung Prog"]
-z_index = 4
-position = Vector2(26, 623)
-scale = Vector2(0.430001, 0.430001)
-texture = ExtResource("2_yo00y")
-
-[node name="Blood Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer"]
-custom_minimum_size = Vector2(50, 0)
+[node name="TextureRect2" type="TextureRect" parent="Control/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+texture = ExtResource("2_yo00y")
+expand_mode = 3
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="Blood Prog" type="ProgressBar" parent="Control/HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
 max_value = 1.0
 value = 1.0
@@ -96,8 +97,10 @@ fill_mode = 3
 show_percentage = false
 script = ExtResource("5_u7ydy")
 
-[node name="blood" type="Sprite2D" parent="Control/VBoxContainer2/HBoxContainer/Blood Prog"]
-z_index = 4
-position = Vector2(25, 623)
-scale = Vector2(0.430001, 0.430001)
+[node name="TextureRect2" type="TextureRect" parent="Control/HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
 texture = ExtResource("3_y66x7")
+expand_mode = 3

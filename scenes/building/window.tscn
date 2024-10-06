@@ -9,7 +9,7 @@
 size = Vector2(50, 400)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d7ane"]
-size = Vector2(200, 400)
+size = Vector2(100, 400)
 
 [sub_resource type="Gradient" id="Gradient_ocxgq"]
 offsets = PackedFloat32Array(0, 0.959016)
@@ -57,7 +57,7 @@ shape = SubResource("RectangleShape2D_2b4mf")
 texture = ExtResource("3_07vtk")
 
 [node name="WindowArea" type="Area2D" parent="." groups=["interaction area"]]
-collision_mask = 3
+collision_mask = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WindowArea"]
 shape = SubResource("RectangleShape2D_d7ane")

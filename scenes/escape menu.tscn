@@ -51,7 +51,13 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "Tutorial"
 
+[node name="Tips" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Tips"
+
 [connection signal="pressed" from="Control/VBoxContainer/Continue" to="." method="button_continue"]
 [connection signal="pressed" from="Control/VBoxContainer/Restart" to="." method="restart"]
 [connection signal="pressed" from="Control/VBoxContainer/Main Menu" to="." method="main_menu"]
 [connection signal="pressed" from="Control/VBoxContainer/Tutorial" to="." method="tutorial"]
+[connection signal="pressed" from="Control/VBoxContainer/Tips" to="." method="tips"]

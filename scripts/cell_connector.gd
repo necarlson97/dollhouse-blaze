@@ -48,7 +48,7 @@ func propegate(origin_cell):
 	# Push smoke from once cell to another
 	var other_cell = other_cell(origin_cell)
 	# Lower prop rate if there is an obstruction:
-	var smoke_ammount = origin_cell.ammount * 0.01 * propegation_rate
+	var smoke_ammount = origin_cell.ammount * 0.05 * propegation_rate
 	
 	if smoke_ammount == 0:
 		return

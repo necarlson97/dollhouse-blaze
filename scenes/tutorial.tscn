@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b7thtfygtosjm"]
+[gd_scene load_steps=17 format=3 uid="uid://b7thtfygtosjm"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
 [ext_resource type="PackedScene" uid="uid://djfvjyauyritd" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ddlxv76igtydu" path="res://scenes/rooms/bathroom small.tscn" id="11_prfff"]
 [ext_resource type="PackedScene" uid="uid://cbk6qbaiqy2qo" path="res://scenes/friend.tscn" id="11_rvkok"]
 [ext_resource type="PackedScene" uid="uid://cq6sb1mqastug" path="res://scenes/magnifier.tscn" id="12_7tuvd"]
+[ext_resource type="PackedScene" uid="uid://bxl6kivkvtyob" path="res://scenes/rooms/crawlthrough.tscn" id="12_xm7c0"]
 [ext_resource type="Script" path="res://scripts/trigger_kid.gd" id="13_ij1l6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_02l0e"]
@@ -28,10 +29,13 @@ position = Vector2(400, 0)
 skip_room_build = true
 
 [node name="difficulty" parent="dollhouse" index="0"]
-room_set = 9
+room_set = 10
 floor_set = 2
 
 [node name="hall" parent="dollhouse" instance=ExtResource("4_xlujy")]
+
+[node name="hall4" parent="dollhouse" instance=ExtResource("4_xlujy")]
+position = Vector2(3600, -400)
 
 [node name="hall2" parent="dollhouse" instance=ExtResource("4_xlujy")]
 position = Vector2(400, 0)
@@ -43,8 +47,16 @@ position = Vector2(800, 0)
 position = Vector2(800, -200)
 force_unlocked = true
 
+[node name="door5" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(2800, -174)
+force_unlocked = true
+
+[node name="door6" parent="dollhouse" instance=ExtResource("5_8nr3v")]
+position = Vector2(3600, -600)
+force_unlocked = true
+
 [node name="door4" parent="dollhouse" instance=ExtResource("5_8nr3v")]
-position = Vector2(800, -600)
+position = Vector2(400, -610)
 force_unlocked = true
 
 [node name="den" parent="dollhouse" instance=ExtResource("6_kb3xr")]
@@ -59,10 +71,13 @@ position = Vector2(2400, -200)
 force_locked = true
 
 [node name="bathroom large" parent="dollhouse" instance=ExtResource("8_2to6f")]
-position = Vector2(2400, 0)
+position = Vector2(2800, 0)
+
+[node name="extinguisher" parent="dollhouse/bathroom large" index="6"]
+visible = false
 
 [node name="stairs" parent="dollhouse" instance=ExtResource("8_pw71g")]
-position = Vector2(3200, -400)
+position = Vector2(3200, -398)
 
 [node name="kitchen" parent="dollhouse" instance=ExtResource("7_vyfu8")]
 position = Vector2(2400, -400)
@@ -79,73 +94,80 @@ position = Vector2(0, -400)
 [node name="friend" parent="dollhouse" instance=ExtResource("11_rvkok")]
 position = Vector2(146, -430)
 
-[node name="friend2" parent="dollhouse" instance=ExtResource("11_rvkok")]
-position = Vector2(586, -49)
+[node name="crawlthrough" parent="dollhouse" instance=ExtResource("12_xm7c0")]
+position = Vector2(2400, 0)
 
 [node name="Label" type="Label" parent="."]
+z_index = 5
 offset_left = 463.0
 offset_top = -145.0
 offset_right = 676.0
 offset_bottom = -103.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "WASD to move
 shift to sprint"
 
 [node name="Label5" type="Label" parent="."]
+z_index = 5
 offset_left = 1279.0
 offset_top = -476.0
 offset_right = 1862.0
 offset_bottom = -426.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "up / down arrow to stand / crouch / crawl"
 
 [node name="Label6" type="Label" parent="."]
+z_index = 5
 offset_left = 1284.0
 offset_top = -110.0
 offset_right = 1511.0
 offset_bottom = -23.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "scroll or + / -
 to zoom"
 
 [node name="Label2" type="Label" parent="."]
+z_index = 5
 offset_left = 464.0
 offset_top = -346.0
 offset_right = 677.0
 offset_bottom = -304.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "Welcome, toy."
 
 [node name="Label3" type="Label" parent="."]
+z_index = 5
 offset_left = 1650.0
 offset_top = -348.0
 offset_right = 1863.0
 offset_bottom = -306.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "Smashing open
 doors hurts..."
 
 [node name="Label4" type="Label" parent="."]
+z_index = 5
 offset_left = 2054.0
 offset_top = -193.0
 offset_right = 2275.0
 offset_bottom = -106.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "But there are
 other ways"
 
 [node name="Label7" type="Label" parent="."]
+z_index = 5
 offset_left = 3450.0
 offset_top = -531.0
 offset_right = 3671.0
 offset_bottom = -444.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "esc to pause"
 
@@ -153,7 +175,7 @@ text = "esc to pause"
 position = Vector2(733, -60)
 
 [node name="magnifier" parent="." instance=ExtResource("12_7tuvd")]
-position = Vector2(2136, -600)
+position = Vector2(3061, -629)
 waiting = true
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -162,46 +184,53 @@ collision_mask = 3
 script = ExtResource("13_ij1l6")
 
 [node name="Labels" type="Node2D" parent="Area2D"]
+visible = false
 
 [node name="Label" type="Label" parent="Area2D/Labels"]
+z_index = 6
 offset_left = -244.0
 offset_top = -173.0
 offset_right = 337.0
 offset_bottom = -86.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "Careful! Watch out for that sadistic kid..."
 
 [node name="Label2" type="Label" parent="Area2D/Labels"]
+z_index = 6
 offset_left = -1555.0
 offset_top = -154.0
 offset_right = -796.0
 offset_bottom = -22.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "Fire burns, and smoke chokes.
-
-Use doors and windows to control the flow of smoke"
+Use doors and windows to control the flow of smoke
+A wet towel under a door
+will buy you the most time"
 
 [node name="Label3" type="Label" parent="Area2D/Labels"]
-offset_left = -2118.0
-offset_top = -95.0
-offset_right = -1704.0
-offset_bottom = 1.0
-theme_override_constants/outline_size = 5
+z_index = 6
+offset_left = -2373.0
+offset_top = -147.0
+offset_right = -1959.0
+offset_bottom = 120.0
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
-text = "Carry your friends to saftey!
+text = "Carry your
+friends to saftey!
 
-Get them out of the building
+Get them outside.
 - who knows when
 that kid will be back..."
 
 [node name="Label7" type="Label" parent="Area2D/Labels"]
+z_index = 6
 offset_left = -1514.0
 offset_top = 96.0
 offset_right = -915.0
 offset_bottom = 146.0
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 30
 text = "stay below the smokeline to survive longer"
 
@@ -211,3 +240,7 @@ shape = SubResource("RectangleShape2D_02l0e")
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 
 [editable path="dollhouse"]
+[editable path="dollhouse/bathroom large"]
+[editable path="dollhouse/bathroom large/back wall"]
+[editable path="dollhouse/bathroom large/back wall2"]
+[editable path="dollhouse/bathroom large/back wall3"]

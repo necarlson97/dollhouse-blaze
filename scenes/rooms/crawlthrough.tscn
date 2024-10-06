@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxl6kivkvtyob"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_arwku"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_lofx5"]
+[ext_resource type="Texture2D" uid="uid://ca2k5rwmgouid" path="res://assets/wallpaper slats.png" id="3_q6a5e"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="4_fr2pf"]
+[ext_resource type="Texture2D" uid="uid://wi6rc0d2vncr" path="res://assets/table.png" id="4_ypcq3"]
+[ext_resource type="Texture2D" uid="uid://mltqmtpl6cub" path="res://assets/boxes.png" id="5_pnfa7"]
+
+[node name="crawlthrough" type="Node2D"]
+script = ExtResource("1_arwku")
+cell_size = 1
+
+[node name="back wall" parent="." instance=ExtResource("2_lofx5")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("3_q6a5e")
+
+[node name="Table" type="Sprite2D" parent="back wall"]
+position = Vector2(196.75, -159.5)
+scale = Vector2(1.7325, 1.355)
+texture = ExtResource("4_ypcq3")
+
+[node name="Boxes" type="Sprite2D" parent="back wall"]
+position = Vector2(201, -282.5)
+scale = Vector2(0.845, 0.845)
+texture = ExtResource("5_pnfa7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="back wall"]
+position = Vector2(0, -27.5)
+
+[node name="hall floor" parent="." instance=ExtResource("4_fr2pf")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[node name="Label4" type="Label" parent="."]
+z_index = 5
+offset_left = 30.0
+offset_top = -272.0
+offset_right = 372.0
+offset_bottom = -185.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 25
+text = "down arrow ONCE to crouch
+down arrow TWICE to crawl
+"
+horizontal_alignment = 1
+
+[editable path="back wall"]

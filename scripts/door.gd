@@ -1,10 +1,14 @@
 extends CellConnector
+class_name Door
 
 var is_open = false
 var is_locked = false
 
 @export var force_unlocked = false
 @export var force_locked = false
+
+var open_rate = 0.9
+var closed_rate = 0.2
 
 func _ready() -> void:
 	if force_locked:
@@ -48,7 +52,7 @@ func close():
 	get_node("RigidBody2D/CollisionShape2D").disabled = false
 	$DoorClosed.show()
 	$DoorOpen.hide()
-	propegation_rate = 0.2
+	propegation_rate = closed_rate
 
 func open():
 	is_open = true
@@ -56,7 +60,7 @@ func open():
 	$DoorClosed.hide()
 	$DoorOpen.show()
 	$Locked.hide()
-	propegation_rate = 0.9
+	propegation_rate = open_rate
 	
 func lock():
 	close()

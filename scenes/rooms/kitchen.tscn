@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2holy8rn4e37"]
+[gd_scene load_steps=8 format=3 uid="uid://c2holy8rn4e37"]
 
 [ext_resource type="Script" path="res://scripts/room.gd" id="1_nd73w"]
 [ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_suc1a"]
 [ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="3_5ybou"]
+[ext_resource type="PackedScene" uid="uid://ku77y3yxojqq" path="res://scenes/towel.tscn" id="4_jkwh8"]
+[ext_resource type="Texture2D" uid="uid://df82vxauav5ub" path="res://assets/towel rack.png" id="5_w0m5q"]
+[ext_resource type="Texture2D" uid="uid://wi6rc0d2vncr" path="res://assets/table.png" id="6_2hjki"]
+[ext_resource type="Texture2D" uid="uid://dvc4hikb5r7ta" path="res://assets/chair.png" id="7_6func"]
 
 [node name="kitchen" type="Node2D"]
 script = ExtResource("1_nd73w")
@@ -30,3 +34,24 @@ rotation = 1.5708
 [node name="kitchen floor 3" parent="." instance=ExtResource("3_5ybou")]
 position = Vector2(1000, 0)
 rotation = 1.5708
+
+[node name="towel" parent="." instance=ExtResource("4_jkwh8")]
+position = Vector2(799, -126)
+
+[node name="TowelRack" type="Sprite2D" parent="."]
+position = Vector2(796, -117)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_w0m5q")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(390, -126)
+texture = ExtResource("6_2hjki")
+
+[node name="Chair" type="Sprite2D" parent="."]
+position = Vector2(247, -123)
+texture = ExtResource("7_6func")
+
+[node name="Chair2" type="Sprite2D" parent="."]
+position = Vector2(570, -124)
+scale = Vector2(-1, 1)
+texture = ExtResource("7_6func")

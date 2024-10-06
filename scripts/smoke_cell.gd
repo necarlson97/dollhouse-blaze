@@ -5,8 +5,8 @@ class_name SmokeCell
 var ammount = 0.0
 const SIZE = 400 # TODO get from smoke cell or w/e
 
-const COLOR_LIGHT = Color(Color.WHITE, 0.2)
-const COLOR_HEAVY = Color(Color.BLACK, 0.8)
+var COLOR_LIGHT = Color(Color.html("#666666"), 0.8)
+var COLOR_HEAVY = Color(Color.BLACK, 0.8)
 
 # How much smoke from flames
 const PER_FLAME = 0.001

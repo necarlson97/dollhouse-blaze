@@ -10,4 +10,7 @@ func _process(delta: float) -> void:
 	progress = clamp(progress, 0.1, 1)
 	modulate = bad.lerp(good, progress)
 	value = progress
-	$Label.text = "%s/%s Saved"%[saved, all.size()]
+	var dead = all.filter(func(f): return f.dead).size()
+
+	var label = get_parent().get_node("TextureRect/Label")
+	label.text = "%s/%s Saved\n%s/%s Died"%[saved, all.size(), dead, all.size()]

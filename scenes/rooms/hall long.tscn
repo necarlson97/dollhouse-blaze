@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://mnj8q4bc5uaw"]
+
+[ext_resource type="Script" path="res://scripts/room.gd" id="1_q423j"]
+[ext_resource type="PackedScene" uid="uid://ce1gpb05x6i2y" path="res://scenes/building/back_wall.tscn" id="2_d3dek"]
+[ext_resource type="Texture2D" uid="uid://dk3eqtly3u077" path="res://assets/wallpaper dots.png" id="3_fc647"]
+[ext_resource type="PackedScene" uid="uid://ch1urk7qurk80" path="res://scenes/building/wall wood.tscn" id="4_prwno"]
+[ext_resource type="Texture2D" uid="uid://dvc4hikb5r7ta" path="res://assets/chair.png" id="5_s8yr4"]
+
+[node name="hall" type="Node2D"]
+script = ExtResource("1_q423j")
+cell_size = 3
+
+[node name="back wall" parent="." instance=ExtResource("2_d3dek")]
+z_index = -1
+
+[node name="WallpaperDiamonds" parent="back wall" index="0"]
+texture = ExtResource("3_fc647")
+
+[node name="back wall2" parent="." instance=ExtResource("2_d3dek")]
+z_index = -1
+position = Vector2(400, 0)
+
+[node name="WallpaperDiamonds" parent="back wall2" index="0"]
+texture = ExtResource("3_fc647")
+
+[node name="back wall3" parent="." instance=ExtResource("2_d3dek")]
+z_index = -1
+position = Vector2(800, 0)
+
+[node name="WallpaperDiamonds" parent="back wall3" index="0"]
+texture = ExtResource("3_fc647")
+
+[node name="kitchen floor 1" parent="." instance=ExtResource("4_prwno")]
+position = Vector2(200, 0)
+rotation = 1.5708
+
+[node name="kitchen floor 2" parent="." instance=ExtResource("4_prwno")]
+position = Vector2(600, 0)
+rotation = 1.5708
+
+[node name="kitchen floor 3" parent="." instance=ExtResource("4_prwno")]
+position = Vector2(1000, 0)
+rotation = 1.5708
+
+[node name="Chair" type="Sprite2D" parent="."]
+position = Vector2(415, -123)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_s8yr4")
+
+[editable path="back wall"]
+[editable path="back wall2"]
+[editable path="back wall3"]
