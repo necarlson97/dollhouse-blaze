@@ -11,7 +11,8 @@ script = ExtResource("1_uiy82")
 [node name="Magnifier" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Magnifier"]
-position = Vector2(362, -115)
+position = Vector2(256, -82)
+scale = Vector2(0.6925, 0.6925)
 texture = ExtResource("1_07lqb")
 
 [node name="smoke particles" type="GPUParticles2D" parent="Magnifier/Sprite2D"]

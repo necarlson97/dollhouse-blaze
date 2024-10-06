@@ -18,6 +18,9 @@ func _ready() -> void:
 		print("Could not find cell for %s"%self)
 		
 func _process(delta: float) -> void:
+	# if it was extinguished
+	if size < 1:
+		queue_free()
 	size += GROWTH
 	size = clamp(size, 1, 5)
 	scale = Vector2(size, size)
@@ -28,7 +31,12 @@ func _process(delta: float) -> void:
 	to_spread -= 1
 	if to_spread <= 0:
 		spread()
-	
+
+func _physics_process(delta: float) -> void:
+	for body in $Area2D.get_overlapping_bodies():
+		if body.is_in_group("toy"):
+			body.hurt(0.001)
+
 func spread():
 	# Find a close flamable object, and create a new fire there
 	# TODO don't create too many fires in the same cell, prefer to spread

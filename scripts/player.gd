@@ -29,35 +29,29 @@ func handle_scroll(event):
 
 func get_moves():
 	if !dead:
-		var move_speed = WALK_SPEED
+		var move_speed = get_walk_speed()
 		if Input.is_action_pressed("sprint"):
 			move_speed = RUN_SPEED
+			walk_index = 0
 			
-		if Input.is_action_pressed("ui_left"):
+		if Input.is_action_pressed("move_left"):
 			velocity.x = -move_speed
-		elif Input.is_action_pressed("ui_right"):
+		elif Input.is_action_pressed("move_right"):
 			velocity.x =  move_speed
+			
+		if Input.is_action_just_released("raise"):
+			walk_index -= 1
+		elif Input.is_action_just_released("lower"):
+			walk_index += 1
+		walk_index = clamp(walk_index, 0, walk_states.size()-1)
 
 		# Jumping (only if on the floor)
-		if Input.is_action_just_pressed("ui_up") and is_on_floor():
+		if Input.is_action_just_pressed("move_up") and is_on_floor():
 			if skip_jump:
 				skip_jump = false
 			else:
 				velocity.y = JUMP_FORCE
 
-func handle_smoke():
-	var cell = Utils.get_smoke_cell(global_position - Vector2(0, 150))
-	if cell == null:
-		lung_health += 0.001
-	else:
-		lung_health -= cell.ammount * 0.001
-	lung_health = clamp(lung_health, 0, 1)
-	
-	$figure.modulate = Color.from_hsv(0, 1-blood_health, lung_health, 1)
-	
-	if blood_health <= 0 || lung_health <= 0:
-		die()
-	
 func _process(delta: float) -> void:
 	if dead:
 		return
@@ -78,15 +72,21 @@ func _process(delta: float) -> void:
 				tip_text += "\nPress e to smash with your %s"%held_str()
 			else:
 				tip_text += "\nPress f to take %s"%area.get_parent().name
+	
+	if "extinguisher" in held_str():
+		tip_text += "\nPress e to extinguish"
 			
 	$ToolTip.text = tip_text
 
 func held_str() -> String:
 	var held_name = "hand"
 	if held:
-		held_name = held.name
+		held_name = held.item.name
 	return held_name
 	
 func drop_held():
 	if held != null:
 		held.drop()
+
+func get_hold_spot():
+	return $figure/HoldSpot

@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://6x0kqg8e4cs8"]
+
+[ext_resource type="Script" path="res://scripts/saved_prog.gd" id="1_02wdo"]
+[ext_resource type="Texture2D" uid="uid://vn01000ng68v" path="res://assets/saved icon.png" id="1_u0g7k"]
+[ext_resource type="Texture2D" uid="uid://v25fmj7lmty5" path="res://assets/lungs.png" id="2_yo00y"]
+[ext_resource type="Script" path="res://scripts/lung_prog.gd" id="3_mxh3v"]
+[ext_resource type="Texture2D" uid="uid://b4wriqt16faul" path="res://assets/blood.png" id="3_y66x7"]
+[ext_resource type="Script" path="res://scripts/blood_prog.gd" id="5_u7ydy"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 4.0
+grow_vertical = 2
+
+[node name="Saved Prog" type="ProgressBar" parent="Control/VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+max_value = 1.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("1_02wdo")
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/Saved Prog"]
+offset_left = 49.0
+offset_top = 604.0
+offset_right = 199.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 30
+text = "0/0 Saved"
+vertical_alignment = 1
+
+[node name="saved" type="Sprite2D" parent="Control/VBoxContainer/Saved Prog"]
+z_index = 4
+position = Vector2(25.0001, 623)
+scale = Vector2(0.430001, 0.430001)
+texture = ExtResource("1_u0g7k")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Lung Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+max_value = 1.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("3_mxh3v")
+
+[node name="Lungs" type="Sprite2D" parent="Control/VBoxContainer2/HBoxContainer/Lung Prog"]
+z_index = 4
+position = Vector2(79, 623)
+scale = Vector2(0.430001, 0.430001)
+texture = ExtResource("2_yo00y")
+
+[node name="Blood Prog" type="ProgressBar" parent="Control/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+max_value = 1.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("5_u7ydy")
+
+[node name="blood" type="Sprite2D" parent="Control/VBoxContainer2/HBoxContainer/Blood Prog"]
+z_index = 4
+position = Vector2(-29, 623)
+scale = Vector2(0.430001, 0.430001)
+texture = ExtResource("3_y66x7")

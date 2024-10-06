@@ -69,6 +69,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_t47tj")
 
 [node name="DoorArea" type="Area2D" parent="." groups=["interaction area"]]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorArea"]
 shape = SubResource("RectangleShape2D_d7ane")

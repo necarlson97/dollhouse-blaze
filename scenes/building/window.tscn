@@ -58,6 +58,7 @@ shape = SubResource("RectangleShape2D_2b4mf")
 texture = ExtResource("3_07vtk")
 
 [node name="WindowArea" type="Area2D" parent="." groups=["interaction area"]]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WindowArea"]
 shape = SubResource("RectangleShape2D_d7ane")

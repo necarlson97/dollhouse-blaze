@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqpfjdn77vy5e"]
+[gd_scene load_steps=12 format=3 uid="uid://dqpfjdn77vy5e"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_lviwu"]
-[ext_resource type="PackedScene" uid="uid://d3p2y3tlrujxa" path="res://scenes/figure.tscn" id="3_rf73h"]
+[ext_resource type="PackedScene" uid="uid://b88atq1u88iv3" path="res://scenes/figure.tscn" id="3_rf73h"]
 [ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="3_t8as5"]
+[ext_resource type="PackedScene" uid="uid://6x0kqg8e4cs8" path="res://scenes/hud.tscn" id="4_x78a6"]
+[ext_resource type="PackedScene" uid="uid://bxwaj2j00rk1v" path="res://scenes/escape menu.tscn" id="5_vrglh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o73lw"]
 radius = 49.0
@@ -37,7 +39,8 @@ gravity = Vector3(0, 784, 0)
 scale_curve = SubResource("CurveTexture_5hbdx")
 color_ramp = SubResource("GradientTexture1D_lbkgx")
 
-[node name="player" type="CharacterBody2D" groups=["player"]]
+[node name="player" type="CharacterBody2D" groups=["player", "toy"]]
+collision_layer = 2
 script = ExtResource("1_lviwu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -46,7 +49,7 @@ shape = SubResource("CapsuleShape2D_o73lw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -260)
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.75, 0.75)
 
 [node name="ToolTip" type="Label" parent="."]
 anchors_preset = 7
@@ -79,3 +82,13 @@ one_shot = true
 explosiveness = 1.0
 
 [node name="figure" parent="." instance=ExtResource("3_rf73h")]
+
+[node name="HoldSpot" type="Node2D" parent="figure"]
+position = Vector2(10, -157)
+
+[node name="hud" parent="." instance=ExtResource("4_x78a6")]
+
+[node name="escape menu" parent="." instance=ExtResource("5_vrglh")]
+visible = false
+
+[editable path="figure"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bhhkkbfvp1jiy"]
+[gd_scene load_steps=16 format=3 uid="uid://bhhkkbfvp1jiy"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
 [ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://c68ditcaw2uew" path="res://scenes/building/stairs.tscn" id="8_pw71g"]
 [ext_resource type="PackedScene" uid="uid://byqx0caid3gu5" path="res://scenes/rooms/bathroom segmented.tscn" id="10_7h1sg"]
 [ext_resource type="PackedScene" uid="uid://ddlxv76igtydu" path="res://scenes/rooms/bathroom small.tscn" id="11_prfff"]
+[ext_resource type="PackedScene" uid="uid://cbk6qbaiqy2qo" path="res://scenes/friend.tscn" id="11_rvkok"]
 [ext_resource type="PackedScene" uid="uid://cq6sb1mqastug" path="res://scenes/magnifier.tscn" id="12_7tuvd"]
 [ext_resource type="Script" path="res://scripts/trigger_kid.gd" id="13_ij1l6"]
 
@@ -72,6 +73,12 @@ position = Vector2(400, -400)
 [node name="bathroom small" parent="dollhouse" instance=ExtResource("11_prfff")]
 position = Vector2(0, -400)
 
+[node name="friend" parent="dollhouse" instance=ExtResource("11_rvkok")]
+position = Vector2(146, -430)
+
+[node name="friend2" parent="dollhouse" instance=ExtResource("11_rvkok")]
+position = Vector2(586, -49)
+
 [node name="Label" type="Label" parent="."]
 offset_left = 463.0
 offset_top = -145.0
@@ -79,7 +86,27 @@ offset_right = 676.0
 offset_bottom = -103.0
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
-text = "WASD to move"
+text = "WASD to move
+shift to sprint"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 1279.0
+offset_top = -476.0
+offset_right = 1862.0
+offset_bottom = -426.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "up / down arrow to stand / crouch / crawl"
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 1284.0
+offset_top = -110.0
+offset_right = 1511.0
+offset_bottom = -23.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "scroll or + / -
+to zoom"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 464.0
@@ -110,6 +137,15 @@ theme_override_font_sizes/font_size = 30
 text = "But there are
 other ways"
 
+[node name="Label7" type="Label" parent="."]
+offset_left = 3450.0
+offset_top = -531.0
+offset_right = 3671.0
+offset_bottom = -444.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "esc to pause"
+
 [node name="player" parent="." instance=ExtResource("4_cuf1r")]
 position = Vector2(733, -60)
 
@@ -119,6 +155,7 @@ waiting = true
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(2800, -610)
+collision_mask = 3
 script = ExtResource("13_ij1l6")
 
 [node name="Labels" type="Node2D" parent="Area2D"]
@@ -133,10 +170,10 @@ theme_override_font_sizes/font_size = 30
 text = "Careful! Watch out for that sadistic kid..."
 
 [node name="Label2" type="Label" parent="Area2D/Labels"]
-offset_left = -1569.0
-offset_top = -183.0
-offset_right = -810.0
-offset_bottom = -51.0
+offset_left = -1555.0
+offset_top = -154.0
+offset_right = -796.0
+offset_bottom = -22.0
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
 text = "Fire burns, and smoke chokes.
@@ -151,6 +188,15 @@ offset_bottom = 1.0
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
 text = "Carry your friends to saftey!"
+
+[node name="Label7" type="Label" parent="Area2D/Labels"]
+offset_left = -1514.0
+offset_top = 96.0
+offset_right = -915.0
+offset_bottom = 146.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 30
+text = "stay below the smokeline to survive longer"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_02l0e")

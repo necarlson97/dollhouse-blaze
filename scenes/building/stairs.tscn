@@ -11,6 +11,7 @@ size = Vector2(200, 400)
 script = ExtResource("1_cl6g2")
 
 [node name="Stair Up" type="Area2D" parent="." groups=["interaction area"]]
+collision_mask = 3
 
 [node name="Stairs" type="Sprite2D" parent="Stair Up"]
 z_index = -1
@@ -23,6 +24,7 @@ shape = SubResource("RectangleShape2D_jumef")
 
 [node name="Stair Down" type="Area2D" parent="." groups=["interaction area"]]
 position = Vector2(0, 400)
+collision_mask = 3
 
 [node name="Stairs" type="Sprite2D" parent="Stair Down"]
 z_index = -1

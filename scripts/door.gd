@@ -10,9 +10,9 @@ var health = 5
 func _ready() -> void:
 	if force_locked:
 		lock()
-	elif !force_unlocked:
+	elif force_unlocked:
 		unlock()
-	if randf() < 0.1:
+	elif randf() < 0.1:
 		lock()
 
 func _process(delta: float) -> void:
@@ -80,6 +80,7 @@ func punch(hurt=1):
 	$GPUParticles2D.emitting = true
 	$GPUParticles2D.restart()
 	health -= hurt
+	health = clamp(health, 0, 10)
 	if !is_alive():
 		smash_open()
 	$Health.scale = Vector2(1, 1)

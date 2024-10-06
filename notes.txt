@@ -1,3 +1,8 @@
 print("Neighbors of %s"%self)
 	print(neighbor_vectors)
 	print("  %s"%cell)
+
+E 0:00:06:0535   holdable.gd:21 @ pick_up(): 
+  <C++ Source>   scene/main/node.cpp:1602 @ remove_child()
+  <Stack Trace>  holdable.gd:21 @ pick_up()
+				 holdable.gd:15 @ _input()
