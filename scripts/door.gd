@@ -2,7 +2,6 @@ extends CellConnector
 
 var is_open = false
 var is_locked = false
-var health = 5
 
 @export var force_unlocked = false
 @export var force_locked = false
@@ -15,11 +14,8 @@ func _ready() -> void:
 	elif randf() < 0.1:
 		lock()
 
-func _process(delta: float) -> void:
-	$Health.scale *= Vector2(0.9, 0.9)
-
 func _input(event: InputEvent) -> void:
-	if !is_alive():
+	if !$Breakable.is_alive():
 		return
 	if Input.is_action_just_pressed("use_door"):
 		for body in $DoorArea.get_overlapping_bodies():
@@ -35,7 +31,7 @@ func _input(event: InputEvent) -> void:
 					var hurt_door = 1
 					if body.held_str() in hurt_dict:
 						hurt_door = hurt_dict[body.held_str()]
-					punch(hurt_door)
+					$Breakable.punch(hurt_door)
 					
 					# Player also hurts themselves a bit
 					if body.held_str() == "hand":
@@ -72,25 +68,7 @@ func unlock():
 	is_locked = false
 	$Locked.hide()
 
-func punch(hurt=1):
-	if !is_alive():
-		return
-
-	$GPUParticles2D.emitting = true
-	$GPUParticles2D.restart()
-	health -= hurt
-	health = clamp(health, 0, 10)
-	if !is_alive():
-		smash_open()
-	$Health.scale = Vector2(1, 1)
-	$Health.get_node("HealthLabel").text = "%s"%health
-	
-func is_alive():
-	return health > 0
-
-func smash_open():
+func forced_open():
 	open()
 	get_node("DoorArea/CollisionShape2D").disabled = true
-	is_locked = true
 	$DoorOpen.hide()
-	$DoorSmashed.show()

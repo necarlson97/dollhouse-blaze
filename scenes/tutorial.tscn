@@ -190,7 +190,11 @@ offset_right = -1704.0
 offset_bottom = 1.0
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 30
-text = "Carry your friends to saftey!"
+text = "Carry your friends to saftey!
+
+Get them out of the building
+- who knows when
+that kid will be back..."
 
 [node name="Label7" type="Label" parent="Area2D/Labels"]
 offset_left = -1514.0

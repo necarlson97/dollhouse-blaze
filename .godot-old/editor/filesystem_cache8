@@ -1,0 +1,601 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1728218780
+doll.blend::PackedScene::7940852505186200468::1728178575::1728178602::1::::<><>::
+icon.svg::CompressedTexture2D::3332721890626853274::1728080160::1728080170::1::::<><>::
+notes.txt::TextFile::-1::1728187219::0::1::::<><>::
+README.md::TextFile::-1::1728086051::0::1::::<><>::
+::res://assets/::1728218716
+1x1.png::CompressedTexture2D::4668996501034326145::1728086337::1728086337::1::::<><>::
+axe.png::CompressedTexture2D::2618317988566196380::1728149762::1728149762::1::::<><>::
+blood.png::CompressedTexture2D::4468360805961455179::1728176943::1728176944::1::::<><>::
+circle.png::CompressedTexture2D::7038763654431171708::1728087489::1728087489::1::::<><>::
+door closed.png::CompressedTexture2D::913842902552999257::1728135495::1728135496::1::::<><>::
+door open.png::CompressedTexture2D::1344592415413370865::1728135491::1728135492::1::::<><>::
+door smashed.png::CompressedTexture2D::7922578738944141498::1728151824::1728151825::1::::<><>::
+extinguisher.png::CompressedTexture2D::7379847216085038055::1728149759::1728149759::1::::<><>::
+flame.tres::ParticleProcessMaterial::5084574881805009510::1728186553::0::1::::<><>::
+locked.png::CompressedTexture2D::5193377205571965893::1728151528::1728151529::1::::<><>::
+lungs.png::CompressedTexture2D::1531535000163381610::1728176939::1728176939::1::::<><>::
+magnifier.png::CompressedTexture2D::4934548135764672422::1728157426::1728157428::1::::<><>::
+player carried.tres::SpriteFrames::2448221780552488778::1728172804::0::1::::<><>::uid://cn8ikbh8y0ggi::::res://render frames/carried/0001.png<>uid://b7y2mq6f4qg85::::res://render frames/carried/0002.png<>uid://cyqqvrr6qplt7::::res://render frames/carried/0003.png<>uid://youkk4julvl3::::res://render frames/carried/0004.png<>uid://pvb012wvu58f::::res://render frames/carried/0005.png<>uid://csf1ggdkv6c3q::::res://render frames/carried/0006.png<>uid://c8dw0wu2notup::::res://render frames/carried/0007.png<>uid://d3ngl1aphvwjv::::res://render frames/carried/0008.png<>uid://bcrtumhdmlspx::::res://render frames/carried/0009.png<>uid://cwqu3j8h13cab::::res://render frames/carried/0010.png<>uid://cia66sw0tnoj7::::res://render frames/carried/0011.png<>uid://cqvtgifmeets2::::res://render frames/carried/0012.png<>uid://ch41mn3qp4hqv::::res://render frames/carried/0013.png<>uid://capx53rbb0j5k::::res://render frames/carried/0014.png<>uid://b38y75lx1pg2e::::res://render frames/carried/0015.png<>uid://blw41x87mfxwh::::res://render frames/carried/0016.png<>uid://c47hgppui6623::::res://render frames/carried/0017.png<>uid://c8im0fjjabsx5::::res://render frames/carried/0018.png<>uid://hqgojfer3ckv::::res://render frames/carried/0019.png<>uid://jvb45ycwukvt::::res://render frames/carried/0020.png<>uid://coueucpmaspnt::::res://render frames/carried/0021.png<>uid://cv7t0qslvsuoi::::res://render frames/carried/0022.png<>uid://m4h3fc06e73y::::res://render frames/carried/0023.png<>uid://bqpnp221ttruu::::res://render frames/carried/0024.png<>uid://doov0k082s3j3::::res://render frames/carried/0025.png<>uid://c26h7wewkvn7d::::res://render frames/carried/0026.png<>uid://c4e3cixpa2ddo::::res://render frames/carried/0027.png<>uid://johuaosv44hd::::res://render frames/carried/0028.png<>uid://c5qpewsta5ysj::::res://render frames/carried/0029.png<>uid://cjwt47yufh175::::res://render frames/carried/0030.png<>uid://bly2jqlu0woni::::res://render frames/carried/0031.png<>uid://briund8ldq8f2::::res://render frames/carried/0032.png<>uid://dggpfrjb3u10::::res://render frames/carried/0033.png<>uid://4hi6317sm858::::res://render frames/carried/0034.png<>uid://dmq6tesnutxmh::::res://render frames/carried/0035.png<>uid://d516kgfts7nb::::res://render frames/carried/0036.png<>uid://cg2c0c23k3c4n::::res://render frames/carried/0037.png<>uid://dsb0lxbjgrs2a::::res://render frames/carried/0038.png<>uid://dsrutsfsy3m60::::res://render frames/carried/0039.png<>uid://bb88muwaeu8cr::::res://render frames/carried/0040.png<>uid://dra1g1hdgi2cr::::res://render frames/carried/0041.png<>uid://jkmxsf2h7d46::::res://render frames/carried/0042.png<>uid://cgxva28rme0kh::::res://render frames/carried/0043.png<>uid://dm5c5aps4r64h::::res://render frames/carried/0044.png<>uid://cfklktsdom75::::res://render frames/carried/0045.png<>uid://b3m1ek0d4ranq::::res://render frames/carried/0046.png<>uid://cxpi1fklchkr5::::res://render frames/carried/0047.png<>uid://buind7hbp4xpx::::res://render frames/carried/0048.png<>uid://dtsccxw1pycjw::::res://render frames/carried/0049.png<>uid://hbn1tu6r0rot::::res://render frames/carried/0050.png<>uid://vjv4mn013d4::::res://render frames/carried/0051.png<>uid://bgqa8m18bf5af::::res://render frames/carried/0052.png<>uid://budo7beigie5x::::res://render frames/carried/0053.png<>uid://cqgcwmqkmir1b::::res://render frames/carried/0054.png<>uid://cop8c2q4lr5ul::::res://render frames/carried/0055.png<>uid://dsjao2bpklymj::::res://render frames/carried/0056.png<>uid://cpq6fbdbc7cgm::::res://render frames/carried/0057.png<>uid://coj3wov4t854o::::res://render frames/carried/0058.png<>uid://coh70dejltvi::::res://render frames/carried/0059.png<>uid://c2o4htl0i61i6::::res://render frames/carried/0060.png
+player crawl.tres::SpriteFrames::4334081389271031123::1728172801::0::1::::<><>::uid://dhbx1opulmbx8::::res://render frames/crawl/0001.png<>uid://67cw6raigqq7::::res://render frames/crawl/0002.png<>uid://dmt8iyrptws7r::::res://render frames/crawl/0003.png<>uid://dal2nyne1ns2h::::res://render frames/crawl/0004.png<>uid://b8hxhc47ojqmw::::res://render frames/crawl/0005.png<>uid://bwu7yxqvrfmgr::::res://render frames/crawl/0006.png<>uid://bti3nc8rg3nk4::::res://render frames/crawl/0007.png<>uid://cn5drcxk77xg::::res://render frames/crawl/0008.png<>uid://dm5hvri5ebwbj::::res://render frames/crawl/0009.png<>uid://bxk7mplig4ec7::::res://render frames/crawl/0010.png<>uid://dyprlxn7hip11::::res://render frames/crawl/0011.png<>uid://bgfipcqxor1t6::::res://render frames/crawl/0012.png<>uid://4l3i1yflin2m::::res://render frames/crawl/0013.png<>uid://ccvkqxo8blvii::::res://render frames/crawl/0014.png<>uid://chd3c4rqc0mne::::res://render frames/crawl/0015.png<>uid://cg8l00ci6ljkm::::res://render frames/crawl/0016.png<>uid://cy5fc21m8ugf3::::res://render frames/crawl/0017.png<>uid://c4fyow4dbu86e::::res://render frames/crawl/0018.png<>uid://btvdu8721ctuf::::res://render frames/crawl/0019.png<>uid://b12y22kp1scg4::::res://render frames/crawl/0020.png<>uid://ctjvoomr73ucm::::res://render frames/crawl/0021.png<>uid://c088oqykit6xi::::res://render frames/crawl/0022.png<>uid://bd0qjitsix3w6::::res://render frames/crawl/0023.png<>uid://ywnfxfld7tkb::::res://render frames/crawl/0024.png<>uid://dku4aomq8xa8q::::res://render frames/crawl/0025.png<>uid://cefbu2whohjd4::::res://render frames/crawl/0026.png<>uid://b2yh1hv707cpc::::res://render frames/crawl/0027.png<>uid://cvqh6mqbf1ej6::::res://render frames/crawl/0028.png<>uid://dcwqthhpurv8a::::res://render frames/crawl/0029.png<>uid://135pdwxsuvd0::::res://render frames/crawl/0030.png<>uid://c7d4o22tdieb3::::res://render frames/crawl/0031.png<>uid://vwjwpgdcsmop::::res://render frames/crawl/0032.png<>uid://cvq42niwhiywt::::res://render frames/crawl/0033.png<>uid://c4786tjdcl7ws::::res://render frames/crawl/0034.png<>uid://dcnetqo8g8o16::::res://render frames/crawl/0035.png<>uid://c5q1vduy01c4o::::res://render frames/crawl/0036.png<>uid://8ibu1a371acc::::res://render frames/crawl/0037.png<>uid://dxaeol4dg8r2b::::res://render frames/crawl/0038.png<>uid://bap8wdieh64ei::::res://render frames/crawl/0039.png<>uid://vqbmhrbk8bo6::::res://render frames/crawl/0040.png<>uid://k4ucrfhqiwm7::::res://render frames/crawl/0041.png<>uid://c0su5xxu3benx::::res://render frames/crawl/0042.png<>uid://srmkmnn5xisy::::res://render frames/crawl/0043.png<>uid://dlx6012tbje0c::::res://render frames/crawl/0044.png<>uid://cyn2hdgm0nktm::::res://render frames/crawl/0045.png<>uid://jogeoqo8abj7::::res://render frames/crawl/0046.png<>uid://dcvvsos3oa1e7::::res://render frames/crawl/0047.png<>uid://c2cys4165pewt::::res://render frames/crawl/0048.png<>uid://don8t7y2g776t::::res://render frames/crawl/0049.png<>uid://cd3oa2ir04xcj::::res://render frames/crawl/0050.png<>uid://dtf5f23gpa5x1::::res://render frames/crawl/0051.png<>uid://qylvvp7nq02j::::res://render frames/crawl/0052.png<>uid://4rk6v4td84ka::::res://render frames/crawl/0053.png<>uid://3ewg7ug11igj::::res://render frames/crawl/0054.png<>uid://djp3aeat3py73::::res://render frames/crawl/0055.png<>uid://dqykmgcnx0p8f::::res://render frames/crawl/0056.png<>uid://dkhe21k3tr5ke::::res://render frames/crawl/0057.png<>uid://ran2o4d7icjx::::res://render frames/crawl/0058.png<>uid://b0ve7a8mqgeyw::::res://render frames/crawl/0059.png<>uid://dythnl6ae1nv1::::res://render frames/crawl/0060.png
+player crouch.tres::SpriteFrames::7502468542707028084::1728172798::0::1::::<><>::uid://ca00wh1627q3r::::res://render frames/crouch/0001.png<>uid://b0xcla16rc5jr::::res://render frames/crouch/0002.png<>uid://cblsuwe67tx47::::res://render frames/crouch/0003.png<>uid://tfqcoa4tdmwy::::res://render frames/crouch/0004.png<>uid://d2jh5tcljhgfx::::res://render frames/crouch/0005.png<>uid://dr16tm2bv4qem::::res://render frames/crouch/0006.png<>uid://k50bufrbg4xx::::res://render frames/crouch/0007.png<>uid://cm83ugmsvgo8q::::res://render frames/crouch/0008.png<>uid://pcuma30t8ev0::::res://render frames/crouch/0009.png<>uid://do8bl4hm7exwa::::res://render frames/crouch/0010.png<>uid://d2ux5hdxlhaeb::::res://render frames/crouch/0011.png<>uid://c885isf3r5jex::::res://render frames/crouch/0012.png<>uid://dgp0tr4afeevm::::res://render frames/crouch/0013.png<>uid://c8dho5y4h64wt::::res://render frames/crouch/0014.png<>uid://c6iljbjl2lmps::::res://render frames/crouch/0015.png<>uid://dno1o8qc1bmha::::res://render frames/crouch/0016.png<>uid://b8u123gm2f4bo::::res://render frames/crouch/0017.png<>uid://dt2xcrgagr0dx::::res://render frames/crouch/0018.png<>uid://bspnxqh08snv4::::res://render frames/crouch/0019.png<>uid://cy4aomvusp4vo::::res://render frames/crouch/0020.png<>uid://m2dheajj7opg::::res://render frames/crouch/0021.png<>uid://bo3hk77sxj1a7::::res://render frames/crouch/0022.png<>uid://chi5ebic30p6g::::res://render frames/crouch/0023.png<>uid://dnffnbi2prw24::::res://render frames/crouch/0024.png<>uid://dkktrcocn88dr::::res://render frames/crouch/0025.png<>uid://dco40u1p0vijv::::res://render frames/crouch/0026.png<>uid://jd65loaaua35::::res://render frames/crouch/0027.png<>uid://bwxaywfm2m4ww::::res://render frames/crouch/0028.png<>uid://cejqf421bjpm7::::res://render frames/crouch/0029.png<>uid://bqg84gk6bkhvf::::res://render frames/crouch/0030.png<>uid://c2s73be4lm6pn::::res://render frames/crouch/0031.png<>uid://by62dx0gr6tr4::::res://render frames/crouch/0032.png<>uid://b463855ikj14c::::res://render frames/crouch/0033.png<>uid://dv8jqdi3yufrs::::res://render frames/crouch/0034.png<>uid://c5yvdq3b0oijn::::res://render frames/crouch/0035.png<>uid://du5h5srgu0bbb::::res://render frames/crouch/0036.png<>uid://cvjvq88ki1rhm::::res://render frames/crouch/0037.png<>uid://bsu7fbl5i7tkr::::res://render frames/crouch/0038.png<>uid://cvt035f3612um::::res://render frames/crouch/0039.png<>uid://c8mao4y0t6j74::::res://render frames/crouch/0040.png<>uid://bcio5jjuwc5ic::::res://render frames/crouch/0041.png<>uid://ci1aq4nq3c1ex::::res://render frames/crouch/0042.png<>uid://c4gu4chit7pc5::::res://render frames/crouch/0043.png<>uid://crkwel462ckls::::res://render frames/crouch/0044.png<>uid://dafq357iuo210::::res://render frames/crouch/0045.png<>uid://cuu5ja77gt0eq::::res://render frames/crouch/0046.png<>uid://cfhwchiwwjiyy::::res://render frames/crouch/0047.png<>uid://b8vfyvlmn8kh::::res://render frames/crouch/0048.png<>uid://0112s6yx63wl::::res://render frames/crouch/0049.png<>uid://cxol40cuegxrc::::res://render frames/crouch/0050.png<>uid://d4hgprhy2w8on::::res://render frames/crouch/0051.png<>uid://yyqvohqgsbty::::res://render frames/crouch/0052.png<>uid://bdniftrklo824::::res://render frames/crouch/0053.png<>uid://b3y2hadfjy7ei::::res://render frames/crouch/0054.png<>uid://bmxyfpfhwiskb::::res://render frames/crouch/0055.png<>uid://ce06s4xav3d8e::::res://render frames/crouch/0056.png<>uid://bfs3w04j8fb73::::res://render frames/crouch/0057.png<>uid://blpnce6lidiro::::res://render frames/crouch/0058.png<>uid://qs5ok4ad2746::::res://render frames/crouch/0059.png<>uid://b7iajm4qsnjrd::::res://render frames/crouch/0060.png
+player dead.tres::SpriteFrames::7334499256676428536::1728171061::0::1::::<><>::uid://cjpjpbkwswmw0::::res://render frames/dead/0001.png
+player falling.tres::SpriteFrames::8788477739303014558::1728172794::0::1::::<><>::uid://j6mmrb8r20f::::res://render frames/falling/0001.png<>uid://nbh2xwqgkhmd::::res://render frames/falling/0002.png<>uid://dl3e6cjoma4xi::::res://render frames/falling/0003.png<>uid://520cwnmakyk3::::res://render frames/falling/0004.png<>uid://drs2374lwayy2::::res://render frames/falling/0005.png<>uid://bsv1lgrp8xoet::::res://render frames/falling/0006.png<>uid://dneuyclu5xgji::::res://render frames/falling/0007.png<>uid://dg155qcofmqo8::::res://render frames/falling/0008.png<>uid://181hy3bde7qn::::res://render frames/falling/0009.png<>uid://ownj4inwtnad::::res://render frames/falling/0010.png<>uid://dlo6w2rikp14v::::res://render frames/falling/0011.png<>uid://bk0u3t6acg7rw::::res://render frames/falling/0012.png<>uid://dtp4qr7rmnrxi::::res://render frames/falling/0013.png<>uid://bpbpf15uo1dqt::::res://render frames/falling/0014.png<>uid://diwnjkca6442b::::res://render frames/falling/0015.png<>uid://u7gnccwsf0lt::::res://render frames/falling/0016.png<>uid://c78q628ea0uhl::::res://render frames/falling/0017.png<>uid://dv4vbar3h2e5n::::res://render frames/falling/0018.png<>uid://1lxsohig7t74::::res://render frames/falling/0019.png<>uid://rns3q0pa216t::::res://render frames/falling/0020.png
+player idle crawl.tres::SpriteFrames::8888446061629506077::1728178699::0::1::::<><>::uid://0djfqs46w6vj::::res://render frames/idle crawl/0001.png<>uid://chq0t0cw7ot7y::::res://render frames/idle crawl/0002.png<>uid://dbuqs6v5kqb50::::res://render frames/idle crawl/0003.png<>uid://cms00hxjidgb2::::res://render frames/idle crawl/0004.png<>uid://cvv7oe574xdbj::::res://render frames/idle crawl/0005.png<>uid://bvr0v8aq6y2i4::::res://render frames/idle crawl/0006.png<>uid://crh8pifky25ys::::res://render frames/idle crawl/0007.png<>uid://dh7p12kw3r0e0::::res://render frames/idle crawl/0008.png<>uid://brtpfkw1lm615::::res://render frames/idle crawl/0009.png<>uid://cn4jcx008is6q::::res://render frames/idle crawl/0010.png<>uid://bd0skl0ke0kyh::::res://render frames/idle crawl/0011.png<>uid://dgqicyaouqria::::res://render frames/idle crawl/0012.png<>uid://laub01w4i5gm::::res://render frames/idle crawl/0013.png<>uid://baeeb2lb1la0p::::res://render frames/idle crawl/0014.png<>uid://c5k0ut7h53upc::::res://render frames/idle crawl/0015.png<>uid://kqwm1fyw2kyi::::res://render frames/idle crawl/0016.png<>uid://dgdqg8ngiraqo::::res://render frames/idle crawl/0017.png<>uid://cajd0874ahqye::::res://render frames/idle crawl/0018.png<>uid://cc0i70i60qxf3::::res://render frames/idle crawl/0019.png<>uid://tfecjkn3thhw::::res://render frames/idle crawl/0020.png<>uid://dgd0sdsu0jfgb::::res://render frames/idle crawl/0021.png<>uid://dejdfa2qojvhw::::res://render frames/idle crawl/0022.png<>uid://dda2gt7dveoeh::::res://render frames/idle crawl/0023.png<>uid://db77ukvnatefm::::res://render frames/idle crawl/0024.png<>uid://8hgx4hco20hc::::res://render frames/idle crawl/0025.png<>uid://5boubicgnhah::::res://render frames/idle crawl/0026.png<>uid://b1rgvaudknfat::::res://render frames/idle crawl/0027.png<>uid://bmldb55ah0alo::::res://render frames/idle crawl/0028.png<>uid://cab7cy7hwq552::::res://render frames/idle crawl/0029.png<>uid://bkvsnpk4706hf::::res://render frames/idle crawl/0030.png<>uid://dh4dwbytmbw65::::res://render frames/idle crawl/0031.png<>uid://bbgx7emcukyy4::::res://render frames/idle crawl/0032.png<>uid://d0jsunojl7rj8::::res://render frames/idle crawl/0033.png<>uid://let7elrrux24::::res://render frames/idle crawl/0034.png<>uid://w5sgilk7jxcs::::res://render frames/idle crawl/0035.png<>uid://c5j6c7rkm02bx::::res://render frames/idle crawl/0036.png<>uid://dvimunqi8odwe::::res://render frames/idle crawl/0037.png<>uid://cn5n8bmgiggaj::::res://render frames/idle crawl/0038.png<>uid://br7kc0kj3gamy::::res://render frames/idle crawl/0039.png<>uid://b6uu2r2pjquxf::::res://render frames/idle crawl/0040.png<>uid://5887boe3qyiq::::res://render frames/idle crawl/0041.png<>uid://cg1x7nmbqgwu2::::res://render frames/idle crawl/0042.png<>uid://ihvnf1457uvm::::res://render frames/idle crawl/0043.png<>uid://diyjb5ofbaty2::::res://render frames/idle crawl/0044.png<>uid://bg6hpelxk2dv4::::res://render frames/idle crawl/0045.png<>uid://cnjj4lxjo4orr::::res://render frames/idle crawl/0046.png<>uid://cx76lqynxm5u7::::res://render frames/idle crawl/0047.png<>uid://evdee10g68fb::::res://render frames/idle crawl/0048.png<>uid://bw4dffakckyo1::::res://render frames/idle crawl/0049.png<>uid://b20b642643d1r::::res://render frames/idle crawl/0050.png<>uid://bwry6at1wdgd2::::res://render frames/idle crawl/0051.png<>uid://bb6fcnrve6pht::::res://render frames/idle crawl/0052.png<>uid://dljk4pvxv5svl::::res://render frames/idle crawl/0053.png<>uid://c5d4gp6g0o0mb::::res://render frames/idle crawl/0054.png<>uid://dbjaunciiggg6::::res://render frames/idle crawl/0055.png<>uid://vixuk1l5kprc::::res://render frames/idle crawl/0056.png<>uid://d7judmf2ky6q::::res://render frames/idle crawl/0057.png<>uid://cakqsbhrccbs3::::res://render frames/idle crawl/0058.png<>uid://b1ae0asd4dewk::::res://render frames/idle crawl/0059.png<>uid://120iy4gkhi7x::::res://render frames/idle crawl/0060.png
+player idle crouch.tres::SpriteFrames::6492307935585498333::1728178673::0::1::::<><>::uid://ctwovc73lykd1::::res://render frames/idle-crouch/0001.png<>uid://cgyspamnwdb6u::::res://render frames/idle-crouch/0002.png<>uid://bheeuumwgaxr0::::res://render frames/idle-crouch/0003.png<>uid://imy1vgnjjkev::::res://render frames/idle-crouch/0004.png<>uid://bgl5k8whq0fhh::::res://render frames/idle-crouch/0005.png<>uid://cqrykkkrau5sq::::res://render frames/idle-crouch/0006.png<>uid://g6a4t7wrdjux::::res://render frames/idle-crouch/0007.png<>uid://ceean8chjpfqb::::res://render frames/idle-crouch/0008.png<>uid://diy88p75pxxn4::::res://render frames/idle-crouch/0009.png<>uid://dxbq0bq13dsde::::res://render frames/idle-crouch/0010.png<>uid://cn6t7veprnd5o::::res://render frames/idle-crouch/0011.png<>uid://stquwuvihyti::::res://render frames/idle-crouch/0012.png<>uid://dtvxa5smv6biv::::res://render frames/idle-crouch/0013.png<>uid://llepafpfxy5l::::res://render frames/idle-crouch/0014.png<>uid://ilk6qfe3gf0v::::res://render frames/idle-crouch/0015.png<>uid://ck6kuq5r8tslx::::res://render frames/idle-crouch/0016.png<>uid://drjpq62jqpglf::::res://render frames/idle-crouch/0017.png<>uid://cvnnlokbhsr23::::res://render frames/idle-crouch/0018.png<>uid://c724f41iugv27::::res://render frames/idle-crouch/0019.png<>uid://khmevbbgrfth::::res://render frames/idle-crouch/0020.png<>uid://5mw3g2lwra22::::res://render frames/idle-crouch/0021.png<>uid://dnvx3o6p4yccy::::res://render frames/idle-crouch/0022.png<>uid://c2tdpcgxlsf8u::::res://render frames/idle-crouch/0023.png<>uid://coqlhi61vtp7i::::res://render frames/idle-crouch/0024.png<>uid://cmkk5t7ojje5v::::res://render frames/idle-crouch/0025.png<>uid://ctqs23m6go7s1::::res://render frames/idle-crouch/0026.png<>uid://ig16i4cx7gkt::::res://render frames/idle-crouch/0027.png<>uid://v72yqtogmvvt::::res://render frames/idle-crouch/0028.png<>uid://be0nrqvnugkkc::::res://render frames/idle-crouch/0029.png<>uid://dd22l5qv2vb28::::res://render frames/idle-crouch/0030.png<>uid://8sjsinmmxrb4::::res://render frames/idle-crouch/0031.png<>uid://bea315w4bve0s::::res://render frames/idle-crouch/0032.png<>uid://bkr2q71qsx8mw::::res://render frames/idle-crouch/0033.png<>uid://cihosmns5dre1::::res://render frames/idle-crouch/0034.png<>uid://dqq4dewopjvdd::::res://render frames/idle-crouch/0035.png<>uid://dnxn1okyp6svt::::res://render frames/idle-crouch/0036.png<>uid://cu7eyl1kdj7bv::::res://render frames/idle-crouch/0037.png<>uid://dbb4b04gnpt28::::res://render frames/idle-crouch/0038.png<>uid://cppolo6tpnbyv::::res://render frames/idle-crouch/0039.png<>uid://bb31t2h2dp66c::::res://render frames/idle-crouch/0040.png<>uid://b5ka2s6udky8u::::res://render frames/idle-crouch/0041.png<>uid://d3kc6xvqpva7b::::res://render frames/idle-crouch/0042.png<>uid://dfd4nkmvdb536::::res://render frames/idle-crouch/0043.png<>uid://cehmbdnjg05x8::::res://render frames/idle-crouch/0044.png<>uid://buh6unqd4bf7t::::res://render frames/idle-crouch/0045.png<>uid://bmdtev6u0hq86::::res://render frames/idle-crouch/0046.png<>uid://cdea6tcmu0ci1::::res://render frames/idle-crouch/0047.png<>uid://rbplbavxnl4k::::res://render frames/idle-crouch/0048.png<>uid://bx3eoosiqjovp::::res://render frames/idle-crouch/0049.png<>uid://dwpvg5mtwhijx::::res://render frames/idle-crouch/0050.png<>uid://qqbggux6klce::::res://render frames/idle-crouch/0051.png<>uid://qvgklcdse6n8::::res://render frames/idle-crouch/0052.png<>uid://b6tqh3m6qumxf::::res://render frames/idle-crouch/0053.png<>uid://be03k1ka8dxam::::res://render frames/idle-crouch/0054.png<>uid://cko74x2cd5myy::::res://render frames/idle-crouch/0055.png<>uid://c31m4ko5y40e4::::res://render frames/idle-crouch/0056.png<>uid://kya63a3on8ol::::res://render frames/idle-crouch/0057.png<>uid://dbh673jhe2b7h::::res://render frames/idle-crouch/0058.png<>uid://bpuoh4lls333e::::res://render frames/idle-crouch/0059.png<>uid://cku4i1id82un3::::res://render frames/idle-crouch/0060.png
+player idle.tres::SpriteFrames::1492458947831425499::1728173258::0::1::::<><>::uid://bgu5rhnkm3vp7::::res://render frames/idle/0001.png<>uid://c8clyrgwgpwnn::::res://render frames/idle/0002.png<>uid://cug3304treel6::::res://render frames/idle/0003.png<>uid://da47nk6qx0ebn::::res://render frames/idle/0004.png<>uid://cc7dsq33je4da::::res://render frames/idle/0005.png<>uid://dfvy3fo4ykyjr::::res://render frames/idle/0006.png<>uid://bcs1cmwe6wu2h::::res://render frames/idle/0007.png<>uid://bi1r06fy1n5d6::::res://render frames/idle/0008.png<>uid://d13aqvaubrcl0::::res://render frames/idle/0009.png<>uid://dgon2q4h5vboe::::res://render frames/idle/0010.png<>uid://ckfjf7lup2wmq::::res://render frames/idle/0011.png<>uid://cp3xxknhph0nf::::res://render frames/idle/0012.png<>uid://chyu8dfcuc4ju::::res://render frames/idle/0013.png<>uid://buyl4fymcv1nj::::res://render frames/idle/0014.png<>uid://m13fbv5nf5fk::::res://render frames/idle/0015.png<>uid://dav16gfcflnuj::::res://render frames/idle/0016.png<>uid://crtdt5fi4mway::::res://render frames/idle/0017.png<>uid://mgmnrvdlhd8t::::res://render frames/idle/0018.png<>uid://bhv4k6mj61kp4::::res://render frames/idle/0019.png<>uid://dwte23sufna4a::::res://render frames/idle/0020.png<>uid://bwfpp7leluam8::::res://render frames/idle/0021.png<>uid://d0laodq228ygq::::res://render frames/idle/0022.png<>uid://cqf2vg86tih7c::::res://render frames/idle/0023.png<>uid://31267168outf::::res://render frames/idle/0024.png<>uid://bkvybm5120chs::::res://render frames/idle/0025.png<>uid://by6cmdytultbi::::res://render frames/idle/0026.png<>uid://brdudqsgyrotg::::res://render frames/idle/0027.png<>uid://cckcqndbanbyv::::res://render frames/idle/0028.png<>uid://d3fjafatjkx5u::::res://render frames/idle/0029.png<>uid://5erw16wq6yaf::::res://render frames/idle/0030.png<>uid://dilexi8i0svb4::::res://render frames/idle/0031.png<>uid://c1l6m2yu8p26n::::res://render frames/idle/0032.png<>uid://00u7a7ynsq1d::::res://render frames/idle/0033.png<>uid://j4in3o537iv2::::res://render frames/idle/0034.png<>uid://ckwblctx2253l::::res://render frames/idle/0035.png<>uid://bu4qjwuogrmic::::res://render frames/idle/0036.png<>uid://d2a1u546l1dia::::res://render frames/idle/0037.png<>uid://dowjr8lefdune::::res://render frames/idle/0038.png<>uid://b8uegi87b4bgi::::res://render frames/idle/0039.png<>uid://ctfvaf6kkb5bc::::res://render frames/idle/0040.png<>uid://trcklai6v846::::res://render frames/idle/0041.png<>uid://dnj5248ppn8lw::::res://render frames/idle/0042.png<>uid://dbm8dd20uqjl8::::res://render frames/idle/0043.png<>uid://bqikb0wrooc6p::::res://render frames/idle/0044.png<>uid://dxathm7l1kx8::::res://render frames/idle/0045.png<>uid://b4evnhm8hxfq7::::res://render frames/idle/0046.png<>uid://t1he57xvurhg::::res://render frames/idle/0047.png<>uid://de35ull85vl4u::::res://render frames/idle/0048.png<>uid://drlehtjffiq1w::::res://render frames/idle/0049.png<>uid://m3l2tddple0n::::res://render frames/idle/0050.png<>uid://6by02r86a5uk::::res://render frames/idle/0051.png<>uid://bigkll72ul50p::::res://render frames/idle/0052.png<>uid://doorbfxo1gerb::::res://render frames/idle/0053.png<>uid://dotljiuh2w05l::::res://render frames/idle/0054.png<>uid://mepvuv0wm3by::::res://render frames/idle/0055.png<>uid://d4l3d7l2taack::::res://render frames/idle/0056.png<>uid://bjxm4rd34ip7c::::res://render frames/idle/0057.png<>uid://bh4hkifv5hdbu::::res://render frames/idle/0058.png<>uid://b4c41xf5vgro3::::res://render frames/idle/0059.png<>uid://cw3kklaiwsis8::::res://render frames/idle/0060.png
+player run.tres::SpriteFrames::7171610849995867891::1728172784::0::1::::<><>::uid://dbewgy1ojhxjd::::res://render frames/run/0001.png<>uid://c3hlnqkjn3eq::::res://render frames/run/0002.png<>uid://c8shu4ci7b63m::::res://render frames/run/0003.png<>uid://b6avfg88o0tqs::::res://render frames/run/0004.png<>uid://bx38vsnlrf6km::::res://render frames/run/0005.png<>uid://dv3hx6ujiwlcl::::res://render frames/run/0006.png<>uid://jsx7hh4ep6i0::::res://render frames/run/0007.png<>uid://bs8fxr8n4s3n5::::res://render frames/run/0008.png<>uid://cap6uhqbe1k2j::::res://render frames/run/0009.png<>uid://ydbny5i5g3iq::::res://render frames/run/0010.png<>uid://b7emuhw1ki4bm::::res://render frames/run/0011.png<>uid://bm7hjrblal8k4::::res://render frames/run/0012.png<>uid://b7qunip1slvsd::::res://render frames/run/0013.png<>uid://k5qkj4wrqsf0::::res://render frames/run/0014.png<>uid://cekxfnfie8v3l::::res://render frames/run/0015.png<>uid://7yi6a3t1jkan::::res://render frames/run/0016.png<>uid://bdm5mswhv0bav::::res://render frames/run/0017.png<>uid://b0ecpwpo8b3nq::::res://render frames/run/0018.png<>uid://cu4tg1v1rlajo::::res://render frames/run/0019.png<>uid://byyinp003oimm::::res://render frames/run/0020.png<>uid://c1hpllrkrjy7f::::res://render frames/run/0021.png<>uid://bxuxbrcqn8pnb::::res://render frames/run/0022.png<>uid://byglgiec2mram::::res://render frames/run/0023.png<>uid://dfq4t0vhvbc78::::res://render frames/run/0024.png<>uid://ucvlu06fjcqf::::res://render frames/run/0025.png<>uid://dx0tved7pi4xt::::res://render frames/run/0026.png<>uid://cuwgyp5ukl7og::::res://render frames/run/0027.png<>uid://qyo2uodpp20p::::res://render frames/run/0028.png<>uid://dasuekytggx2a::::res://render frames/run/0029.png<>uid://cbww8qjgohror::::res://render frames/run/0030.png<>uid://dolsfw5cpmvwl::::res://render frames/run/0031.png<>uid://c0mym652cessu::::res://render frames/run/0032.png<>uid://dgylafv32dpfk::::res://render frames/run/0033.png<>uid://dyjhtl87agjr4::::res://render frames/run/0034.png<>uid://d8s3wrxx0417::::res://render frames/run/0035.png<>uid://bdqb00fd0002g::::res://render frames/run/0036.png<>uid://n10v2tx8o5d::::res://render frames/run/0037.png<>uid://c58q0hrju1uam::::res://render frames/run/0038.png<>uid://dse2jrinbsg00::::res://render frames/run/0039.png<>uid://cqgsuk7xf28ur::::res://render frames/run/0040.png
+player walk.tres::SpriteFrames::85561615079730399::1728174139::0::1::::<><>::uid://r0iwtgvnwsfm::::res://render frames/walk/0001.png<>uid://btn4wjwwjiwhf::::res://render frames/walk/0002.png<>uid://cbauomnt1kr8c::::res://render frames/walk/0003.png<>uid://cpyru8cb8ssva::::res://render frames/walk/0004.png<>uid://6h38dlb3o3ck::::res://render frames/walk/0005.png<>uid://b3mq87dj0p2ii::::res://render frames/walk/0006.png<>uid://cikqa4a34qhbp::::res://render frames/walk/0007.png<>uid://dm20q08xr4pqs::::res://render frames/walk/0008.png<>uid://hi4gl8ketdbj::::res://render frames/walk/0009.png<>uid://qb7waye50nfg::::res://render frames/walk/0010.png<>uid://dgnis2gm3ehhj::::res://render frames/walk/0011.png<>uid://cp28b8xewa2uc::::res://render frames/walk/0012.png<>uid://tfx75g0vxw4r::::res://render frames/walk/0013.png<>uid://bqkqunvwh1jcm::::res://render frames/walk/0014.png<>uid://bihw5vblt1aqc::::res://render frames/walk/0015.png<>uid://de3jwtyfl3oyh::::res://render frames/walk/0016.png<>uid://cwbkufybbnrjl::::res://render frames/walk/0017.png<>uid://cirtyv2h4haxy::::res://render frames/walk/0018.png<>uid://d0sakai250pdr::::res://render frames/walk/0019.png<>uid://m3mq0fndalbi::::res://render frames/walk/0020.png<>uid://crs7bxmmpjnmc::::res://render frames/walk/0021.png<>uid://cabt45chrbkq8::::res://render frames/walk/0022.png<>uid://bmj3xmv1sbhdg::::res://render frames/walk/0023.png<>uid://yxu08tyk5rlg::::res://render frames/walk/0024.png<>uid://fe87gwgn5vmh::::res://render frames/walk/0025.png<>uid://rb8wpw2x4om1::::res://render frames/walk/0026.png<>uid://54l7rgl35kju::::res://render frames/walk/0027.png<>uid://dnknnqr22har::::res://render frames/walk/0028.png<>uid://dvsi13gjr0vqm::::res://render frames/walk/0029.png<>uid://bmfbmr8nwopgq::::res://render frames/walk/0030.png<>uid://bp2mt32podgtq::::res://render frames/walk/0031.png<>uid://dq4dqehnbqtpm::::res://render frames/walk/0032.png<>uid://ww23nw3eode1::::res://render frames/walk/0033.png<>uid://bju8e07mawfqu::::res://render frames/walk/0034.png<>uid://beufcwixofcp4::::res://render frames/walk/0035.png<>uid://dketubbwp5d6q::::res://render frames/walk/0036.png<>uid://b63psokyssasn::::res://render frames/walk/0037.png<>uid://bsmby4ecthvhb::::res://render frames/walk/0038.png<>uid://vgvjl0j8aafw::::res://render frames/walk/0039.png<>uid://djc4wvfrwxl2::::res://render frames/walk/0040.png<>uid://ynsfbem244ga::::res://render frames/walk/0041.png<>uid://demfsjepaey78::::res://render frames/walk/0042.png<>uid://bchci8byx0beb::::res://render frames/walk/0043.png<>uid://lygsyko1yt6i::::res://render frames/walk/0044.png<>uid://cq8w1xofoefy4::::res://render frames/walk/0045.png<>uid://bnfqhixy6a7pt::::res://render frames/walk/0046.png<>uid://drmhc82bfdamm::::res://render frames/walk/0047.png<>uid://jnv7wlckhoa0::::res://render frames/walk/0048.png<>uid://d15mgy378q1yw::::res://render frames/walk/0049.png<>uid://dv2110bd1b6kn::::res://render frames/walk/0050.png
+roof left.png::CompressedTexture2D::4135135931073259632::1728214619::1728214620::1::::<><>::
+roof middle.png::CompressedTexture2D::3513056753690134634::1728214614::1728214615::1::::<><>::
+roof right.png::CompressedTexture2D::3086513522340970664::1728214608::1728214609::1::::<><>::
+saved icon.png::CompressedTexture2D::1502368335519540819::1728176946::1728176947::1::::<><>::
+smoke.tres::ParticleProcessMaterial::7034547551786097588::1728186553::0::1::::<><>::
+spark.tres::ParticleProcessMaterial::6018233111342175609::1728186553::0::1::::<><>::
+stairs up.png::CompressedTexture2D::1070887564559240372::1728144423::1728144423::1::::<><>::
+stairs.png::CompressedTexture2D::9007250118320631050::1728144226::1728144227::1::::<><>::
+tile.png::CompressedTexture2D::8906358689397334369::1728132491::1728132492::1::::<><>::
+wallpaper chevrons.png::CompressedTexture2D::3794075941319115775::1728134837::1728134837::1::::<><>::
+wallpaper diamonds.png::CompressedTexture2D::2697445184277806786::1728081541::1728081543::1::::<><>::
+wallpaper dots.png::CompressedTexture2D::7919225521312029924::1728134834::1728134836::1::::<><>::
+wallpaper slats.png::CompressedTexture2D::4829241237927093939::1728134840::1728134841::1::::<><>::
+wallpaper tile.png::CompressedTexture2D::2869161338867267413::1728132888::1728132888::1::::<><>::
+window broken.png::CompressedTexture2D::5805216763340543862::1728135307::1728135307::1::::<><>::
+window.png::CompressedTexture2D::7037156975069541560::1728135304::1728135304::1::::<><>::
+wood broken.png::CompressedTexture2D::8759517346416386414::1728216084::1728218716::1::::<><>::
+wood plank 2x.png::CompressedTexture2D::5489502407904596077::1728081857::1728081857::1::::<><>::
+wood plank 3x.png::CompressedTexture2D::2933260176133220275::1728081848::1728081848::1::::<><>::
+wood plank.png::CompressedTexture2D::4153939387224100649::1728132495::1728132495::1::::<><>::
+::res://old/::1728168729
+skeleton figure.tscn::PackedScene::9157199057641911170::1728168506::0::1::::<><>::uid://deetw5425kwkt::::res://render frames/parts/0007.png
+::res://render frames/::1728178576
+::res://render frames/carried/::1728170710
+0001.png::CompressedTexture2D::5753924459315188244::1728170393::1728170708::1::::<><>::
+0002.png::CompressedTexture2D::4683670423068232264::1728170393::1728170708::1::::<><>::
+0003.png::CompressedTexture2D::6491413552909311978::1728170393::1728170708::1::::<><>::
+0004.png::CompressedTexture2D::1714666304132924382::1728170393::1728170707::1::::<><>::
+0005.png::CompressedTexture2D::1096291357591417167::1728170394::1728170707::1::::<><>::
+0006.png::CompressedTexture2D::6048152118474594456::1728170394::1728170707::1::::<><>::
+0007.png::CompressedTexture2D::7096647947046427939::1728170394::1728170707::1::::<><>::
+0008.png::CompressedTexture2D::9151771895735380247::1728170394::1728170706::1::::<><>::
+0009.png::CompressedTexture2D::2563082772775471381::1728170394::1728170706::1::::<><>::
+0010.png::CompressedTexture2D::6351290837615129897::1728170394::1728170706::1::::<><>::
+0011.png::CompressedTexture2D::5336290683445076546::1728170395::1728170706::1::::<><>::
+0012.png::CompressedTexture2D::5940379564517541227::1728170395::1728170706::1::::<><>::
+0013.png::CompressedTexture2D::5325631025865184937::1728170395::1728170706::1::::<><>::
+0014.png::CompressedTexture2D::4805258595311119202::1728170395::1728170706::1::::<><>::
+0015.png::CompressedTexture2D::4421348718447042026::1728170395::1728170706::1::::<><>::
+0016.png::CompressedTexture2D::3205722758218319607::1728170395::1728170705::1::::<><>::
+0017.png::CompressedTexture2D::6874814466674821478::1728170395::1728170705::1::::<><>::
+0018.png::CompressedTexture2D::7106361755163539164::1728170396::1728170705::1::::<><>::
+0019.png::CompressedTexture2D::524741733242186401::1728170396::1728170705::1::::<><>::
+0020.png::CompressedTexture2D::675165643490434117::1728170396::1728170704::1::::<><>::
+0021.png::CompressedTexture2D::5797051446013731673::1728170396::1728170704::1::::<><>::
+0022.png::CompressedTexture2D::6314066308333645812::1728170396::1728170704::1::::<><>::
+0023.png::CompressedTexture2D::902608366586691200::1728170396::1728170710::1::::<><>::
+0024.png::CompressedTexture2D::3541225417074704968::1728170397::1728170710::1::::<><>::
+0025.png::CompressedTexture2D::8172127417654113630::1728170397::1728170709::1::::<><>::
+0026.png::CompressedTexture2D::6732419183049956479::1728170397::1728170709::1::::<><>::
+0027.png::CompressedTexture2D::6818279447690550008::1728170397::1728170709::1::::<><>::
+0028.png::CompressedTexture2D::661061638600927581::1728170397::1728170709::1::::<><>::
+0029.png::CompressedTexture2D::6912455802843909789::1728170397::1728170709::1::::<><>::
+0030.png::CompressedTexture2D::5451164400341820494::1728170397::1728170709::1::::<><>::
+0031.png::CompressedTexture2D::3209699319068179578::1728170398::1728170709::1::::<><>::
+0032.png::CompressedTexture2D::3597383811801284761::1728170398::1728170709::1::::<><>::
+0033.png::CompressedTexture2D::223344175593433517::1728170398::1728170709::1::::<><>::
+0034.png::CompressedTexture2D::2050469717631758369::1728170398::1728170709::1::::<><>::
+0035.png::CompressedTexture2D::8036474614178642675::1728170398::1728170709::1::::<><>::
+0036.png::CompressedTexture2D::274132399714510619::1728170398::1728170709::1::::<><>::
+0037.png::CompressedTexture2D::5249878855450244271::1728170399::1728170709::1::::<><>::
+0038.png::CompressedTexture2D::8426264392869545766::1728170399::1728170709::1::::<><>::
+0039.png::CompressedTexture2D::8459004882317774407::1728170399::1728170709::1::::<><>::
+0040.png::CompressedTexture2D::2526760167962127801::1728170399::1728170709::1::::<><>::
+0041.png::CompressedTexture2D::8354063126066615809::1728170399::1728170708::1::::<><>::
+0042.png::CompressedTexture2D::653114001837597077::1728170399::1728170708::1::::<><>::
+0043.png::CompressedTexture2D::5242731644303491327::1728170400::1728170708::1::::<><>::
+0044.png::CompressedTexture2D::8063634539189527477::1728170400::1728170708::1::::<><>::
+0045.png::CompressedTexture2D::151326945114179374::1728170400::1728170708::1::::<><>::
+0046.png::CompressedTexture2D::4378067187623613250::1728170400::1728170701::1::::<><>::
+0047.png::CompressedTexture2D::6418682882523047104::1728170400::1728170701::1::::<><>::
+0048.png::CompressedTexture2D::3807508948401388585::1728170400::1728170701::1::::<><>::
+0049.png::CompressedTexture2D::8530135128573399616::1728170400::1728170701::1::::<><>::
+0050.png::CompressedTexture2D::494223065039737451::1728170401::1728170701::1::::<><>::
+0051.png::CompressedTexture2D::43937429782086771::1728170401::1728170701::1::::<><>::
+0052.png::CompressedTexture2D::2840643392731166421::1728170401::1728170701::1::::<><>::
+0053.png::CompressedTexture2D::3797297932094004547::1728170401::1728170701::1::::<><>::
+0054.png::CompressedTexture2D::5908410509038317177::1728170401::1728170701::1::::<><>::
+0055.png::CompressedTexture2D::5788459521159010307::1728170401::1728170701::1::::<><>::
+0056.png::CompressedTexture2D::8441267057835706137::1728170402::1728170701::1::::<><>::
+0057.png::CompressedTexture2D::5860595278974060896::1728170402::1728170701::1::::<><>::
+0058.png::CompressedTexture2D::5775804710480707320::1728170402::1728170701::1::::<><>::
+0059.png::CompressedTexture2D::169762458099614150::1728170402::1728170701::1::::<><>::
+0060.png::CompressedTexture2D::6698615743601801455::1728170402::1728170701::1::::<><>::
+::res://render frames/crawl/::1728170713
+0001.png::CompressedTexture2D::7654092015197595651::1728169910::1728170701::1::::<><>::
+0002.png::CompressedTexture2D::2242076616856832496::1728169910::1728170701::1::::<><>::
+0003.png::CompressedTexture2D::8042770586705246873::1728169910::1728170701::1::::<><>::
+0004.png::CompressedTexture2D::7183634061359298861::1728169911::1728170701::1::::<><>::
+0005.png::CompressedTexture2D::4718512310736594390::1728169911::1728170701::1::::<><>::
+0006.png::CompressedTexture2D::3973849835364249573::1728169911::1728170701::1::::<><>::
+0007.png::CompressedTexture2D::3738247182773201349::1728169911::1728170701::1::::<><>::
+0008.png::CompressedTexture2D::169042362289785364::1728169912::1728170704::1::::<><>::
+0009.png::CompressedTexture2D::8063922934602713739::1728169912::1728170703::1::::<><>::
+0010.png::CompressedTexture2D::4023373043419575932::1728169912::1728170703::1::::<><>::
+0011.png::CompressedTexture2D::8875813026896092090::1728169912::1728170703::1::::<><>::
+0012.png::CompressedTexture2D::2818388287970292693::1728169912::1728170703::1::::<><>::
+0013.png::CompressedTexture2D::2059900385870913766::1728169913::1728170703::1::::<><>::
+0014.png::CompressedTexture2D::4957207961293142516::1728169913::1728170703::1::::<><>::
+0015.png::CompressedTexture2D::5272061603669344534::1728169913::1728170702::1::::<><>::
+0016.png::CompressedTexture2D::5262812743445137868::1728169913::1728170702::1::::<><>::
+0017.png::CompressedTexture2D::6519613562757900814::1728169913::1728170702::1::::<><>::
+0018.png::CompressedTexture2D::6820123131052002934::1728169913::1728170702::1::::<><>::
+0019.png::CompressedTexture2D::3763580296473267465::1728169914::1728170702::1::::<><>::
+0020.png::CompressedTexture2D::4268575676198868481::1728169914::1728170702::1::::<><>::
+0021.png::CompressedTexture2D::6126309608938963360::1728169914::1728170702::1::::<><>::
+0022.png::CompressedTexture2D::6597716464011682794::1728169914::1728170702::1::::<><>::
+0023.png::CompressedTexture2D::2649584652855650611::1728169914::1728170702::1::::<><>::
+0024.png::CompressedTexture2D::1730748024043734897::1728169915::1728170702::1::::<><>::
+0025.png::CompressedTexture2D::7904199589967575994::1728169915::1728170701::1::::<><>::
+0026.png::CompressedTexture2D::5064016516032688287::1728169915::1728170701::1::::<><>::
+0027.png::CompressedTexture2D::4331536379201248856::1728169915::1728170701::1::::<><>::
+0028.png::CompressedTexture2D::6280318161460471969::1728169916::1728170701::1::::<><>::
+0029.png::CompressedTexture2D::7346061830099173022::1728169916::1728170701::1::::<><>::
+0030.png::CompressedTexture2D::1884561001019709939::1728169916::1728170701::1::::<><>::
+0031.png::CompressedTexture2D::7026864751678088030::1728169916::1728170713::1::::<><>::
+0032.png::CompressedTexture2D::1519968564647580459::1728169916::1728170712::1::::<><>::
+0033.png::CompressedTexture2D::6281646833246762063::1728169916::1728170712::1::::<><>::
+0034.png::CompressedTexture2D::6876437953377740694::1728169917::1728170712::1::::<><>::
+0035.png::CompressedTexture2D::7326754310722969171::1728169917::1728170712::1::::<><>::
+0036.png::CompressedTexture2D::6913153053667083472::1728169917::1728170712::1::::<><>::
+0037.png::CompressedTexture2D::2332844661881491606::1728169917::1728170712::1::::<><>::
+0038.png::CompressedTexture2D::8773873946541603939::1728169917::1728170712::1::::<><>::
+0039.png::CompressedTexture2D::2419429468352032620::1728169918::1728170712::1::::<><>::
+0040.png::CompressedTexture2D::1507078300968485255::1728169918::1728170712::1::::<><>::
+0041.png::CompressedTexture2D::762974203651940592::1728169918::1728170712::1::::<><>::
+0042.png::CompressedTexture2D::6565990416096289001::1728169918::1728170712::1::::<><>::
+0043.png::CompressedTexture2D::1299240720150169236::1728169918::1728170712::1::::<><>::
+0044.png::CompressedTexture2D::7980748299246208604::1728169919::1728170712::1::::<><>::
+0045.png::CompressedTexture2D::6485862552281818802::1728169919::1728170712::1::::<><>::
+0046.png::CompressedTexture2D::660973087155315878::1728169919::1728170712::1::::<><>::
+0047.png::CompressedTexture2D::7344299636753319408::1728169919::1728170712::1::::<><>::
+0048.png::CompressedTexture2D::6673559818029131463::1728169920::1728170712::1::::<><>::
+0049.png::CompressedTexture2D::8170782082718600817::1728169920::1728170712::1::::<><>::
+0050.png::CompressedTexture2D::5042061944608569793::1728169920::1728170712::1::::<><>::
+0051.png::CompressedTexture2D::8505003869402406352::1728169920::1728170712::1::::<><>::
+0052.png::CompressedTexture2D::1173273080532770579::1728169920::1728170712::1::::<><>::
+0053.png::CompressedTexture2D::2071234565518965792::1728169921::1728170713::1::::<><>::
+0054.png::CompressedTexture2D::1974893333437119013::1728169921::1728170713::1::::<><>::
+0055.png::CompressedTexture2D::7823627596924661716::1728169921::1728170713::1::::<><>::
+0056.png::CompressedTexture2D::8332457533691886331::1728169921::1728170713::1::::<><>::
+0057.png::CompressedTexture2D::7875893598497976840::1728169921::1728170713::1::::<><>::
+0058.png::CompressedTexture2D::1194048659493562929::1728169921::1728170713::1::::<><>::
+0059.png::CompressedTexture2D::4184793772400581958::1728169922::1728170713::1::::<><>::
+0060.png::CompressedTexture2D::8883466335641516520::1728169922::1728170713::1::::<><>::
+::res://render frames/crouch/::1728170713
+0001.png::CompressedTexture2D::4826008432796988057::1728169501::1728170713::1::::<><>::
+0002.png::CompressedTexture2D::4188763582302016571::1728169501::1728170713::1::::<><>::
+0003.png::CompressedTexture2D::4866868151211742414::1728169501::1728170713::1::::<><>::
+0004.png::CompressedTexture2D::1344885698035039644::1728169501::1728170713::1::::<><>::
+0005.png::CompressedTexture2D::9073419823404588161::1728169501::1728170713::1::::<><>::
+0006.png::CompressedTexture2D::8408063043455939180::1728169502::1728170713::1::::<><>::
+0007.png::CompressedTexture2D::765340538580217273::1728169502::1728170713::1::::<><>::
+0008.png::CompressedTexture2D::5684968083126029930::1728169502::1728170713::1::::<><>::
+0009.png::CompressedTexture2D::1058197223877895371::1728169502::1728170713::1::::<><>::
+0010.png::CompressedTexture2D::8210112223200406952::1728169502::1728170713::1::::<><>::
+0011.png::CompressedTexture2D::9097098822396002577::1728169502::1728170713::1::::<><>::
+0012.png::CompressedTexture2D::7159034423899900419::1728169502::1728170713::1::::<><>::
+0013.png::CompressedTexture2D::7612913571824873494::1728169503::1728170713::1::::<><>::
+0014.png::CompressedTexture2D::7095717974871528571::1728169503::1728170713::1::::<><>::
+0015.png::CompressedTexture2D::6965894568226166760::1728169503::1728170713::1::::<><>::
+0016.png::CompressedTexture2D::8102223707970252038::1728169503::1728170711::1::::<><>::
+0017.png::CompressedTexture2D::4745568417580892284::1728169503::1728170711::1::::<><>::
+0018.png::CompressedTexture2D::8549989244157465033::1728169503::1728170711::1::::<><>::
+0019.png::CompressedTexture2D::3681616782022298395::1728169504::1728170711::1::::<><>::
+0020.png::CompressedTexture2D::6517266234335862180::1728169504::1728170711::1::::<><>::
+0021.png::CompressedTexture2D::898199185067257068::1728169504::1728170711::1::::<><>::
+0022.png::CompressedTexture2D::3427311679657545472::1728169504::1728170711::1::::<><>::
+0023.png::CompressedTexture2D::5282507012854595240::1728169504::1728170711::1::::<><>::
+0024.png::CompressedTexture2D::8082365773557900515::1728169504::1728170711::1::::<><>::
+0025.png::CompressedTexture2D::7882978373142711443::1728169504::1728170711::1::::<><>::
+0026.png::CompressedTexture2D::7330347555897747071::1728169505::1728170711::1::::<><>::
+0027.png::CompressedTexture2D::639829125982278518::1728169505::1728170711::1::::<><>::
+0028.png::CompressedTexture2D::3978099954946443206::1728169505::1728170711::1::::<><>::
+0029.png::CompressedTexture2D::5073158108648559820::1728169505::1728170711::1::::<><>::
+0030.png::CompressedTexture2D::3523884229208894507::1728169505::1728170711::1::::<><>::
+0031.png::CompressedTexture2D::6707091951219419191::1728169505::1728170711::1::::<><>::
+0032.png::CompressedTexture2D::4136594604521875507::1728169506::1728170710::1::::<><>::
+0033.png::CompressedTexture2D::4487653488990084140::1728169506::1728170710::1::::<><>::
+0034.png::CompressedTexture2D::8701927430232874504::1728169506::1728170710::1::::<><>::
+0035.png::CompressedTexture2D::6929333040561948287::1728169506::1728170710::1::::<><>::
+0036.png::CompressedTexture2D::8625449821210556975::1728169506::1728170710::1::::<><>::
+0037.png::CompressedTexture2D::6266691897837181454::1728169506::1728170710::1::::<><>::
+0038.png::CompressedTexture2D::3693059367888162993::1728169507::1728170712::1::::<><>::
+0039.png::CompressedTexture2D::6287599772899715104::1728169507::1728170712::1::::<><>::
+0040.png::CompressedTexture2D::7113872303019622729::1728169507::1728170712::1::::<><>::
+0041.png::CompressedTexture2D::2544217492269133882::1728169507::1728170712::1::::<><>::
+0042.png::CompressedTexture2D::5388056054822598295::1728169507::1728170712::1::::<><>::
+0043.png::CompressedTexture2D::6821970343542551310::1728169507::1728170712::1::::<><>::
+0044.png::CompressedTexture2D::5988039027790681616::1728169508::1728170712::1::::<><>::
+0045.png::CompressedTexture2D::7170607039488240681::1728169508::1728170712::1::::<><>::
+0046.png::CompressedTexture2D::6219743428052652020::1728169508::1728170712::1::::<><>::
+0047.png::CompressedTexture2D::5139575956334683344::1728169508::1728170712::1::::<><>::
+0048.png::CompressedTexture2D::139598588857296551::1728169508::1728170712::1::::<><>::
+0049.png::CompressedTexture2D::1810022765235400975::1728169509::1728170712::1::::<><>::
+0050.png::CompressedTexture2D::6416807051649136144::1728169509::1728170712::1::::<><>::
+0051.png::CompressedTexture2D::9209581154563850893::1728169509::1728170712::1::::<><>::
+0052.png::CompressedTexture2D::1735087033842705106::1728169509::1728170712::1::::<><>::
+0053.png::CompressedTexture2D::2624319814996602583::1728169509::1728170711::1::::<><>::
+0054.png::CompressedTexture2D::4402905235892069056::1728169509::1728170711::1::::<><>::
+0055.png::CompressedTexture2D::3277634428410841309::1728169510::1728170711::1::::<><>::
+0056.png::CompressedTexture2D::5107122115592698466::1728169510::1728170711::1::::<><>::
+0057.png::CompressedTexture2D::2776264423056006008::1728169510::1728170711::1::::<><>::
+0058.png::CompressedTexture2D::3190256781009073320::1728169510::1728170711::1::::<><>::
+0059.png::CompressedTexture2D::1162027378717194305::1728169510::1728170711::1::::<><>::
+0060.png::CompressedTexture2D::4648995450118832177::1728169510::1728170711::1::::<><>::
+::res://render frames/dead/::1728170698
+0001.png::CompressedTexture2D::5436079935278768837::1728170671::1728170698::1::::<><>::
+::res://render frames/falling/::1728170698
+0001.png::CompressedTexture2D::20483712721268667::1728170546::1728170698::1::::<><>::
+0002.png::CompressedTexture2D::914993823191415015::1728170546::1728170698::1::::<><>::
+0003.png::CompressedTexture2D::7989440255395557066::1728170547::1728170697::1::::<><>::
+0004.png::CompressedTexture2D::2162926181049363680::1728170547::1728170697::1::::<><>::
+0005.png::CompressedTexture2D::8391322279608711595::1728170547::1728170697::1::::<><>::
+0006.png::CompressedTexture2D::3694770429686147899::1728170547::1728170697::1::::<><>::
+0007.png::CompressedTexture2D::8081231851288268714::1728170547::1728170697::1::::<><>::
+0008.png::CompressedTexture2D::7635944862219671853::1728170547::1728170697::1::::<><>::
+0009.png::CompressedTexture2D::1894626846706643229::1728170548::1728170697::1::::<><>::
+0010.png::CompressedTexture2D::1028867050729287759::1728170548::1728170697::1::::<><>::
+0011.png::CompressedTexture2D::7962163578665760687::1728170548::1728170697::1::::<><>::
+0012.png::CompressedTexture2D::3141183951845121384::1728170548::1728170697::1::::<><>::
+0013.png::CompressedTexture2D::8525606055125184290::1728170548::1728170697::1::::<><>::
+0014.png::CompressedTexture2D::3442238812758347375::1728170548::1728170697::1::::<><>::
+0015.png::CompressedTexture2D::7766995032189696355::1728170549::1728170697::1::::<><>::
+0016.png::CompressedTexture2D::1470224587328091253::1728170549::1728170697::1::::<><>::
+0017.png::CompressedTexture2D::7088037130474273489::1728170549::1728170697::1::::<><>::
+0018.png::CompressedTexture2D::8694371592532005537::1728170549::1728170697::1::::<><>::
+0019.png::CompressedTexture2D::1849047471520731465::1728170549::1728170697::1::::<><>::
+0020.png::CompressedTexture2D::1221191040424797457::1728170549::1728170697::1::::<><>::
+::res://render frames/idle/::1728170701
+0001.png::CompressedTexture2D::2850693557099292050::1728168932::1728170696::1::::<><>::
+0002.png::CompressedTexture2D::7093913612097530679::1728168932::1728170696::1::::<><>::
+0003.png::CompressedTexture2D::6190755943467241205::1728168932::1728170696::1::::<><>::
+0004.png::CompressedTexture2D::7221095738917455287::1728168933::1728170696::1::::<><>::
+0005.png::CompressedTexture2D::4979494322973302922::1728168933::1728170696::1::::<><>::
+0006.png::CompressedTexture2D::7555065697754585619::1728168933::1728170696::1::::<><>::
+0007.png::CompressedTexture2D::2565540048431935373::1728168933::1728170696::1::::<><>::
+0008.png::CompressedTexture2D::3002683725201183813::1728168933::1728170696::1::::<><>::
+0009.png::CompressedTexture2D::9042004239385365935::1728168933::1728170696::1::::<><>::
+0010.png::CompressedTexture2D::7610134824337625996::1728168934::1728170700::1::::<><>::
+0011.png::CompressedTexture2D::5485608773111141256::1728168934::1728170700::1::::<><>::
+0012.png::CompressedTexture2D::5884914708818159211::1728168934::1728170700::1::::<><>::
+0013.png::CompressedTexture2D::5314981775415836810::1728168934::1728170700::1::::<><>::
+0014.png::CompressedTexture2D::3840462597735666803::1728168934::1728170700::1::::<><>::
+0015.png::CompressedTexture2D::897649036373837604::1728168934::1728170700::1::::<><>::
+0016.png::CompressedTexture2D::7204248308299661837::1728168934::1728170700::1::::<><>::
+0017.png::CompressedTexture2D::6005492551449641440::1728168935::1728170700::1::::<><>::
+0018.png::CompressedTexture2D::855405134903839369::1728168935::1728170700::1::::<><>::
+0019.png::CompressedTexture2D::2922874819936746147::1728168935::1728170700::1::::<><>::
+0020.png::CompressedTexture2D::8742932372225835026::1728168935::1728170700::1::::<><>::
+0021.png::CompressedTexture2D::3941836372237463881::1728168935::1728170700::1::::<><>::
+0022.png::CompressedTexture2D::8936716481990522452::1728168935::1728170700::1::::<><>::
+0023.png::CompressedTexture2D::5907861982394575214::1728168936::1728170700::1::::<><>::
+0024.png::CompressedTexture2D::2020657884251497915::1728168936::1728170700::1::::<><>::
+0025.png::CompressedTexture2D::3133120724371701696::1728168936::1728170700::1::::<><>::
+0026.png::CompressedTexture2D::4135091700429933550::1728168936::1728170700::1::::<><>::
+0027.png::CompressedTexture2D::3587044724524326284::1728168936::1728170700::1::::<><>::
+0028.png::CompressedTexture2D::4934013526374789393::1728168936::1728170700::1::::<><>::
+0029.png::CompressedTexture2D::9135418278141878444::1728168936::1728170700::1::::<><>::
+0030.png::CompressedTexture2D::2114995711018395741::1728168937::1728170700::1::::<><>::
+0031.png::CompressedTexture2D::7743765368272068723::1728168937::1728170700::1::::<><>::
+0032.png::CompressedTexture2D::6622364569731510047::1728168937::1728170700::1::::<><>::
+0033.png::CompressedTexture2D::1807602070604880663::1728168937::1728170701::1::::<><>::
+0034.png::CompressedTexture2D::692076992555734021::1728168937::1728170701::1::::<><>::
+0035.png::CompressedTexture2D::5520226610561738211::1728168937::1728170701::1::::<><>::
+0036.png::CompressedTexture2D::3851053242405477482::1728168937::1728170700::1::::<><>::
+0037.png::CompressedTexture2D::9055976808920259388::1728168938::1728170700::1::::<><>::
+0038.png::CompressedTexture2D::8187900734484321206::1728168938::1728170700::1::::<><>::
+0039.png::CompressedTexture2D::4744194134185618448::1728168938::1728170700::1::::<><>::
+0040.png::CompressedTexture2D::6118026653100691268::1728168938::1728170700::1::::<><>::
+0041.png::CompressedTexture2D::1368822321028839317::1728168938::1728170700::1::::<><>::
+0042.png::CompressedTexture2D::8092167719236514056::1728168938::1728170700::1::::<><>::
+0043.png::CompressedTexture2D::7256232646352082523::1728168939::1728170700::1::::<><>::
+0044.png::CompressedTexture2D::3526567507516782245::1728168939::1728170700::1::::<><>::
+0045.png::CompressedTexture2D::258081537012436567::1728168939::1728170700::1::::<><>::
+0046.png::CompressedTexture2D::4431453320091876380::1728168939::1728170700::1::::<><>::
+0047.png::CompressedTexture2D::1387695639061283720::1728168939::1728170700::1::::<><>::
+0048.png::CompressedTexture2D::7499677824696196610::1728168939::1728170700::1::::<><>::
+0049.png::CompressedTexture2D::8375436928829996474::1728168939::1728170700::1::::<><>::
+0050.png::CompressedTexture2D::900785806860780759::1728168940::1728170700::1::::<><>::
+0051.png::CompressedTexture2D::2179421829140040954::1728168940::1728170700::1::::<><>::
+0052.png::CompressedTexture2D::2960945141426881233::1728168940::1728170700::1::::<><>::
+0053.png::CompressedTexture2D::8171841424057862179::1728168940::1728170700::1::::<><>::
+0054.png::CompressedTexture2D::8181813449842380587::1728168940::1728170700::1::::<><>::
+0055.png::CompressedTexture2D::851472975309812170::1728168940::1728170700::1::::<><>::
+0056.png::CompressedTexture2D::9219153804048275614::1728168940::1728170699::1::::<><>::
+0057.png::CompressedTexture2D::3066382255557851086::1728168941::1728170699::1::::<><>::
+0058.png::CompressedTexture2D::2938052849820811322::1728168941::1728170699::1::::<><>::
+0059.png::CompressedTexture2D::4427834345288371644::1728168941::1728170699::1::::<><>::
+0060.png::CompressedTexture2D::6375424110553753621::1728168941::1728170699::1::::<><>::
+::res://render frames/idle crawl/::1728178592
+0001.png::CompressedTexture2D::1761470475657448335::1728178576::1728178591::1::::<><>::
+0002.png::CompressedTexture2D::5298746489037017684::1728178576::1728178591::1::::<><>::
+0003.png::CompressedTexture2D::7271743728014886969::1728178576::1728178591::1::::<><>::
+0004.png::CompressedTexture2D::5653829263896137677::1728178576::1728178591::1::::<><>::
+0005.png::CompressedTexture2D::6292127219434460735::1728178576::1728178591::1::::<><>::
+0006.png::CompressedTexture2D::3897037982441884489::1728178577::1728178591::1::::<><>::
+0007.png::CompressedTexture2D::5982533229579384082::1728178577::1728178591::1::::<><>::
+0008.png::CompressedTexture2D::7717602664824658957::1728178577::1728178591::1::::<><>::
+0009.png::CompressedTexture2D::3619774447143536478::1728178577::1728178591::1::::<><>::
+0010.png::CompressedTexture2D::5745714561908549286::1728178577::1728178591::1::::<><>::
+0011.png::CompressedTexture2D::2649708039105194471::1728178577::1728178591::1::::<><>::
+0012.png::CompressedTexture2D::7613915725726270292::1728178578::1728178591::1::::<><>::
+0013.png::CompressedTexture2D::773294759954941216::1728178578::1728178591::1::::<><>::
+0014.png::CompressedTexture2D::2394924283678226745::1728178578::1728178591::1::::<><>::
+0015.png::CompressedTexture2D::6900705142501687152::1728178578::1728178591::1::::<><>::
+0016.png::CompressedTexture2D::736277058265050200::1728178578::1728178591::1::::<><>::
+0017.png::CompressedTexture2D::7587572186454353718::1728178578::1728178591::1::::<><>::
+0018.png::CompressedTexture2D::4791649347020879692::1728178579::1728178591::1::::<><>::
+0019.png::CompressedTexture2D::4965372706745600786::1728178579::1728178591::1::::<><>::
+0020.png::CompressedTexture2D::1344156846238818328::1728178579::1728178591::1::::<><>::
+0021.png::CompressedTexture2D::7588138501598133049::1728178579::1728178591::1::::<><>::
+0022.png::CompressedTexture2D::7458787947821567552::1728178579::1728178591::1::::<><>::
+0023.png::CompressedTexture2D::7371479703103461143::1728178579::1728178591::1::::<><>::
+0024.png::CompressedTexture2D::7297490200759679422::1728178579::1728178591::1::::<><>::
+0025.png::CompressedTexture2D::2331089393651353484::1728178580::1728178591::1::::<><>::
+0026.png::CompressedTexture2D::2108615505653053099::1728178580::1728178591::1::::<><>::
+0027.png::CompressedTexture2D::4246826874775835535::1728178580::1728178591::1::::<><>::
+0028.png::CompressedTexture2D::3251580521471325628::1728178580::1728178591::1::::<><>::
+0029.png::CompressedTexture2D::4776853570838855247::1728178580::1728178591::1::::<><>::
+0030.png::CompressedTexture2D::3132777978758945239::1728178580::1728178591::1::::<><>::
+0031.png::CompressedTexture2D::7710672440335501500::1728178581::1728178592::1::::<><>::
+0032.png::CompressedTexture2D::2470449658843150205::1728178581::1728178592::1::::<><>::
+0033.png::CompressedTexture2D::8933691868420254951::1728178581::1728178592::1::::<><>::
+0034.png::CompressedTexture2D::781545787184297503::1728178581::1728178592::1::::<><>::
+0035.png::CompressedTexture2D::1607189950968878586::1728178581::1728178592::1::::<><>::
+0036.png::CompressedTexture2D::6898973582157565613::1728178581::1728178592::1::::<><>::
+0037.png::CompressedTexture2D::8650507817230316412::1728178581::1728178592::1::::<><>::
+0038.png::CompressedTexture2D::5748075990751791121::1728178582::1728178592::1::::<><>::
+0039.png::CompressedTexture2D::3646303184163409088::1728178582::1728178592::1::::<><>::
+0040.png::CompressedTexture2D::4604825883144944787::1728178582::1728178592::1::::<><>::
+0041.png::CompressedTexture2D::2175850655561622080::1728178582::1728178592::1::::<><>::
+0042.png::CompressedTexture2D::5249102588466819563::1728178582::1728178592::1::::<><>::
+0043.png::CompressedTexture2D::577259969692201382::1728178583::1728178592::1::::<><>::
+0044.png::CompressedTexture2D::7770867702566102343::1728178583::1728178592::1::::<><>::
+0045.png::CompressedTexture2D::2872001489900779787::1728178583::1728178591::1::::<><>::
+0046.png::CompressedTexture2D::5704474589141438515::1728178583::1728178591::1::::<><>::
+0047.png::CompressedTexture2D::6455147607770385584::1728178583::1728178591::1::::<><>::
+0048.png::CompressedTexture2D::324296852944779559::1728178583::1728178591::1::::<><>::
+0049.png::CompressedTexture2D::3990633541619569798::1728178584::1728178591::1::::<><>::
+0050.png::CompressedTexture2D::4333246548710518241::1728178584::1728178591::1::::<><>::
+0051.png::CompressedTexture2D::3967182263548405905::1728178584::1728178591::1::::<><>::
+0052.png::CompressedTexture2D::2520913104284580821::1728178584::1728178591::1::::<><>::
+0053.png::CompressedTexture2D::7950578510200527357::1728178584::1728178591::1::::<><>::
+0054.png::CompressedTexture2D::6886472153388799357::1728178584::1728178591::1::::<><>::
+0055.png::CompressedTexture2D::7248066696649549235::1728178585::1728178591::1::::<><>::
+0056.png::CompressedTexture2D::1491913511081591824::1728178585::1728178591::1::::<><>::
+0057.png::CompressedTexture2D::277208964228389550::1728178585::1728178591::1::::<><>::
+0058.png::CompressedTexture2D::4794488825213487764::1728178585::1728178591::1::::<><>::
+0059.png::CompressedTexture2D::4211618159082294094::1728178585::1728178591::1::::<><>::
+0060.png::CompressedTexture2D::1882181650764849615::1728178585::1728178591::1::::<><>::
+::res://render frames/idle-crouch/::1728178591
+0001.png::CompressedTexture2D::6152733402437153944::1728178499::1728178590::1::::<><>::
+0002.png::CompressedTexture2D::5244639207248033870::1728178499::1728178590::1::::<><>::
+0003.png::CompressedTexture2D::2886279754037011031::1728178500::1728178590::1::::<><>::
+0004.png::CompressedTexture2D::587788033483131325::1728178500::1728178590::1::::<><>::
+0005.png::CompressedTexture2D::2832103036134665649::1728178500::1728178590::1::::<><>::
+0006.png::CompressedTexture2D::5932432894633949740::1728178500::1728178590::1::::<><>::
+0007.png::CompressedTexture2D::485181608627109451::1728178500::1728178590::1::::<><>::
+0008.png::CompressedTexture2D::5061879204966168861::1728178500::1728178590::1::::<><>::
+0009.png::CompressedTexture2D::7772381296909184027::1728178501::1728178590::1::::<><>::
+0010.png::CompressedTexture2D::8776686027699091658::1728178501::1728178590::1::::<><>::
+0011.png::CompressedTexture2D::5750503923198330862::1728178501::1728178590::1::::<><>::
+0012.png::CompressedTexture2D::1303630737949009606::1728178501::1728178590::1::::<><>::
+0013.png::CompressedTexture2D::8537600107952294257::1728178501::1728178590::1::::<><>::
+0014.png::CompressedTexture2D::795055098605820943::1728178501::1728178590::1::::<><>::
+0015.png::CompressedTexture2D::584882282254658987::1728178502::1728178590::1::::<><>::
+0016.png::CompressedTexture2D::5539369287483145629::1728178502::1728178590::1::::<><>::
+0017.png::CompressedTexture2D::8371992790670837739::1728178502::1728178590::1::::<><>::
+0018.png::CompressedTexture2D::6274453710057041174::1728178502::1728178590::1::::<><>::
+0019.png::CompressedTexture2D::7076393848655144442::1728178502::1728178590::1::::<><>::
+0020.png::CompressedTexture2D::717075932336844905::1728178502::1728178590::1::::<><>::
+0021.png::CompressedTexture2D::2131823975639566393::1728178502::1728178590::1::::<><>::
+0022.png::CompressedTexture2D::8116516228209014932::1728178503::1728178590::1::::<><>::
+0023.png::CompressedTexture2D::6707372376203040682::1728178503::1728178590::1::::<><>::
+0024.png::CompressedTexture2D::5789196079147264620::1728178503::1728178590::1::::<><>::
+0025.png::CompressedTexture2D::5636413060353876409::1728178503::1728178590::1::::<><>::
+0026.png::CompressedTexture2D::6140602053487563438::1728178503::1728178590::1::::<><>::
+0027.png::CompressedTexture2D::575531482160598383::1728178503::1728178590::1::::<><>::
+0028.png::CompressedTexture2D::1541708892756501745::1728178504::1728178590::1::::<><>::
+0029.png::CompressedTexture2D::2719606054931202254::1728178504::1728178590::1::::<><>::
+0030.png::CompressedTexture2D::7427227385299090099::1728178504::1728178590::1::::<><>::
+0031.png::CompressedTexture2D::2353969677684774331::1728178504::1728178591::1::::<><>::
+0032.png::CompressedTexture2D::2668924175690214860::1728178504::1728178591::1::::<><>::
+0033.png::CompressedTexture2D::3125073195063696778::1728178504::1728178591::1::::<><>::
+0034.png::CompressedTexture2D::5349685594178622814::1728178505::1728178591::1::::<><>::
+0035.png::CompressedTexture2D::8317079988260336693::1728178505::1728178591::1::::<><>::
+0036.png::CompressedTexture2D::8120034210151271693::1728178505::1728178591::1::::<><>::
+0037.png::CompressedTexture2D::6242964673682066415::1728178505::1728178591::1::::<><>::
+0038.png::CompressedTexture2D::7233279209229206731::1728178505::1728178591::1::::<><>::
+0039.png::CompressedTexture2D::5857510153998938817::1728178505::1728178590::1::::<><>::
+0040.png::CompressedTexture2D::2516026106516404964::1728178506::1728178590::1::::<><>::
+0041.png::CompressedTexture2D::4512778981032481430::1728178506::1728178590::1::::<><>::
+0042.png::CompressedTexture2D::9145371485307176729::1728178506::1728178590::1::::<><>::
+0043.png::CompressedTexture2D::7518183955372017831::1728178506::1728178590::1::::<><>::
+0044.png::CompressedTexture2D::5068777953994315311::1728178506::1728178590::1::::<><>::
+0045.png::CompressedTexture2D::3806566851081554207::1728178506::1728178590::1::::<><>::
+0046.png::CompressedTexture2D::3236041858471552969::1728178507::1728178590::1::::<><>::
+0047.png::CompressedTexture2D::4991721770533788730::1728178507::1728178590::1::::<><>::
+0048.png::CompressedTexture2D::1196205171733815560::1728178507::1728178590::1::::<><>::
+0049.png::CompressedTexture2D::4058835297085870937::1728178507::1728178590::1::::<><>::
+0050.png::CompressedTexture2D::8735669644169551841::1728178507::1728178590::1::::<><>::
+0051.png::CompressedTexture2D::1156123321152706580::1728178507::1728178590::1::::<><>::
+0052.png::CompressedTexture2D::1166756171946435447::1728178507::1728178590::1::::<><>::
+0053.png::CompressedTexture2D::4602483476862975683::1728178508::1728178590::1::::<><>::
+0054.png::CompressedTexture2D::2720504816932626448::1728178508::1728178590::1::::<><>::
+0055.png::CompressedTexture2D::5505627073957977880::1728178508::1728178590::1::::<><>::
+0056.png::CompressedTexture2D::6792583751050169521::1728178508::1728178590::1::::<><>::
+0057.png::CompressedTexture2D::751490334034064435::1728178508::1728178590::1::::<><>::
+0058.png::CompressedTexture2D::7245842396057971587::1728178508::1728178590::1::::<><>::
+0059.png::CompressedTexture2D::3481404972495827404::1728178509::1728178590::1::::<><>::
+0060.png::CompressedTexture2D::5517793816136217326::1728178509::1728178590::1::::<><>::
+::res://render frames/parts/::1728162118
+0001.png::CompressedTexture2D::1110028795623916610::1728162112::1728162118::1::::<><>::
+0002.png::CompressedTexture2D::9036696104346231259::1728162112::1728162118::1::::<><>::
+0003.png::CompressedTexture2D::3040642491088276399::1728162112::1728162118::1::::<><>::
+0004.png::CompressedTexture2D::3677759358222675350::1728162112::1728162118::1::::<><>::
+0005.png::CompressedTexture2D::7099968738802408404::1728162112::1728162118::1::::<><>::
+0006.png::CompressedTexture2D::6009503722467980172::1728162112::1728162118::1::::<><>::
+0007.png::CompressedTexture2D::7449469468743240079::1728162112::1728162118::1::::<><>::
+::res://render frames/run/::1728170700
+0001.png::CompressedTexture2D::7239056195711609497::1728168917::1728170699::1::::<><>::
+0002.png::CompressedTexture2D::198625635059404864::1728168917::1728170699::1::::<><>::
+0003.png::CompressedTexture2D::7126694268514895176::1728168918::1728170699::1::::<><>::
+0004.png::CompressedTexture2D::4563559189927454598::1728168918::1728170699::1::::<><>::
+0005.png::CompressedTexture2D::4060608792940315828::1728168918::1728170699::1::::<><>::
+0006.png::CompressedTexture2D::8691498096341264587::1728168918::1728170699::1::::<><>::
+0007.png::CompressedTexture2D::670312408354633021::1728168918::1728170699::1::::<><>::
+0008.png::CompressedTexture2D::3718289937790954248::1728168918::1728170699::1::::<><>::
+0009.png::CompressedTexture2D::4805725368783093879::1728168919::1728170699::1::::<><>::
+0010.png::CompressedTexture2D::1690810620196864544::1728168919::1728170699::1::::<><>::
+0011.png::CompressedTexture2D::4641485913761852482::1728168919::1728170699::1::::<><>::
+0012.png::CompressedTexture2D::3295188881515929197::1728168919::1728170699::1::::<><>::
+0013.png::CompressedTexture2D::4666731723915886387::1728168919::1728170699::1::::<><>::
+0014.png::CompressedTexture2D::764809617357855771::1728168919::1728170699::1::::<><>::
+0015.png::CompressedTexture2D::5075646630179807519::1728168919::1728170699::1::::<><>::
+0016.png::CompressedTexture2D::2296129202220561149::1728168920::1728170699::1::::<><>::
+0017.png::CompressedTexture2D::2623603666718862737::1728168920::1728170699::1::::<><>::
+0018.png::CompressedTexture2D::4149548685920292690::1728168920::1728170700::1::::<><>::
+0019.png::CompressedTexture2D::6237650931893043368::1728168920::1728170700::1::::<><>::
+0020.png::CompressedTexture2D::4121007776010433748::1728168920::1728170700::1::::<><>::
+0021.png::CompressedTexture2D::6613132949373894525::1728168920::1728170700::1::::<><>::
+0022.png::CompressedTexture2D::4043450815808790223::1728168920::1728170700::1::::<><>::
+0023.png::CompressedTexture2D::4084018225707559456::1728168921::1728170699::1::::<><>::
+0024.png::CompressedTexture2D::7545032382079642081::1728168921::1728170699::1::::<><>::
+0025.png::CompressedTexture2D::1409201419352466533::1728168921::1728170699::1::::<><>::
+0026.png::CompressedTexture2D::8826406239342249221::1728168921::1728170699::1::::<><>::
+0027.png::CompressedTexture2D::6222442546863407450::1728168921::1728170699::1::::<><>::
+0028.png::CompressedTexture2D::1173465890891353109::1728168921::1728170699::1::::<><>::
+0029.png::CompressedTexture2D::7197642896863689826::1728168921::1728170699::1::::<><>::
+0030.png::CompressedTexture2D::4889842081221731913::1728168922::1728170699::1::::<><>::
+0031.png::CompressedTexture2D::8165717054114983131::1728168922::1728170699::1::::<><>::
+0032.png::CompressedTexture2D::6553815304536577632::1728168922::1728170699::1::::<><>::
+0033.png::CompressedTexture2D::7630608362291415032::1728168922::1728170699::1::::<><>::
+0034.png::CompressedTexture2D::8862833277401754355::1728168922::1728170699::1::::<><>::
+0035.png::CompressedTexture2D::279835087749348960::1728168922::1728170699::1::::<><>::
+0036.png::CompressedTexture2D::2630123941491046264::1728168922::1728170699::1::::<><>::
+0037.png::CompressedTexture2D::28461343057722831::1728168923::1728170699::1::::<><>::
+0038.png::CompressedTexture2D::6947647653504848716::1728168923::1728170699::1::::<><>::
+0039.png::CompressedTexture2D::8432575084378063683::1728168923::1728170699::1::::<><>::
+0040.png::CompressedTexture2D::5909378329587012421::1728168923::1728170699::1::::<><>::
+::res://render frames/walk/::1728173211
+0001.png::CompressedTexture2D::1245345817290965534::1728173189::1728173210::1::::<><>::
+0002.png::CompressedTexture2D::3748646211582423515::1728173189::1728173210::1::::<><>::
+0003.png::CompressedTexture2D::4844270203255323064::1728173189::1728173210::1::::<><>::
+0004.png::CompressedTexture2D::5876288729259677394::1728173190::1728173211::1::::<><>::
+0005.png::CompressedTexture2D::2192063978700079438::1728173190::1728173211::1::::<><>::
+0006.png::CompressedTexture2D::4377512927514416236::1728173190::1728173211::1::::<><>::
+0007.png::CompressedTexture2D::5355968890404059165::1728173190::1728173211::1::::<><>::
+0008.png::CompressedTexture2D::8058814236748135174::1728173190::1728173211::1::::<><>::
+0009.png::CompressedTexture2D::509609064248208911::1728173190::1728173211::1::::<><>::
+0010.png::CompressedTexture2D::1127068144495148044::1728173191::1728173211::1::::<><>::
+0011.png::CompressedTexture2D::7607751331924782835::1728173191::1728173211::1::::<><>::
+0012.png::CompressedTexture2D::5883419436883729334::1728173191::1728173211::1::::<><>::
+0013.png::CompressedTexture2D::1345365140265709419::1728173191::1728173211::1::::<><>::
+0014.png::CompressedTexture2D::3531093863458988980::1728173191::1728173211::1::::<><>::
+0015.png::CompressedTexture2D::2963772529795147586::1728173191::1728173211::1::::<><>::
+0016.png::CompressedTexture2D::7498406778407865375::1728173191::1728173211::1::::<><>::
+0017.png::CompressedTexture2D::6319703490722096281::1728173192::1728173211::1::::<><>::
+0018.png::CompressedTexture2D::5370644165282907598::1728173192::1728173211::1::::<><>::
+0019.png::CompressedTexture2D::8951159813168519611::1728173192::1728173211::1::::<><>::
+0020.png::CompressedTexture2D::900827198788196198::1728173192::1728173211::1::::<><>::
+0021.png::CompressedTexture2D::6005156465508605958::1728173192::1728173211::1::::<><>::
+0022.png::CompressedTexture2D::4776112735156996961::1728173192::1728173211::1::::<><>::
+0023.png::CompressedTexture2D::3249008020119818288::1728173193::1728173211::1::::<><>::
+0024.png::CompressedTexture2D::1733273684085955088::1728173193::1728173211::1::::<><>::
+0025.png::CompressedTexture2D::361262884789637747::1728173193::1728173211::1::::<><>::
+0026.png::CompressedTexture2D::1197318490922409250::1728173193::1728173210::1::::<><>::
+0027.png::CompressedTexture2D::2166258199038269822::1728173193::1728173210::1::::<><>::
+0028.png::CompressedTexture2D::238034535295277653::1728173193::1728173210::1::::<><>::
+0029.png::CompressedTexture2D::8670920213989992696::1728173194::1728173210::1::::<><>::
+0030.png::CompressedTexture2D::3239091787135539656::1728173194::1728173210::1::::<><>::
+0031.png::CompressedTexture2D::3495755584684480198::1728173194::1728173210::1::::<><>::
+0032.png::CompressedTexture2D::8342361449336012230::1728173194::1728173210::1::::<><>::
+0033.png::CompressedTexture2D::1591260949727399262::1728173194::1728173210::1::::<><>::
+0034.png::CompressedTexture2D::3061419998517091960::1728173194::1728173210::1::::<><>::
+0035.png::CompressedTexture2D::2708771938814129547::1728173194::1728173210::1::::<><>::
+0036.png::CompressedTexture2D::7870597392305489434::1728173195::1728173210::1::::<><>::
+0037.png::CompressedTexture2D::4621021064657722273::1728173195::1728173210::1::::<><>::
+0038.png::CompressedTexture2D::3674697507745817963::1728173195::1728173210::1::::<><>::
+0039.png::CompressedTexture2D::1487643728746258608::1728173195::1728173210::1::::<><>::
+0040.png::CompressedTexture2D::229320340914792461::1728173195::1728173210::1::::<><>::
+0041.png::CompressedTexture2D::1712471052239922648::1728173195::1728173210::1::::<><>::
+0042.png::CompressedTexture2D::7465126167505356865::1728173196::1728173210::1::::<><>::
+0043.png::CompressedTexture2D::2541386471521885317::1728173196::1728173210::1::::<><>::
+0044.png::CompressedTexture2D::822020069042932370::1728173196::1728173210::1::::<><>::
+0045.png::CompressedTexture2D::5965370765871447169::1728173196::1728173210::1::::<><>::
+0046.png::CompressedTexture2D::3310181969048635457::1728173196::1728173210::1::::<><>::
+0047.png::CompressedTexture2D::8377675291544255468::1728173196::1728173210::1::::<><>::
+0048.png::CompressedTexture2D::659869878409198249::1728173197::1728173210::1::::<><>::
+0049.png::CompressedTexture2D::9046843942280184894::1728173197::1728173210::1::::<><>::
+0050.png::CompressedTexture2D::8690592354090737061::1728173197::1728173210::1::::<><>::
+::res://scenes/::1728217783
+axe.tscn::PackedScene::1289308313140024357::1728217782::0::1::::<><>::res://scripts/axe.gd<>res://scripts/holdable.gd<>uid://bdklkx3f5b653::::res://assets/axe.png<>uid://b7rxxp5r8vrkr::::res://assets/1x1.png
+dollhouse.tscn::PackedScene::-1::1728217783::0::1::::<><>::
+escape menu.tscn::PackedScene::4046197903305973289::1728217783::0::1::::<><>::res://scripts/escape_menu.gd
+extinguisher.tscn::PackedScene::5024783559869056907::1728217782::0::1::::<><>::res://scripts/holdable.gd<>res://scripts/extinguisher.gd<>uid://dde4agj2ljr5p::::res://assets/extinguisher.png<>uid://c7jvn5221uvyy::::res://assets/circle.png
+figure.tscn::PackedScene::4770811801208967070::1728217782::0::1::::<><>::uid://dyvvn4wxtbngf::::res://assets/player idle crawl.tres
+flame.tscn::PackedScene::6691256179544347340::1728217783::0::1::::<><>::uid://c7jvn5221uvyy::::res://assets/circle.png<>res://scripts/flame.gd<>uid://c7ht782kbyluq::::res://assets/smoke.tres<>uid://cepag8qrylrfa::::res://assets/flame.tres<>uid://cr0jojunitu8p::::res://assets/spark.tres
+friend.tscn::PackedScene::4865584840952260954::1728217782::0::1::::<><>::res://scripts/friend.gd<>uid://c7jvn5221uvyy::::res://assets/circle.png<>uid://b88atq1u88iv3::::res://scenes/figure.tscn<>res://scripts/holdable.gd
+ground.tscn::PackedScene::5512782234943857736::1728217782::0::1::::<><>::uid://bh15mpyy610eh::::res://assets/wood plank 3x.png
+hud.tscn::PackedScene::2224871475028875221::1728217783::0::1::::<><>::res://scripts/saved_prog.gd<>uid://vn01000ng68v::::res://assets/saved icon.png<>uid://v25fmj7lmty5::::res://assets/lungs.png<>res://scripts/lung_prog.gd<>uid://b4wriqt16faul::::res://assets/blood.png<>res://scripts/blood_prog.gd
+magnifier.tscn::PackedScene::5960954652506728202::1728217783::0::1::::<><>::uid://ccklj0ulmom0u::::res://assets/magnifier.png<>res://scripts/magnifier.gd<>uid://c7ht782kbyluq::::res://assets/smoke.tres<>uid://c7jvn5221uvyy::::res://assets/circle.png
+main.tscn::PackedScene::4200258534955131932::1728217782::0::1::::<><>::uid://cksoyn8te21qi::::res://scenes/ground.tscn<>uid://c0hipi2q12hrl::::res://scenes/dollhouse.tscn<>uid://dqpfjdn77vy5e::::res://scenes/player.tscn<>uid://c2lkanq1fnk2w::::res://scenes/flame.tscn
+player.tscn::PackedScene::8313569051857752648::1728217782::0::1::::<><>::res://scripts/player.gd<>uid://b88atq1u88iv3::::res://scenes/figure.tscn<>uid://c7jvn5221uvyy::::res://assets/circle.png<>uid://6x0kqg8e4cs8::::res://scenes/hud.tscn<>uid://bxwaj2j00rk1v::::res://scenes/escape menu.tscn
+smoke_cell.tscn::PackedScene::3418060197487152000::1728168229::0::1::::<><>::res://scripts/smoke_cell.gd<>uid://b7rxxp5r8vrkr::::res://assets/1x1.png
+tutorial.tscn::PackedScene::4672146106461462374::1728217782::0::1::::<><>::uid://cksoyn8te21qi::::res://scenes/ground.tscn<>uid://c0hipi2q12hrl::::res://scenes/dollhouse.tscn<>uid://dqpfjdn77vy5e::::res://scenes/player.tscn<>uid://cr6klukbbb76h::::res://scenes/rooms/hall.tscn<>uid://d3l575ltfli3g::::res://scenes/building/door.tscn<>uid://bruqq7blelev4::::res://scenes/rooms/den.tscn<>uid://c2holy8rn4e37::::res://scenes/rooms/kitchen.tscn<>uid://rjgnubobolka::::res://scenes/rooms/bathroom large.tscn<>uid://c68ditcaw2uew::::res://scenes/building/stairs.tscn<>uid://byqx0caid3gu5::::res://scenes/rooms/bathroom segmented.tscn<>uid://ddlxv76igtydu::::res://scenes/rooms/bathroom small.tscn<>uid://cbk6qbaiqy2qo::::res://scenes/friend.tscn<>uid://cq6sb1mqastug::::res://scenes/magnifier.tscn<>res://scripts/trigger_kid.gd
+::res://scenes/building/::1728217783
+back_wall.tscn::PackedScene::5107661744947545654::1728159651::0::1::::<><>::uid://beowr7p13mlhi::::res://assets/wallpaper diamonds.png
+breakable.tscn::PackedScene::4363459976995403670::1728217783::0::1::::<><>::res://scripts/breakable.gd<>uid://b7rxxp5r8vrkr::::res://assets/1x1.png
+connection.tscn::PackedScene::7754232204111220308::1728159650::0::1::::<><>::res://scripts/cell_connector.gd<>uid://b7rxxp5r8vrkr::::res://assets/1x1.png
+door.tscn::PackedScene::9149138076990568230::1728217783::0::1::::<><>::res://scripts/door.gd<>uid://naw4hdyeuyn6::::res://assets/door closed.png<>uid://b3fxsv33tsl6m::::res://scenes/building/breakable.tscn<>uid://tfligf5qft1j::::res://assets/door open.png<>uid://cf8yftmsmnqxp::::res://assets/locked.png<>uid://dk40yj06d33es::::res://assets/door smashed.png
+roof_left.tscn::PackedScene::2876839966576061069::1728215103::0::1::::<><>::uid://by6dc43pjewh1::::res://assets/roof left.png
+roof_middle.tscn::PackedScene::4460646200008668345::1728215103::0::1::::<><>::uid://bqb0scm4rh3ek::::res://assets/roof middle.png
+roof_right.tscn::PackedScene::4195433993288172017::1728215104::0::1::::<><>::uid://bj8eorlxa137i::::res://assets/roof right.png
+stairs.tscn::PackedScene::7017017424442462630::1728217783::0::1::::<><>::res://scripts/stairs.gd<>uid://pi0mkfompjrw::::res://assets/stairs up.png<>uid://d1lgdgb4myct3::::res://assets/stairs.png
+wall tile.tscn::PackedScene::9096757290294818504::1728217375::0::1::::<><>::res://scripts/wall.gd<>uid://dy5koq5nyq2cr::::res://assets/tile.png
+wall wood.tscn::PackedScene::5319082368231312619::1728217783::0::1::::<><>::res://scripts/wall.gd<>uid://b0gg1lxd0qhob::::res://assets/wood plank.png<>uid://b3fxsv33tsl6m::::res://scenes/building/breakable.tscn<>uid://dw2f8am2khnac::::res://assets/wood broken.png
+window.tscn::PackedScene::6006001186245642152::1728217783::0::1::::<><>::res://scripts/window.gd<>uid://c7i37haidl2js::::res://assets/window.png<>uid://coydcpfriy4r7::::res://assets/window broken.png<>uid://b7rxxp5r8vrkr::::res://assets/1x1.png
+::res://scenes/rooms/::1728217783
+bathroom large.tscn::PackedScene::1212178311560253824::1728168229::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://bg43wyjqsfibl::::res://assets/wallpaper tile.png<>uid://d2usi7vk75oiq::::res://scenes/building/wall tile.tscn<>uid://cdubplqcqgkk6::::res://scenes/extinguisher.tscn
+bathroom segmented.tscn::PackedScene::4105424216167386606::1728168229::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://bg43wyjqsfibl::::res://assets/wallpaper tile.png<>uid://d2usi7vk75oiq::::res://scenes/building/wall tile.tscn<>uid://d3l575ltfli3g::::res://scenes/building/door.tscn
+bathroom small.tscn::PackedScene::7393972458802106898::1728168229::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://bg43wyjqsfibl::::res://assets/wallpaper tile.png<>uid://d2usi7vk75oiq::::res://scenes/building/wall tile.tscn
+den.tscn::PackedScene::3621920308005170607::1728217783::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://smsyp2cyhsbd::::res://scenes/axe.tscn<>uid://ch1urk7qurk80::::res://scenes/building/wall wood.tscn<>uid://bub442fj01lat::::res://assets/wallpaper chevrons.png
+hall.tscn::PackedScene::6030675299231120349::1728159650::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://ch1urk7qurk80::::res://scenes/building/wall wood.tscn<>uid://dk3eqtly3u077::::res://assets/wallpaper dots.png
+kitchen.tscn::PackedScene::6683261783853048448::1728159651::0::1::::<><>::res://scripts/room.gd<>uid://ce1gpb05x6i2y::::res://scenes/building/back_wall.tscn<>uid://ch1urk7qurk80::::res://scenes/building/wall wood.tscn
+::res://scripts/::1728217780
+axe.gd::GDScript::-1::1728217747::0::1::::<>Node2D<>::
+blood_prog.gd::GDScript::-1::1728180896::0::1::::<>ProgressBar<>::
+breakable.gd::GDScript::-1::1728216131::0::1::::<>Node2D<>::
+cell_connector.gd::GDScript::-1::1728148476::0::1::::CellConnector<>Node2D<>::
+difficulty.gd::GDScript::-1::1728186896::0::1::::<>Node2D<>::
+dollhouse.gd::GDScript::-1::1728214951::0::1::::<>Node2D<>::
+door.gd::GDScript::-1::1728216019::0::1::::<>CellConnector<>::
+escape_menu.gd::GDScript::-1::1728184253::0::1::::<>CanvasLayer<>::
+extinguisher.gd::GDScript::-1::1728185504::0::1::::<>Node2D<>::
+figure.gd::GDScript::-1::1728183079::0::1::::Figure<>CharacterBody2D<>::
+flame.gd::GDScript::-1::1728185681::0::1::::<>Node2D<>::
+friend.gd::GDScript::-1::1728214350::0::1::::<>Figure<>::
+holdable.gd::GDScript::-1::1728217309::0::1::::<>Area2D<>::
+lung_prog.gd::GDScript::-1::1728180893::0::1::::<>ProgressBar<>::
+magnifier.gd::GDScript::-1::1728184650::0::1::::<>Node2D<>::
+obstruction.gd::GDScript::-1::1728094187::0::1::::Obstruction<>Node2D<>::
+player.gd::GDScript::-1::1728217780::0::1::::<>Figure<>::
+room.gd::GDScript::-1::1728140598::0::1::::<>Node2D<>::
+saved_prog.gd::GDScript::-1::1728180908::0::1::::<>ProgressBar<>::
+smoke_cell.gd::GDScript::-1::1728143409::0::1::::SmokeCell<>Node2D<>::
+stairs.gd::GDScript::-1::1728178076::0::1::::<>Node2D<>::
+trigger_kid.gd::GDScript::-1::1728159599::0::1::::<>Area2D<>::
+utils.gd::GDScript::-1::1728185964::0::1::::<>Node2D<>::
+wall.gd::GDScript::-1::1728217538::0::1::::<>CellConnector<>::
+window.gd::GDScript::-1::1728185575::0::1::::<>CellConnector<>::

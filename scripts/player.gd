@@ -75,6 +75,10 @@ func _process(delta: float) -> void:
 	
 	if "extinguisher" in held_str():
 		tip_text += "\nPress r to extinguish"
+	if "axe" in held_str():
+		var nb = held.get_parent().nearby_breakable()
+		if nb != null:
+			tip_text += "\nPress r to smash %s"%nb
 			
 	$ToolTip.text = tip_text
 

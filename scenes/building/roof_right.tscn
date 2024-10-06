@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b01kgj0wnkf3f"]
+
+[ext_resource type="Texture2D" uid="uid://bj8eorlxa137i" path="res://assets/roof right.png" id="1_1hdwi"]
+
+[node name="roof right" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(220, -100)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_1hdwi")

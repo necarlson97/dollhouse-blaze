@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ch1urk7qurk80"]
+[gd_scene load_steps=6 format=3 uid="uid://ch1urk7qurk80"]
 
 [ext_resource type="Script" path="res://scripts/wall.gd" id="1_tvjic"]
 [ext_resource type="Texture2D" uid="uid://b0gg1lxd0qhob" path="res://assets/wood plank.png" id="2_jcmaj"]
+[ext_resource type="PackedScene" uid="uid://b3fxsv33tsl6m" path="res://scenes/building/breakable.tscn" id="3_3cyvr"]
+[ext_resource type="Texture2D" uid="uid://dw2f8am2khnac" path="res://assets/wood broken.png" id="4_8h1pi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2b4mf"]
 size = Vector2(50, 400)
@@ -18,3 +20,9 @@ texture = ExtResource("2_jcmaj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("RectangleShape2D_2b4mf")
+
+[node name="Breakable" parent="." instance=ExtResource("3_3cyvr")]
+health = 10
+
+[node name="Broken" type="Sprite2D" parent="."]
+texture = ExtResource("4_8h1pi")

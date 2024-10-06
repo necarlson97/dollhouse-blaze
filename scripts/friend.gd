@@ -29,6 +29,14 @@ func handle_animation():
 		position.x = -25
 		rotation = 0
 		play_animation("carried")
+	
+	else:
+		if lung_health > 0.9:
+			walk_index = 0
+		elif lung_health > 0.5:
+			walk_index = 1
+		else:
+			walk_index = 2
 
 func is_held() -> bool:
 	return $Area2D.is_held()

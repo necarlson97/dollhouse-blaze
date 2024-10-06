@@ -112,6 +112,23 @@ func build_roof():
 		add_child(roof)
 		# TODO I shouldn't have to do this
 		roof.propegation_rate = 0.01
+	
+	# The visual-only roof facade
+	var rl = preload("res://scenes/building/roof_left.tscn")
+	var rm = preload("res://scenes/building/roof_middle.tscn")
+	var rr = preload("res://scenes/building/roof_right.tscn")
+	
+	for r in range(ROOMS):
+		var facade_prefab = rm
+		if r == 0:
+			facade_prefab = rl
+		if r == ROOMS-1:
+			facade_prefab = rr
+		var rf =  facade_prefab.instantiate()
+		rf.position.x = r * SIZE
+		rf.position.y = FLOORS * -SIZE
+		rf.name = "roof facade %s"%r
+		add_child(rf)
 
 func create_smoke_cells():
 	var smoke_cell = preload("res://scenes/smoke_cell.tscn")
