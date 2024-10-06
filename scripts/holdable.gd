@@ -35,7 +35,7 @@ func drop():
 	var gp = item.global_position
 	holding_player.held = null
 	holding_player = null
-	var new_parent = get_tree().get_root().get_node("main")
+	var new_parent = get_tree().get_root()
 	item.get_parent().remove_child(item)
 	new_parent.add_child(item)
 	item.global_position = gp

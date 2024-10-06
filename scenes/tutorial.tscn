@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bhhkkbfvp1jiy"]
+[gd_scene load_steps=16 format=3 uid="uid://b7thtfygtosjm"]
 
 [ext_resource type="PackedScene" uid="uid://cksoyn8te21qi" path="res://scenes/ground.tscn" id="1_a3oba"]
 [ext_resource type="PackedScene" uid="uid://c0hipi2q12hrl" path="res://scenes/dollhouse.tscn" id="2_fvky4"]
@@ -18,15 +18,18 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_02l0e"]
 size = Vector2(600, 380)
 
-[node name="main" type="Node2D"]
+[node name="tutorial" type="Node2D"]
 
 [node name="ground" parent="." instance=ExtResource("1_a3oba")]
 position = Vector2(400, 0)
 
 [node name="dollhouse" parent="." instance=ExtResource("2_fvky4")]
 position = Vector2(400, 0)
-ROOMS = 9
 skip_room_build = true
+
+[node name="difficulty" parent="dollhouse" index="0"]
+room_set = 9
+floor_set = 2
 
 [node name="hall" parent="dollhouse" instance=ExtResource("4_xlujy")]
 
@@ -202,3 +205,5 @@ text = "stay below the smokeline to survive longer"
 shape = SubResource("RectangleShape2D_02l0e")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+
+[editable path="dollhouse"]

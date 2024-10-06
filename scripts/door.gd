@@ -21,10 +21,12 @@ func _process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if !is_alive():
 		return
-	if Input.is_action_just_pressed("use_item"):
+	if Input.is_action_just_pressed("use_door"):
 		for body in $DoorArea.get_overlapping_bodies():
 			if body.is_in_group("player"):
-				if is_locked:
+				if !is_locked:
+					toggle()
+				else:
 					var hurt_dict = {
 						"axe": 5,
 						"extinguisher": 3,
@@ -38,9 +40,6 @@ func _input(event: InputEvent) -> void:
 					# Player also hurts themselves a bit
 					if body.held_str() == "hand":
 						body.hurt(0.02)
-				else:
-					toggle()
-			
 		
 func toggle():
 	if is_open:

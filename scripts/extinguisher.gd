@@ -19,7 +19,6 @@ func squirt():
 	if fuel <= 0:
 		return
 	for area in $SquirtArea.get_overlapping_areas():
-		print("Overlapping: %s"%area.get_parent().name)
 		if area.get_parent().is_in_group("flame"):
 			area.get_parent().size *= 0.9
 	fuel -= 0.1

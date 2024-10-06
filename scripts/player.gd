@@ -74,7 +74,7 @@ func _process(delta: float) -> void:
 				tip_text += "\nPress f to take %s"%area.get_parent().name
 	
 	if "extinguisher" in held_str():
-		tip_text += "\nPress e to extinguish"
+		tip_text += "\nPress r to extinguish"
 			
 	$ToolTip.text = tip_text
 

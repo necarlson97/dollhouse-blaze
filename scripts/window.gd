@@ -5,7 +5,7 @@ var is_broken = false
 func _input(event: InputEvent) -> void:
 	if is_broken:
 		return
-	if Input.is_action_just_pressed("use_item"):
+	if Input.is_action_just_pressed("use_door"):
 		for body in $WindowArea.get_overlapping_bodies():
 			if body.is_in_group("player"):
 				break_open()

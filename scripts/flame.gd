@@ -17,10 +17,17 @@ func _ready() -> void:
 	if cell == null:
 		print("Could not find cell for %s"%self)
 		
+var die_timer = -1
 func _process(delta: float) -> void:
 	# if it was extinguished
+	if die_timer > 0:
+		die_timer -= 1
+		scale *= 0.9
+		if die_timer == 0:
+			queue_free()
+		return
 	if size < 1:
-		queue_free()
+		die()
 	size += GROWTH
 	size = clamp(size, 1, 5)
 	scale = Vector2(size, size)
@@ -53,3 +60,9 @@ func spread():
 	sc.add_child(new_flame)
 	new_flame.global_position = new_pos
 	new_flame.name = "flame %s"%flames_in_cell
+
+func die():
+	die_timer = 200
+	$"fire particles".emitting = false
+	$"spark particles".emitting = false
+	$"smoke particles".emitting = false

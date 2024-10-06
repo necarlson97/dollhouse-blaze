@@ -1,8 +1,8 @@
 extends Node2D
 
 const SIZE = 400
-@export var FLOORS = 2
-@export var ROOMS = 4
+var FLOORS = 2
+var ROOMS = 4
 @export var skip_room_build = false
 
 var wall = preload("res://scenes/building/wall wood.tscn")
@@ -19,6 +19,10 @@ var rooms = [
 ]
 
 func _ready() -> void:
+	var diff = get_node_or_null("difficulty")
+	if diff != null:
+		FLOORS = diff.get_floors()
+		ROOMS = diff.get_rooms()
 	build()
 	
 func build():

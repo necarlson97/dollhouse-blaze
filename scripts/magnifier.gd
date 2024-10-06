@@ -9,14 +9,15 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if waiting:
 		return 
-		
+	
+	var speed = 1.0
 	if escape_vector:
-		$Magnifier.position = lerp($Magnifier.position, escape_vector, delta * 0.5)
+		$Magnifier.position = lerp($Magnifier.position, escape_vector, delta * speed)
 	elif $Magnifier.position.length() < 10:
 		spawn_fire()
 		escape_vector = Vector2(randf_range(2000, 3000), randf_range(2000, 3000))
 	else:
-		$Magnifier.position = lerp($Magnifier.position, Vector2.ZERO, delta * 0.5)
+		$Magnifier.position = lerp($Magnifier.position, Vector2.ZERO, delta * speed)
 
 func spawn_fire():
 	var flame = preload("res://scenes/flame.tscn").instantiate()

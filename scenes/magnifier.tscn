@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c7jvn5221uvyy" path="res://assets/circle.png" id="4_4lx58"]
 
 [node name="magnifier" type="Node2D"]
+z_index = 5
 script = ExtResource("1_uiy82")
 
 [node name="Magnifier" type="Node2D" parent="."]
